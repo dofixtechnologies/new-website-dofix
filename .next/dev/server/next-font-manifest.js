@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\n  \"app\": {\n    \"[project]/src/app/(site)/(pages)/booking-address/page\": [],\n    \"[project]/src/app/(site)/(pages)/booking/page\": [],\n    \"[project]/src/app/(site)/(pages)/cart/page\": [],\n    \"[project]/src/app/(site)/page\": []\n  },\n  \"appUsingSizeAdjust\": false,\n  \"pages\": {},\n  \"pagesUsingSizeAdjust\": false\n}"

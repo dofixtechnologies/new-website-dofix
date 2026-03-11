@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
 
 const defaultCenter = {
@@ -48,6 +48,7 @@ export default function BookingAddress() {
       let state = "";
       let country = "";
       let pincode = "";
+      let street = "";
 
       result.address_components.forEach((component: any) => {
 
@@ -63,6 +64,10 @@ export default function BookingAddress() {
           pincode = component.long_name;
         }
 
+        if (component.types.includes("route")) {
+          street = component.long_name;
+        }
+
       });
 
       setFormData((prev) => ({
@@ -71,12 +76,13 @@ export default function BookingAddress() {
         state,
         country,
         pincode,
+        street
       }));
     }
   };
 
-  // Auto detect location
-  useEffect(() => {
+  // Button click location detect
+  const getCurrentLocation = () => {
 
     if (!navigator.geolocation) return;
 
@@ -100,12 +106,11 @@ export default function BookingAddress() {
       },
 
       () => {
-        console.log("Location permission denied");
+        alert("Unable to fetch location");
       }
 
     );
-
-  }, []);
+  };
 
   const validateAddress = () => {
 
@@ -172,11 +177,20 @@ export default function BookingAddress() {
 
         </div>
 
+        {/* Location Button */}
+        <button
+          onClick={getCurrentLocation}
+          className="w-full bg-[#3683ab] hover:bg-[#14455b] text-white py-3 rounded-xl font-medium transition"
+        >
+          Use My Current Location
+        </button>
+
         {/* Address */}
         <input
           type="text"
           value={formData.fullAddress}
           readOnly
+          placeholder="Address will appear after clicking location button"
           className="w-full border border-gray-300 bg-gray-100 p-3 rounded-xl"
         />
 
@@ -201,11 +215,11 @@ export default function BookingAddress() {
 
         </div>
 
-        {/* Manual Fields */}
+        {/* Fields */}
         <div className="space-y-4">
 
           <input
-            placeholder="House/Office No."
+            placeholder="House / Office No."
             value={formData.houseNo}
             onChange={(e) =>
               setFormData({ ...formData, houseNo: e.target.value })
@@ -234,12 +248,14 @@ export default function BookingAddress() {
           <input
             value={formData.country}
             readOnly
+            placeholder="Country auto detect"
             className="w-full border border-gray-200 bg-gray-100 p-3 rounded-xl"
           />
 
           <input
             value={formData.state}
             readOnly
+            placeholder="State auto detect"
             className="w-full border border-gray-200 bg-gray-100 p-3 rounded-xl"
           />
 
@@ -254,7 +270,7 @@ export default function BookingAddress() {
 
         </div>
 
-        {/* Add Address */}
+        {/* Save Address */}
         <button
           onClick={() => {
 
