@@ -1,0 +1,11 @@
+{
+  "/(site)/(pages)/[category]/[subcategory]/page": "app/(site)/(pages)/[category]/[subcategory]/page.js",
+  "/(site)/(pages)/about/page": "app/(site)/(pages)/about/page.js",
+  "/(site)/(pages)/account/page": "app/(site)/(pages)/account/page.js",
+  "/(site)/(pages)/account/profile/page": "app/(site)/(pages)/account/profile/page.js",
+  "/(site)/(pages)/signin/page": "app/(site)/(pages)/signin/page.js",
+  "/(site)/blog/page": "app/(site)/blog/page.js",
+  "/(site)/page": "app/(site)/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/send-otp/route": "app/api/send-otp/route.js"
+}

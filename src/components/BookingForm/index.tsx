@@ -1,7 +1,21 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+
+export default function BookingForm() {
+
+  const router = useRouter();
+
+  const [address, setAddress] = useState<any>(null);
+
+  useEffect(() => {
+    const savedAddress = localStorage.getItem("selectedAddress");
+    if (savedAddress) {
+      setAddress(JSON.parse(savedAddress));
+    }
+  }, []);
+
 
 const dates = [
   { day: "Thu", date: "26 Feb" },
@@ -18,8 +32,7 @@ const slots = [
   "06:00 PM","07:00 PM","08:00 PM"
 ];
 
-export default function BookingForm() {
-  const router = useRouter();
+
 
   // Service
   const [serviceType, setServiceType] = useState("On-site Service");
@@ -67,12 +80,17 @@ export default function BookingForm() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-6 px-4 pt-40">
+    <div className="min-h-screen bg-gray-50 py-6 px-4 pt-55">
       <div className="max-w-[800px] mx-auto bg-white rounded-3xl shadow-xl p-6 space-y-6">
 
-        <h2 className="text-2xl font-semibold text-center">
-          Book Service
-        </h2>
+        <div>
+          <h2 className="text-2xl font-semibold text-[#14455b]">
+            Book Service
+          </h2>
+          <p className="text-sm text-gray-500 mt-1">
+            Choose your location and fill address details
+          </p>
+        </div>
 
         {/* Service Preference */}
         <div>
@@ -208,7 +226,9 @@ export default function BookingForm() {
             onClick={() => router.push("/booking-address")}
             className="w-full border p-3 rounded-xl cursor-pointer flex justify-between items-center text-gray-500 hover:border-[#3683ab]"
           >
-            <span>Select an Address</span>
+           <span>
+             {address ? address.fullAddress : "Select an Address"}
+           </span>
             ✏️
           </div>
         </div>

@@ -11,6 +11,7 @@ import { useSelector } from "react-redux";
 import { selectTotalPrice } from "@/redux/features/cart-slice";
 import { useCartModalContext } from "@/app/context/CartSidebarModalContext";
 import Image from "next/image";
+import HeaderAccount from "./HeaderAccount"
 
 const Header = () => {
   

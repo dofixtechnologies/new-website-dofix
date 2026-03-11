@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/acer/Downloads/new-website-dofix/src/app/%28site%29/blogs/blog-grid/page.tsx"],"sourcesContent":["import React from \"react\";\r\nimport BlogGrid from \"@/components/BlogGrid\";\r\n\r\nimport { Metadata } from \"next\";\r\nexport const metadata: Metadata = {\r\n  title: \"Blog Grid Page | NextCommerce Nextjs E-commerce template\",\r\n  description: \"This is Blog Grid Page for NextCommerce Template\",\r\n  // other metadata\r\n};\r\n\r\nconst BlogGridPage = () => {\r\n  return (\r\n    <main>\r\n      <BlogGrid />\r\n    </main>\r\n  );\r\n};\r\n\r\nexport default BlogGridPage;\r\n"],"names":[],"mappings":";;;;;;;;;;;;;;AAIO,MAAM,WAAqB;IAChC,OAAO;IACP,aAAa;AAEf;AAEA,MAAM,eAAe;IACnB,qBACE,8OAAC;kBACC,cAAA,8OAAC;;;;;;;;;;AAGP;uCAEe"}}]
+}

@@ -1,0 +1,179 @@
+[00:00:01.357] Server  LOG     ✓ Ready in 923ms
+[00:00:02.501] Server  ERROR   redux-persist failed to create sync storage. falling back to noop storage.
+[00:00:03.570] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:04.583] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/ac/basic-ac-service.png" "received" null
+[00:00:04.594] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/ac/gas-charging.jpg" "received" null
+[00:00:04.596] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/ac/ac-repair.jpg" "received" null
+[00:00:04.710] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/ac/ac-install-uninstall.jpg" "received" null
+[00:00:04.807] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/cleaning/deep.jpg" "received" null
+[00:00:04.824] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/ac/ac-repair.jpg" "received" null
+[00:00:04.866] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/ac/basic-ac-service.png" "received" null
+[00:00:04.903] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/ac/gas-charging.jpg" "received" null
+[00:00:05.118] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/products/service-1-bg-1.png" "received" null
+[00:00:05.188] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/ac/ac-install-uninstall.jpg" "received" null
+[00:00:05.192] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/cleaning/deep.jpg" "received" null
+[00:00:05.978] Browser WARN    Image with src "/images/logo/headerlogo.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:05.978] Browser WARN    Image with src "/images/icons/technician.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:05.978] Browser WARN    Image with src "/images/icons/24-hours.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:05.978] Browser WARN    Image with src "/images/icons/price-tag.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:05.978] Browser WARN    Image with src "/images/icons/24-7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:05.978] Browser WARN    Image with src "/images/categories/categories-ac.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:05.978] Browser WARN    Image with src "/images/categories/categories-hc.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:05.978] Browser WARN    Image with src "/images/categories/categories-re.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:05.978] Browser WARN    Image with src "/images/categories/categories-in.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:05.978] Browser WARN    Image with src "/images/categories/categories-pa.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:05.978] Browser WARN    Image with src "/images/categories/categories-el.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:05.978] Browser WARN    Image with src "/images/promo/promo3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:05.978] Browser WARN    Image with src "/images/promo/promo5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:07.524] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:08.333] Browser WARN    Image with src "/images/logo/headerlogo.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:08.333] Browser WARN    Image with src "/images/icons/technician.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:08.333] Browser WARN    Image with src "/images/icons/24-hours.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:08.333] Browser WARN    Image with src "/images/icons/price-tag.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:08.333] Browser WARN    Image with src "/images/icons/24-7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:08.333] Browser WARN    Image with src "/images/categories/categories-ac.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:08.333] Browser WARN    Image with src "/images/categories/categories-hc.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:08.333] Browser WARN    Image with src "/images/categories/categories-re.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:08.333] Browser WARN    Image with src "/images/categories/categories-pa.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:08.333] Browser WARN    Image with src "/images/hero/hero-bg.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:08.333] Browser WARN    Image with src "/images/categories/categories-in.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:08.333] Browser WARN    Image with src "/images/categories/categories-el.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:08.333] Browser WARN    Image with src "/images/promo/promo3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:08.371] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/ac/basic-ac-service.png" "received" null
+[00:00:08.373] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/ac/gas-charging.jpg" "received" null
+[00:00:08.381] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/ac/ac-repair.jpg" "received" null
+[00:00:08.442] Browser WARN    Image with src "/images/promo/promo5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:10.667] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:33.525] Server  WARN    ⚠ Cross origin request detected from 192.168.1.28 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:00:34.150] Browser WARN    Image with src "/images/logo/headerlogo.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:10.429] Server  LOG     ✓ Compiled in 927ms
+[00:02:12.563] Browser WARN    Image with src "/images/logo/headerlogo.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:33.782] Browser WARN    Image with src "/images/logo/headerlogo.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:29.814] Server  LOG     ✓ Compiled in 142ms
+[00:03:33.797] Server  ERROR   redux-persist failed to create sync storage. falling back to noop storage.
+[00:03:34.099] Browser WARN    Image with src "/images/logo/headerlogo.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:39.418] Server  LOG     ✓ Compiled in 94ms
+[00:03:49.266] Server  LOG     ✓ Compiled in 90ms
+[00:03:55.385] Server  LOG     ✓ Compiled in 92ms
+[00:03:56.501] Server  LOG     ✓ Compiled in 93ms
+[00:03:58.447] Server  LOG     ✓ Compiled in 84ms
+[00:04:04.726] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:04:04.726] Browser WARN    Image with src "/images/icons/technician.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:04.726] Browser WARN    Image with src "/images/icons/24-hours.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:04.726] Browser WARN    Image with src "/images/icons/price-tag.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:04.726] Browser WARN    Image with src "/images/icons/24-7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:04.726] Browser WARN    Image with src "/images/categories/categories-hc.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:04.726] Browser WARN    Image with src "/images/categories/categories-ac.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:06.351] Browser WARN    Image with src "/images/icons/technician.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:06.351] Browser WARN    Image with src "/images/icons/24-hours.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:06.351] Browser WARN    Image with src "/images/logo/headerlogo.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:06.351] Browser WARN    Image with src "/images/icons/price-tag.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:06.351] Browser WARN    Image with src "/images/categories/categories-ac.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:06.351] Browser WARN    Image with src "/images/icons/24-7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:06.351] Browser WARN    Image with src "/images/categories/categories-hc.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:09.798] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:04:23.879] Server  ERROR   redux-persist failed to create sync storage. falling back to noop storage.
+[00:04:24.237] Browser WARN    Image with src "/images/logo/headerlogo.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:07:03.706] Server  LOG     ✓ Compiled in 107ms
+[00:09:20.228] Server  LOG     ✓ Compiled in 86ms
+[00:09:35.811] Server  LOG     ✓ Compiled in 78ms
+[00:12:16.684] Server  LOG     ✓ Compiled in 107ms
+[00:12:29.896] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:12:29.896] Browser WARN    Image with src "/images/icons/technician.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:12:29.896] Browser WARN    Image with src "/images/icons/price-tag.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:12:29.896] Browser WARN    Image with src "/images/icons/24-hours.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:12:29.896] Browser WARN    Image with src "/images/icons/24-7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:12:29.896] Browser WARN    Image with src "/images/categories/categories-hc.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:12:29.896] Browser WARN    Image with src "/images/categories/categories-ac.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:12:52.123] Browser WARN    Image with src "/images/logo/headerlogo.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:12:54.283] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:12:54.283] Browser WARN    Image with src "/images/icons/technician.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:12:54.283] Browser WARN    Image with src "/images/icons/24-hours.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:12:54.283] Browser WARN    Image with src "/images/icons/price-tag.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:12:54.283] Browser WARN    Image with src "/images/icons/24-7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:12:54.283] Browser WARN    Image with src "/images/categories/categories-ac.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:12:54.283] Browser WARN    Image with src "/images/categories/categories-hc.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:49.307] Server  LOG     ✓ Compiled in 172ms
+[00:16:50.794] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/products/service-1-bg-1.png" "received" null
+[00:17:15.843] Server  LOG     ✓ Compiled in 110ms
+[00:17:49.767] Server  LOG     ✓ Compiled in 151ms
+[00:35:41.627] Server  LOG     ✓ Compiled in 141ms
+[00:36:17.875] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:36:20.528] Server  ERROR   redux-persist failed to create sync storage. falling back to noop storage.
+[00:36:21.082] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:36:21.283] Browser WARN    Image with src "/images/logo/headerlogo.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:36:21.283] Browser WARN    Image with src "/images/logo/headerlogo.webp" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:36:31.029] Server  LOG     ✓ Compiled in 173ms
+[00:36:52.646] Server  LOG     ✓ Compiled in 82ms
+[00:36:56.607] Server  LOG     ✓ Compiled in 104ms
+[00:37:20.756] Server  LOG     ✓ Compiled in 87ms
+[00:37:27.186] Server  LOG     ✓ Compiled in 78ms
+[00:37:33.622] Server  LOG     ✓ Compiled in 161ms
+[00:39:10.743] Server  LOG     ✓ Compiled in 189ms
+[00:39:12.545] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:40:28.115] Server  LOG     ✓ Compiled in 94ms
+[00:40:28.967] Browser ERROR   ./src/app/(site)/(pages)/account/profile/page.tsx:107:2
+Parsing ecmascript source code failed
+  105 |   </div>
+  106 |
+> 107 | </div>
+      |  ^^^^^
+  108 |
+  109 | )
+  110 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(site)/(pages)/account/profile/page.tsx [Client Component Browser]
+    ./src/app/(site)/(pages)/account/profile/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(site)/(pages)/account/profile/page.tsx [Client Component SSR]
+    ./src/app/(site)/(pages)/account/profile/page.tsx [Server Component]
+[00:41:01.311] Server  LOG     ✓ Compiled in 81ms
+[00:41:19.960] Server  LOG     ✓ Compiled in 87ms
+[00:41:22.026] Server  LOG     ✓ Compiled in 183ms
+[00:41:33.642] Server  LOG     ✓ Compiled in 83ms
+[00:41:51.339] Server  LOG     ✓ Compiled in 88ms
+[00:41:52.995] Server  LOG     ✓ Compiled in 286ms
+[00:42:02.887] Server  LOG     ✓ Compiled in 77ms
+[00:42:06.687] Server  LOG     ✓ Compiled in 76ms
+[00:42:14.576] Server  LOG     ✓ Compiled in 143ms
+[00:47:02.971] Server  LOG     ✓ Compiled in 241ms
+[00:47:55.118] Server  LOG     ✓ Compiled in 82ms
+[00:47:58.994] Server  LOG     ✓ Compiled in 161ms
+[00:48:04.826] Server  LOG     ✓ Compiled in 86ms
+[00:48:07.125] Server  LOG     ✓ Compiled in 79ms
+[00:48:32.643] Server  LOG     ✓ Compiled in 79ms
+[00:48:34.761] Server  LOG     ✓ Compiled in 185ms
+[00:54:58.979] Server  LOG     ✓ Compiled in 176ms
+[00:55:19.788] Browser WARN    Image with src "/images/icons/technician.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:55:19.788] Browser WARN    Image with src "/images/icons/price-tag.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:55:19.788] Browser WARN    Image with src "/images/icons/24-hours.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:55:19.788] Browser WARN    Image with src "/images/icons/24-7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:55:19.788] Browser WARN    Image with src "/images/categories/categories-ac.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:55:19.788] Browser WARN    Image with src "/images/categories/categories-hc.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:55:19.788] Browser WARN    Image with src "/images/categories/categories-re.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:55:19.788] Browser WARN    Image with src "/images/categories/categories-in.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:55:19.788] Browser WARN    Image with src "/images/categories/categories-pa.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:55:19.788] Browser WARN    Image with src "/images/categories/categories-el.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:55:19.788] Browser WARN    Image with src "/images/promo/promo3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:55:19.788] Browser WARN    Image with src "/images/promo/promo5.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:55:19.825] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/ac/basic-ac-service.png" "received" null
+[00:55:19.828] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/ac/ac-repair.jpg" "received" null
+[00:55:19.837] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/ac/gas-charging.jpg" "received" null
+[00:58:59.586] Server  ERROR   redux-persist failed to create sync storage. falling back to noop storage.
+[00:59:03.787] Browser WARN    Image with src "/images/icons/24-7.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:03.787] Browser WARN    Image with src "/images/icons/technician.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:03.787] Browser WARN    Image with src "/images/icons/price-tag.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:03.787] Browser WARN    Image with src "/images/logo/headerlogo.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:03.787] Browser WARN    Image with src "/images/icons/24-hours.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:03.787] Browser WARN    Image with src "/images/categories/categories-ac.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:03.787] Browser WARN    Image with src "/images/categories/categories-hc.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:59:05.957] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:00:18.774] Server  LOG     ✓ Compiled in 80ms

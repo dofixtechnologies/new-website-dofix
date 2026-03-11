@@ -1,0 +1,14 @@
+{
+  "app": {
+    "[project]/src/app/(site)/(pages)/[category]/[subcategory]/page": [],
+    "[project]/src/app/(site)/(pages)/about/page": [],
+    "[project]/src/app/(site)/(pages)/account/page": [],
+    "[project]/src/app/(site)/(pages)/account/profile/page": [],
+    "[project]/src/app/(site)/(pages)/signin/page": [],
+    "[project]/src/app/(site)/blog/page": [],
+    "[project]/src/app/(site)/page": []
+  },
+  "appUsingSizeAdjust": false,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

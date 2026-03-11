@@ -6,7 +6,8 @@ const About = () => {
     <>
       <Breadcrumb title={"About Us"} pages={["About"]} />
 
-      <section className="w-full min-h-screen bg-gray-50 py-10 sm:py-14 lg:py-20">
+      <section className="w-full min-h-screen bg-gray-50 py-10 sm:py-14 pt-20 
+      lg:py-20">
         <div className="w-full px-4 sm:px-8 lg:px-20 xl:px-32">
           
           <div className="bg-white w-full rounded-2xl shadow-lg p-6 sm:p-10 lg:p-16">

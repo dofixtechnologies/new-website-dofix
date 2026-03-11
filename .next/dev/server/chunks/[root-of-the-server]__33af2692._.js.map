@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/acer/Downloads/new-website-dofix/src/app/api/send-otp/route.ts"],"sourcesContent":["export async function POST(req: Request) {\r\n\r\n  const { mobile } = await req.json()\r\n\r\n  const response = await fetch(\"https://control.msg91.com/api/v5/otp\", {\r\n    method: \"POST\",\r\n    headers: {\r\n      \"Content-Type\": \"application/json\",\r\n      \"authkey\": process.env.MSG91_AUTH_KEY as string\r\n    },\r\n    body: JSON.stringify({\r\n      mobile: \"91\" + mobile,\r\n      template_id: process.env.MSG91_TEMPLATE_ID,\r\n      otp_length: 4\r\n    })\r\n  })\r\n\r\n  const data = await response.json()\r\n\r\n  return Response.json(data)\r\n\r\n}"],"names":[],"mappings":";;;;AAAO,eAAe,KAAK,GAAY;IAErC,MAAM,EAAE,MAAM,EAAE,GAAG,MAAM,IAAI,IAAI;IAEjC,MAAM,WAAW,MAAM,MAAM,wCAAwC;QACnE,QAAQ;QACR,SAAS;YACP,gBAAgB;YAChB,WAAW,QAAQ,GAAG,CAAC,cAAc;QACvC;QACA,MAAM,KAAK,SAAS,CAAC;YACnB,QAAQ,OAAO;YACf,aAAa,QAAQ,GAAG,CAAC,iBAAiB;YAC1C,YAAY;QACd;IACF;IAEA,MAAM,OAAO,MAAM,SAAS,IAAI;IAEhC,OAAO,SAAS,IAAI,CAAC;AAEvB"}}]
+}

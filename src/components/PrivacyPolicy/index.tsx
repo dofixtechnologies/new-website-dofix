@@ -11,7 +11,7 @@ const PrivacyPolicy = () => {
           
           <div className="bg-white w-full rounded-2xl shadow-lg p-6 sm:p-10 lg:p-16">
 
-            <p className="text-gray-600 text-base sm:text-5 leading-relaxed mb-6 -mt-25">
+            <p className="text-gray-600 text-base sm:text-5 leading-relaxed mb-6 -mt-10">
                Welcome to <span className="font-semibold text-[#3683ab]">Dofix</span>.
               HomeTriangle's privacy policy ("Privacy Policy" or "Policy"). Dofix Technologies Pvt Ltd and its
                affiliates (collectively, “ "Dofix"”, “ we” or “us ”) are engaged in the business of providing web-based 

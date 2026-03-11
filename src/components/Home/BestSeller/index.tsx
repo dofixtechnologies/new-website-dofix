@@ -1,15 +1,35 @@
-import React from "react";
-import SingleItem from "./SingleItem";
+"use client";
+
+import React, { useRef, useCallback, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import SingleItem from "./SingleItem";
 import shopData from "@/components/Shop/shopData";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+
 const BestSeller = () => {
+  const sliderRef = useRef<any>(null);
+
+  const handlePrev = useCallback(() => {
+    sliderRef.current?.swiper.slidePrev();
+  }, []);
+
+  const handleNext = useCallback(() => {
+    sliderRef.current?.swiper.slideNext();
+  }, []);
+
+  useEffect(() => {
+    sliderRef.current?.swiper.init();
+  }, []);
+
   return (
-    <section className="overflow-hidden">
+    <section className="overflow-hidden pt-15">
       <div className="max-w-[1170px] w-full mx-auto px-4 sm:px-8 xl:px-0">
-        {/* <!-- section title --> */}
-        <div className="mb-10 flex items-center justify-between">
+
+        {/* Title */}
+        <div className="mb-7 flex items-center justify-between">
           <div>
             <span className="flex items-center gap-2.5 font-medium text-dark mb-1.5">
               <Image
@@ -20,27 +40,49 @@ const BestSeller = () => {
               />
               This Month
             </span>
+
             <h2 className="font-semibold text-xl xl:text-heading-5 text-dark">
               Best Bookings
             </h2>
           </div>
+
+          {/* Navigation */}
+          <div className="flex items-center gap-3">
+            <button
+              onClick={handlePrev}
+              className="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-300 text-[#3683ab] hover:bg-[#3683ab] hover:text-white transition"
+            >
+              <FiChevronLeft size={20} />
+            </button>
+
+            <button
+              onClick={handleNext}
+              className="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-300 text-[#3683ab] hover:bg-[#3683ab] hover:text-white transition"
+            >
+              <FiChevronRight size={20} />
+            </button>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7.5">
-          {/* <!-- Best Sellers item --> */}
-          {shopData.slice(1, 4).map((item, key) => (
-            <SingleItem item={item} key={key} />
+        {/* Swiper */}
+        <Swiper
+          ref={sliderRef}
+          spaceBetween={30}
+          slidesPerView={3}
+          breakpoints={{
+            0: { slidesPerView: 1 },
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+            1280: { slidesPerView: 3 },
+          }}
+        >
+          {shopData.slice(1, 6).map((item, key) => (
+            <SwiperSlide key={key}>
+              <SingleItem item={item} />
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
 
-        <div className="text-center mt-12.5">
-          {/* <Link
-            href="/services"
-            className="inline-flex font-medium text-custom-sm py-3 px-7 sm:px-12.5 rounded-md border-gray-3 border bg-gray-1 text-[#14455b] ease-out duration-200 hover:bg-[#3683ab] hover:text-white hover:border-transparent"
-          >
-            View All
-          </Link> */}
-        </div>
       </div>
     </section>
   );

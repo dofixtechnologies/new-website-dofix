@@ -2,7 +2,7 @@ import About from "@/components/About";
 
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Privacy Policy Page",
+  title: "About Us",
   description: "This is Privacy Policy",
   // other metadata
 };
