@@ -272,30 +272,31 @@ export default function BookingAddress() {
         </div>
 
         {/* Save Address */}
-        <button
-          onClick={() => {
+        {/* Save Address */}
+<button
+  onClick={() => {
+    if (!validateAddress()) return;
 
-            if (!validateAddress()) return;
+    const addressData = {
+      ...formData,
+      addressType,
+      lat: position.lat,
+      lng: position.lng,
+    };
 
-            const addressData = {
-              ...formData,
-              addressType,
-              lat: position.lat,
-              lng: position.lng,
-            };
+    localStorage.setItem(
+      "selectedAddress",
+      JSON.stringify(addressData)
+    );
 
-            localStorage.setItem(
-              "selectedAddress",
-              JSON.stringify(addressData)
-            );
+    localStorage.setItem("bookingStep", "2");
 
-            router.push("/booking");
-
-          }}
-          className="w-full bg-[#3683ab] hover:bg-[#14455b] text-white py-4 rounded-2xl font-semibold"
-        >
-          Add Address
-        </button>
+    router.back();
+  }}
+  className="w-full bg-[#3683ab] hover:bg-[#14455b] text-white py-4 rounded-2xl font-semibold"
+>
+  Add Address
+</button>
 
       </div>
     </div>

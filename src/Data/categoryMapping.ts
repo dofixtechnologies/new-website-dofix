@@ -1,4 +1,5 @@
 import shopData from "@/components/Shop/shopData";
+import { Refrigerator } from "lucide-react";
 
 export const categoryMapping: any = {
   acrepairinstallation: {
@@ -37,9 +38,15 @@ export const categoryMapping: any = {
     baseRoute: "/plumber-services",
   },
 
-  pestcontrol: {
+  "pest-control": {
     title: "Pest Control",
     data: shopData.filter((item) => item.category === "pestcontrol"),
     baseRoute: "/pestcontrol",
+  },
+
+  refrigerator: {
+    title: "Refrigerator",
+    data: shopData.filter((item) => item.category === "refrigerator"),
+    baseRoute: "/refrigerator",
   },
 };

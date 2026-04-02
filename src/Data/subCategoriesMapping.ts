@@ -29,6 +29,16 @@ export const subCategoryMapping: any = {
       img: "/images/subcategories/bath.png",
     },
     {
+      id: "sofa-cleaning",
+      title: "Sofa Cleaning",
+      img: "/images/subcategories/sofa1.png",
+    },
+    {
+      id: "kitchen-cleaning",
+      title: "Kitchen Cleaning",
+      img: "/images/subcategories/kitchen.png",
+    },
+    {
       id: "chimney-cleaning",
       title: "Chimney Cleaning",
       img: "/images/subcategories/chimney.png",
@@ -39,47 +49,37 @@ export const subCategoryMapping: any = {
       img: "/images/subcategories/home.png",
     },
     {
-      id: "kitchen-cleaning",
-      title: "Kitchen Cleaning",
-      img: "/images/subcategories/kitchen.png",
-    },
-    {
       id: "mattress-cleaning",
       title: "Mattress Cleaning Service",
-      img: "/images/subcategories/full-home.png",
-    },
-    {
-      id: "sofa-cleaning",
-      title: "Sofa Cleaning",
-      img: "/images/subcategories/sofa1.png",
+      img: "/images/subcategories/mattress.png",
     },
   ],
 
   painting: [
     {
-      id: "exterior-painting",
-      title: "Exterior Painting",
-      img: "/images/subcategories/wall.png",
-    },
-    {
-      id: "grill-painting",
-      title: "Grill Painting",
-      img: "/images/subcategories/wall.png",
-    },
-    {
       id: "interior-painting",
       title: "Interior Painting",
-      img: "/images/subcategories/wall.png",
+      img: "/images/subcategories/in.png",
+    },
+    {
+      id: "exterior-painting",
+      title: "Exterior Painting",
+      img: "/images/subcategories/ex.png",
     },
     {
       id: "water-proofing",
       title: "Water Proofing",
-      img: "/images/subcategories/wall.png",
+      img: "/images/subcategories/water.png",
     },
     {
       id: "wood-polish",
       title: "Wood Polish",
       img: "/images/subcategories/wall.png",
+    },
+    {
+      id: "grill-painting",
+      title: "Grill Painting",
+      img: "/images/subcategories/grill.png",
     },
   ],
 
@@ -87,27 +87,28 @@ export const subCategoryMapping: any = {
     {
       id: "chimney-repair-service",
       title: "Chimney Repair & Service",
-      img: "/images/subcategories/fridge.png",
-    },
-    {
-      id: "geyser-repair-service",
-      title: "Geyser Repair & Service",
-      img: "/images/subcategories/washing.png",
-    },
-    {
-      id: "refrigerator-service",
-      title: "Refrigerator Service",
-      img: "/images/subcategories/microwave.png",
+      img: "/images/subcategories/chimney.png",
     },
     {
       id: "ro-repair",
       title: "RO Repair",
-      img: "/images/subcategories/microwave.png",
+      img: "/images/subcategories/ro.png",
     },
+    {
+      id: "geyser-repair-service",
+      title: "Geyser Repair & Service",
+      img: "/images/subcategories/gey.png",
+    },
+    // {
+    //   id: "refrigerator-service",
+    //   title: "Refrigerator Service",
+    //   img: "/images/subcategories/microwave.png",
+    // },
+    
     {
       id: "washing-machine-service",
       title: "Washing Machine Service",
-      img: "/images/subcategories/microwave.png",
+      img: "/images/subcategories/wash.png",
     },
   ],
 
@@ -119,69 +120,70 @@ export const subCategoryMapping: any = {
     },
   ],
 
-  pestcontrol: [
+  "pest-control": [
     {
       id: "cockroach-ant-termite-control",
       title: "Coakroach, Ant & Termite Control",
-      img: "/images/subcategories/switch.png",
+      img: "/images/subcategories/cock.png",
     },
     {
       id: "pest-control-bungalow",
       title: "Pest Control Bungalow",
-      img: "/images/subcategories/fan.png",
+      img: "/images/subcategories/pest.png",
     },
   ],
 
   "plumber-services": [
     {
-      id: "basin-sink",
-      title: "Basin & Sink",
-      img: "/images/plumber/basin-sink.png",
-    },
-    {
       id: "bath-fittings",
       title: "Bath Fittings",
-      img: "/images/plumber/bath-fittings.png",
-    },
-    {
-      id: "drainage",
-      title: "Drainage",
-      img: "/images/plumber/drainage.png",
-    },
-    {
-      id: "flush-tank-repair",
-      title: "Flush Tank Repair (Concealed)",
-      img: "/images/plumber/flush-tank.png",
-    },
-    {
-      id: "shower-installation",
-      title: "Shower Installation",
-      img: "/images/plumber/shower.png",
+      img: "/images/subcategories/bath.png",
     },
     {
       id: "tap-fitting",
       title: "Tap Fitting",
-      img: "/images/plumber/tap-fitting.png",
+      img: "/images/subcategories/tap.png",
     },
     {
-      id: "toilet-cistern-repair",
-      title: "Toilet Cistern Repair",
-      img: "/images/plumber/cistern.png",
+      id: "shower-installation",
+      title: "Shower Installation",
+      img: "/images/subcategories/sho.png",
+    },
+    {
+      id: "basin-sink",
+      title: "Basin & Sink",
+      img: "/images/subcategories/basin.png",
     },
     {
       id: "waste-coupling",
       title: "Waste Coupling Installation",
-      img: "/images/plumber/waste-coupling.png",
+      img: "/images/subcategories/waste.png",
     },
     {
-      id: "western-toilet-install",
-      title: "Western Toilet Installation",
-      img: "/images/plumber/western-toilet-install.png",
+      id: "drainage",
+      title: "Drainage",
+      img: "/images/subcategories/drain.png",
+    },
+    {
+      id: "toilet-cistern-repair",
+      title: "Toilet Cistern Repair",
+      img: "/images/subcategories/toi.png",
+    },
+    {
+      id: "flush-tank-repair",
+      title: "Flush Tank Repair (Concealed)",
+      img: "/images/subcategories/flush.png",
     },
     {
       id: "western-toilet-replace",
       title: "Western Toilet Replacement",
-      img: "/images/plumber/western-toilet-replace.png",
+      img: "/images/subcategories/wastet.png",
     },
+    {
+      id: "western-toilet-install",
+      title: "Western Toilet Installation",
+      img: "/images/subcategories/wastett.png",
+    },
+    
   ],
 };

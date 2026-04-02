@@ -6,37 +6,21 @@ const PromoBanner = () => {
     <section className="overflow-hidden py-20">
       <div className="max-w-[1170px] w-full mx-auto px-4 sm:px-8 xl:px-0">
         {/* <!-- promo banner big --> */}
-        <div className="relative z-1 overflow-hidden rounded-lg bg-[#F5F5F7] py-12.5 lg:py-17.5 xl:py-22.5 px-4 sm:px-7.5 lg:px-14 xl:px-19 mb-7.5">
-          <div className="max-w-[550px] w-full">
-            <span className="block font-medium text-xl text-[#113e55] mb-3">
-              Dofix
-            </span>
+      <div className="relative overflow-hidden rounded-lg mb-7.5 w-full h-[220px] sm:h-[280px] md:h-[320px] lg:h-[360px] xl:h-[400px] bg-[#fff]">
+  <Image
+    src="/images/promo/lucky-draw.jpeg"
+    alt="Mega Lucky Draw Banner"
+    fill
+    priority
+    className="object-cover object-center lg:object-contain"
+  />
 
-            <h2 className="font-bold text-xl lg:text-heading-4 xl:text-heading-3 text-[#113e55] mb-5">
-            YOUR TRUSTED HOME PARTNER
-            </h2>
-
-            <p>
-              On-time service, transparent pricing, and customer-first support.
-              Experience convenience like never before.
-            </p>
-
-            <a
-              href="#"
-              className="inline-flex font-medium text-custom-sm text-white bg-[#3683ab] py-[11px] px-9.5 rounded-md ease-out duration-200 hover:bg-[#113e55] mt-7.5"
-            >
-              Book Now
-            </a>
-          </div>
-
-          <Image
-            src="/images/promo/promo1.png"
-            alt="promo img"
-            className="absolute bottom-0 right-4 lg:right-26 -z-1"
-            width={400}
-            height={350}
-          />
-        </div>
+  <a
+    href="/services"
+    className="absolute inset-0 z-10"
+    aria-label="Mega Lucky Draw Banner"
+  />
+</div>
 
         <div className="grid gap-7.5 grid-cols-1 lg:grid-cols-2">
           {/* <!-- promo banner small --> */}

@@ -32,14 +32,20 @@ const data = [
   {
     title: "Plumber Services",
     id: 6,
-    img: "/images/categories/categories-el.png",
+    img: "/images/categories/plumb.png",
     link: "plumber-services",
   },
   {
     title: "Pest Control",
     id: 7,
-    img: "/images/categories/categories-el.png",
+    img: "/images/categories/pestc.png",
     link: "pest-control",
+  },
+  {
+    title: "Refrigerator",
+    id: 8,
+    img: "/images/categories/refrige.png",
+    link: "refrigerator",
   },
 ];
 
