@@ -30,7 +30,7 @@ export default function ServiceVariantPage() {
 
   if (!service) return <div className="p-10">Service Not Found</div>;
 
-  // ADD
+  // ✅ ADD WITH CORRECT CATEGORY + SUBCATEGORY
   const handleAdd = (variant: any) => {
     dispatch(
       addItemToCart({
@@ -39,6 +39,11 @@ export default function ServiceVariantPage() {
         price: variant.price,
         oldPrice: variant.oldPrice,
         quantity: 1,
+
+        // ✅ FIXED LOGIC
+        category: service.category,
+        subCategory: service.subCategory,
+
         imgs: {
           thumbnails: [variant.img || service.imgs.thumbnails[0]],
           previews: [variant.img || service.imgs.previews[0]],
@@ -219,7 +224,6 @@ export default function ServiceVariantPage() {
 
       {/* STICKY CART */}
       {cartItems.length > 0 && (
-
         <div className="fixed bottom-4 left-1/2 -translate-x-1/2 w-[95%] md:w-[500px] bg-[#1383b8] text-white rounded-xl shadow-lg flex justify-between items-center px-6 py-4">
 
           <div>
@@ -240,9 +244,7 @@ export default function ServiceVariantPage() {
           </button>
 
         </div>
-
       )}
-
     </div>
   );
 }

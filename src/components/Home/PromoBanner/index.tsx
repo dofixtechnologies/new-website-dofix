@@ -1,29 +1,37 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 
-const PromoBanner = () => {
+type PromoBannerProps = {
+  onBookNowClick: (slug: string) => void;
+};
+
+const PromoBanner = ({ onBookNowClick }: PromoBannerProps) => {
   return (
     <section className="overflow-hidden py-20">
       <div className="max-w-[1170px] w-full mx-auto px-4 sm:px-8 xl:px-0">
-        {/* <!-- promo banner big --> */}
-      <div className="relative overflow-hidden rounded-lg mb-7.5 w-full h-[220px] sm:h-[280px] md:h-[320px] lg:h-[360px] xl:h-[400px] bg-[#fff]">
-  <Image
-    src="/images/promo/lucky-draw.jpeg"
-    alt="Mega Lucky Draw Banner"
-    fill
-    priority
-    className="object-cover object-center lg:object-contain"
-  />
+        
+        {/* BIG BANNER */}
+        <div className="relative overflow-hidden rounded-lg mb-7.5 w-full h-[220px] sm:h-[280px] md:h-[320px] lg:h-[360px] xl:h-[400px] bg-[#fff]">
+          <Image
+            src="/images/promo/draw.png"
+            alt="Mega Lucky Draw Banner"
+            fill
+            priority
+            className="object-cover object-center lg:object-contain"
+          />
 
-  <a
-    href="/services"
-    className="absolute inset-0 z-10"
-    aria-label="Mega Lucky Draw Banner"
-  />
-</div>
+          {/* CLICK HANDLER */}
+          <div
+            onClick={() => onBookNowClick("ac-repair-installation")}
+            className="absolute inset-0 z-10 cursor-pointer"
+          />
+        </div>
 
         <div className="grid gap-7.5 grid-cols-1 lg:grid-cols-2">
-          {/* <!-- promo banner small --> */}
+          
+          {/* AC BANNER */}
           <div className="relative z-1 overflow-hidden rounded-lg bg-[#d4eefb] py-10 xl:py-16 px-4 sm:px-7.5 xl:px-10">
             <Image
               src="/images/promo/promo3.png"
@@ -42,20 +50,21 @@ const PromoBanner = () => {
                 Experts Near You
               </h2>
 
-              <p className=" text-custom-10 text-dark">
-                Quick response, professional <br></br>servicing, and smooth performance<br></br> guaranteed.
+              <p className="text-custom-10 text-dark">
+                Quick response, professional <br /> servicing, and smooth
+                performance <br /> guaranteed.
               </p>
 
-              <a
-                href="/services"
+              <button
+                onClick={() => onBookNowClick("ac-repair-installation")}
                 className="inline-flex font-medium text-custom-sm text-white bg-[#3683ab] py-2.5 px-8.5 rounded-md ease-out duration-200 hover:bg-[#14455e] mt-9"
               >
-                Book Now
-              </a>
+                Book AC Service
+              </button>
             </div>
           </div>
 
-          {/* <!-- promo banner small --> */}
+          {/* APPLIANCE BANNER */}
           <div className="relative z-1 overflow-hidden rounded-lg bg-[#14455e] py-10 xl:py-16 px-4 sm:px-7.5 xl:px-10">
             <Image
               src="/images/promo/promo5.png"
@@ -66,23 +75,25 @@ const PromoBanner = () => {
             />
 
             <div>
-              <span className="block text-lg text-[#fff] mb-1.5">
+              <span className="block text-lg text-white mb-1.5">
                 Appliance Not Working Properly?
               </span>
 
               <h2 className="font-bold text-xl lg:text-heading-5 text-[#d4eefb] mb-2.5">
-                We’ve Got You 
+                We’ve Got You
               </h2>
 
-              <p className="max-w-[285px] text-custom-10   text-[#d5d5d5]">
-                Fast doorstep service, skilled <br></br>technicians, and reliable solutions you can trust.
+              <p className="max-w-[285px] text-custom-10 text-[#d5d5d5]">
+                Fast doorstep service, skilled <br /> technicians, and reliable
+                solutions you can trust.
               </p>
 
-              <a
-                href="#"
-                className="inline-flex font-medium text-custom-sm text-[#14455b] bg-[#d4eefb] py-2.5 px-8.5 rounded-md ease-out duration-200  mt-9">
-                Book Now
-              </a>
+              <button
+                onClick={() => onBookNowClick("washing-machine-service")}
+                className="inline-flex font-medium text-custom-sm text-[#14455b] bg-[#d4eefb] py-2.5 px-8.5 rounded-md ease-out duration-200 mt-9 hover:bg-white"
+              >
+                Book Appliance Service
+              </button>
             </div>
           </div>
         </div>

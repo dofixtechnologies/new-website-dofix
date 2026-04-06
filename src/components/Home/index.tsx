@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Hero from "./Hero";
 import Categories from "./Categories";
-import NewArrival from "./NewArrivals";
+import NewArrivals from "./NewArrivals";
 import PromoBanner from "./PromoBanner";
 import BestSeller from "./BestSeller";
 import Testimonials from "@/components/Home/Testimonials";
@@ -19,12 +19,12 @@ const Home = () => {
 
       <Categories onCategoryClick={(slug) => setActiveCategory(slug)} />
 
-      <NewArrival />
-      <PromoBanner />
+      <NewArrivals />
+
+      <PromoBanner onBookNowClick={(slug) => setActiveCategory(slug)} />
+
       {/* <BestSeller /> */}
       <Testimonials />
-
-      {/* ✅ ADD THIS */}
       <FaqSection />
 
       {activeCategory && (

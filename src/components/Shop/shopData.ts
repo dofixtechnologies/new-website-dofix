@@ -682,8 +682,8 @@ const shopData: Product[] = [
     reviews: 18,
 
     imgs: {
-      thumbnails: ["/images/ac/ac-repair.png"],
-      previews: ["/images/ac/ac-repair.png"],
+      thumbnails: ["/images/ac/cass.png"],
+      previews: ["/images/ac/cass.png"],
     },
 
     description: {
@@ -1901,8 +1901,8 @@ const shopData: Product[] = [
     reviews: 10,
 
     imgs: {
-      thumbnails: ["/images/cleaning/deep.png"],
-      previews: ["/images/cleaning/deep.png"],
+      thumbnails: ["/images/ac/bath-class.png"],
+      previews: ["/images/ac/bath-class.png"],
     },
 
     variants: [
@@ -1943,8 +1943,8 @@ const shopData: Product[] = [
     reviews: 9,
 
     imgs: {
-      thumbnails: ["/images/cleaning/bathroom.png"],
-      previews: ["/images/cleaning/bathroom.png"],
+      thumbnails: ["/images/ac/bath-deep.png"],
+      previews: ["/images/ac/bath-deep.png"],
     },
 
     variants: [
@@ -1993,8 +1993,8 @@ const shopData: Product[] = [
     reviews: 11,
 
     imgs: {
-      thumbnails: ["/images/cleaning/kitchen.png"],
-      previews: ["/images/cleaning/kitchen.png"],
+      thumbnails: ["/images/ac/basic-kitch.png"],
+      previews: ["/images/ac/basic-kitch.png"],
     },
 
     variants: [
@@ -2018,8 +2018,8 @@ const shopData: Product[] = [
     reviews: 11,
 
     imgs: {
-      thumbnails: ["/images/cleaning/kitchen.png"],
-      previews: ["/images/cleaning/kitchen.png"],
+      thumbnails: ["/images/ac/deep-kitch.png"],
+      previews: ["/images/ac/deep-kitch.png"],
     },
 
     variants: [
@@ -2044,8 +2044,8 @@ const shopData: Product[] = [
     reviews: 14,
 
     imgs: {
-      thumbnails: ["/images/cleaning/full-home.png"],
-      previews: ["/images/cleaning/full-home.png"],
+      thumbnails: ["/images/ac/comp-hand.png"],
+      previews: ["/images/ac/comp-hand.png"],
     },
 
     variants: [
@@ -2093,8 +2093,8 @@ const shopData: Product[] = [
     reviews: 14,
 
     imgs: {
-      thumbnails: ["/images/cleaning/full-home.png"],
-      previews: ["/images/cleaning/full-home.png"],
+      thumbnails: ["/images/ac/comp-deep.png"],
+      previews: ["/images/ac/comp-deep.png"],
     },
 
     variants: [
@@ -2141,8 +2141,8 @@ const shopData: Product[] = [
     reviews: 14,
 
     imgs: {
-      thumbnails: ["/images/cleaning/full-home.png"],
-      previews: ["/images/cleaning/full-home.png"],
+      thumbnails: ["/images/ac/bung.png"],
+      previews: ["/images/ac/bung.png"],
     },
 
     variants: [
@@ -2182,8 +2182,8 @@ const shopData: Product[] = [
     reviews: 14,
 
     imgs: {
-      thumbnails: ["/images/cleaning/full-home.png"],
-      previews: ["/images/cleaning/full-home.png"],
+      thumbnails: ["/images/ac/chim.png"],
+      previews: ["/images/ac/chim.png"],
     },
 
     variants: [
@@ -2208,8 +2208,8 @@ const shopData: Product[] = [
     reviews: 14,
 
     imgs: {
-      thumbnails: ["/images/cleaning/full-home.png"],
-      previews: ["/images/cleaning/full-home.png"],
+      thumbnails: ["/images/ac/chim.png"],
+      previews: ["/images/ac/chim.png"],
     },
 
     variants: [
@@ -2233,8 +2233,8 @@ const shopData: Product[] = [
     reviews: 14,
 
     imgs: {
-      thumbnails: ["/images/cleaning/full-home.png"],
-      previews: ["/images/cleaning/full-home.png"],
+      thumbnails: ["/images/ac/matt-vac.png"],
+      previews: ["/images/ac/matt-vac.png"],
     },
 
     variants: [
@@ -2266,8 +2266,8 @@ const shopData: Product[] = [
     reviews: 14,
 
     imgs: {
-      thumbnails: ["/images/cleaning/full-home.png"],
-      previews: ["/images/cleaning/full-home.png"],
+      thumbnails: ["/images/ac/sofa-c.png"],
+      previews: ["/images/ac/sofa-c.png"],
     },
 
     variants: [
@@ -2363,8 +2363,8 @@ const shopData: Product[] = [
     reviews: 14,
 
     imgs: {
-      thumbnails: ["/images/cleaning/full-home.png"],
-      previews: ["/images/cleaning/full-home.png"],
+      thumbnails: ["/images/ac/carpet-d.png"],
+      previews: ["/images/ac/carpet-d.png"],
     },
 
     variants: [
@@ -2396,8 +2396,8 @@ const shopData: Product[] = [
     reviews: 14,
 
     imgs: {
-      thumbnails: ["/images/cleaning/full-home.png"],
-      previews: ["/images/cleaning/full-home.png"],
+      thumbnails: ["/images/ac/cushion-c.png"],
+      previews: ["/images/ac/cushion-c.png"],
     },
 
     variants: [
@@ -2423,8 +2423,8 @@ const shopData: Product[] = [
     reviews: 8,
 
     imgs: {
-      thumbnails: ["/images/painting/wall.png"],
-      previews: ["/images/painting/wall.png"],
+      thumbnails: ["/images/ac/sing-wall.png"],
+      previews: ["/images/ac/sing-wall.png"],
     },
 
     variants: [
@@ -2447,8 +2447,8 @@ const shopData: Product[] = [
     reviews: 8,
 
     imgs: {
-      thumbnails: ["/images/painting/wall.png"],
-      previews: ["/images/painting/wall.png"],
+      thumbnails: ["/images/ac/sing-room.png"],
+      previews: ["/images/ac/sing-room.png"],
     },
 
     variants: [
@@ -2472,8 +2472,8 @@ const shopData: Product[] = [
     reviews: 8,
 
     imgs: {
-      thumbnails: ["/images/painting/wall.png"],
-      previews: ["/images/painting/wall.png"],
+      thumbnails: ["/images/ac/front-home.png"],
+      previews: ["/images/ac/front-home.png"],
     },
 
     variants: [
@@ -2497,8 +2497,8 @@ const shopData: Product[] = [
     reviews: 8,
 
     imgs: {
-      thumbnails: ["/images/painting/wall.png"],
-      previews: ["/images/painting/wall.png"],
+      thumbnails: ["/images/ac/full-home.png"],
+      previews: ["/images/ac/full-home.png"],
     },
 
     variants: [
@@ -2522,8 +2522,8 @@ const shopData: Product[] = [
     reviews: 8,
 
     imgs: {
-      thumbnails: ["/images/painting/wall.png"],
-      previews: ["/images/painting/wall.png"],
+      thumbnails: ["/images/ac/grill-pai.png"],
+      previews: ["/images/ac/grill-pai.png"],
     },
 
     variants: [
@@ -2547,8 +2547,8 @@ const shopData: Product[] = [
     reviews: 8,
 
     imgs: {
-      thumbnails: ["/images/painting/wall.png"],
-      previews: ["/images/painting/wall.png"],
+      thumbnails: ["/images/ac/wind-pai.png"],
+      previews: ["/images/ac/wind-pai.png"],
     },
 
     variants: [
@@ -2572,8 +2572,8 @@ const shopData: Product[] = [
     reviews: 8,
 
     imgs: {
-      thumbnails: ["/images/painting/wall.png"],
-      previews: ["/images/painting/wall.png"],
+      thumbnails: ["/images/ac/do-pai.png"],
+      previews: ["/images/ac/do-pai.png"],
     },
 
     variants: [
@@ -2597,8 +2597,8 @@ const shopData: Product[] = [
     reviews: 8,
 
     imgs: {
-      thumbnails: ["/images/painting/wall.png"],
-      previews: ["/images/painting/wall.png"],
+      thumbnails: ["/images/ac/ex-wat-pr.png"],
+      previews: ["/images/ac/ex-wat-pr.png"],
     },
 
     variants: [
@@ -2622,8 +2622,8 @@ const shopData: Product[] = [
     reviews: 8,
 
     imgs: {
-      thumbnails: ["/images/painting/wall.png"],
-      previews: ["/images/painting/wall.png"],
+      thumbnails: ["/images/ac/in-wat-pr.png"],
+      previews: ["/images/ac/in-wat-pr.png"],
     },
 
     variants: [
@@ -2647,8 +2647,8 @@ const shopData: Product[] = [
     reviews: 8,
 
     imgs: {
-      thumbnails: ["/images/painting/wall.png"],
-      previews: ["/images/painting/wall.png"],
+      thumbnails: ["/images/ac/grout.png"],
+      previews: ["/images/ac/grout.png"],
     },
 
     variants: [
@@ -2672,8 +2672,8 @@ const shopData: Product[] = [
     reviews: 8,
 
     imgs: {
-      thumbnails: ["/images/painting/wall.png"],
-      previews: ["/images/painting/wall.png"],
+      thumbnails: ["/images/ac/da-pr.png"],
+      previews: ["/images/ac/da-pr.png"],
     },
 
     variants: [
@@ -2697,8 +2697,8 @@ const shopData: Product[] = [
     reviews: 8,
 
     imgs: {
-      thumbnails: ["/images/painting/wall.png"],
-      previews: ["/images/painting/wall.png"],
+      thumbnails: ["/images/ac/bed-po.png"],
+      previews: ["/images/ac/bed-po.png"],
     },
 
     variants: [
@@ -2722,8 +2722,8 @@ const shopData: Product[] = [
     reviews: 8,
 
     imgs: {
-      thumbnails: ["/images/painting/wall.png"],
-      previews: ["/images/painting/wall.png"],
+      thumbnails: ["/images/ac/door-po.png"],
+      previews: ["/images/ac/door-po.png"],
     },
 
     variants: [
@@ -2747,8 +2747,8 @@ const shopData: Product[] = [
     reviews: 8,
 
     imgs: {
-      thumbnails: ["/images/painting/wall.png"],
-      previews: ["/images/painting/wall.png"],
+      thumbnails: ["/images/ac/wind-po.png"],
+      previews: ["/images/ac/wind-po.png"],
     },
 
     variants: [
@@ -2775,8 +2775,8 @@ const shopData: Product[] = [
   reviews: 8,
 
   imgs: {
-    thumbnails: ["/images/appliances/fridge.png"],
-    previews: ["/images/appliances/fridge.png"],
+    thumbnails: ["/images/ac/fridge.png"],
+    previews: ["/images/ac/fridge.png"],
   },
 
   variants: [
@@ -2800,8 +2800,8 @@ const shopData: Product[] = [
   reviews: 8,
 
   imgs: {
-    thumbnails: ["/images/appliances/fridge.png"],
-    previews: ["/images/appliances/fridge.png"],
+    thumbnails: ["/images/ac/fridge.png"],
+    previews: ["/images/ac/fridge.png"],
   },
 
   variants: [
@@ -2825,8 +2825,8 @@ const shopData: Product[] = [
   reviews: 8,
 
   imgs: {
-    thumbnails: ["/images/appliances/fridge.png"],
-    previews: ["/images/appliances/fridge.png"],
+    thumbnails: ["/images/ac/fridge.png"],
+    previews: ["/images/ac/fridge.png"],
   },
 
   variants: [
@@ -2866,8 +2866,8 @@ const shopData: Product[] = [
   reviews: 8,
 
   imgs: {
-    thumbnails: ["/images/appliances/fridge.png"],
-    previews: ["/images/appliances/fridge.png"],
+    thumbnails: ["/images/ac/fridge.png"],
+    previews: ["/images/ac/fridge.png"],
   },
 
   variants: [
@@ -2923,8 +2923,8 @@ const shopData: Product[] = [
   reviews: 7,
 
   imgs: {
-    thumbnails: ["/images/appliances/washing-machine.png"],
-    previews: ["/images/appliances/washing-machine.png"],
+    thumbnails: ["/images/ac/washing-machine.png"],
+    previews: ["/images/ac/washing-machine.png"],
   },
 
   variants: [
@@ -2964,8 +2964,8 @@ const shopData: Product[] = [
 //   reviews: 6,
 
 //   imgs: {
-//     thumbnails: ["/images/appliances/microwave.png"],
-//     previews: ["/images/appliances/microwave.png"],
+//     thumbnails: ["/images/ac/microwave.png"],
+//     previews: ["/images/ac/microwave.png"],
 //   },
 
 //   variants: [],

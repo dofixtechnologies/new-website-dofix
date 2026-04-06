@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 const faqs = [
   {
@@ -52,72 +53,109 @@ const faqs = [
     answer:
       "Professionals can apply through the partner registration page to join the DOFIX network.",
   },
-  {
-    question: "Can I change my booking time after scheduling?",
-    answer:
-      "Yes, you can easily reschedule your booking if your plans change. Simply update the booking time from your confirmation page or contact our support team for assistance.",
-  },
-  {
-    question: "In which cities does DOFIX operate?",
-    answer:
-      "DOFIX currently operates in selected cities, and we are continuously expanding to new areas. You can check service availability by entering your location or pin code on our website during booking.",
-  },
-  {
-    question: "Why choose DOFIX?",
-    answer:
-      "DOFIX makes home maintenance simple by connecting you with verified professionals, transparent pricing, and convenient booking. Our goal is to provide reliable services that save you time and effort.",
-  },
+  // {
+  //   question: "Can I change my booking time after scheduling?",
+  //   answer:
+  //     "Yes, you can easily reschedule your booking if your plans change. Simply update the booking time from your confirmation page or contact our support team for assistance.",
+  // },
+  // {
+  //   question: "In which cities does DOFIX operate?",
+  //   answer:
+  //     "DOFIX currently operates in selected cities, and we are continuously expanding to new areas. You can check service availability by entering your location or pin code on our website during booking.",
+  // },
+  // {
+  //   question: "Why choose DOFIX?",
+  //   answer:
+  //     "DOFIX makes home maintenance simple by connecting you with verified professionals, transparent pricing, and convenient booking. Our goal is to provide reliable services that save you time and effort.",
+  // },
 ];
 
 export default function FaqSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <section className="bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6">
-        
-        {/* Title */}
+    <section className="bg-[#f7f9fc] py-16 md:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-dark">
+          <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[#3683ab] mb-3">
+            FAQ
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0b2c4d]">
             Frequently Asked Questions
           </h2>
-          <p className="text-gray-500 mt-3">
-            Everything you need to know about DOFIX home services.
+          <p className="text-gray-500 mt-4 max-w-2xl mx-auto text-sm md:text-base">
+            Find quick answers to the most common questions about DOFIX home
+            services, booking process, pricing, and support.
           </p>
         </div>
 
-        {/* FAQ List */}
-        <div className="space-y-4">
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl shadow-sm border"
-            >
-              <button
-                onClick={() => toggleFAQ(index)}
-                className="w-full flex justify-between items-center p-5 text-left"
+        {/* FAQ Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {faqs.map((faq, index) => {
+            const isOpen = openIndex === index;
+
+            return (
+              <div
+                key={index}
+                className={`overflow-hidden rounded-2xl border transition-all duration-300 h-fit ${
+                  isOpen
+                    ? "bg-[#47a5f0] border-[#47a5f0] shadow-lg"
+                    : "bg-white border-[#dbe5ef]"
+                }`}
               >
-                <span className="font-medium text-dark">
-                  {faq.question}
-                </span>
-                <span className="text-xl text-[#3683ab]">
-                  {openIndex === index ? "−" : "+"}
-                </span>
-              </button>
+                <button
+                  onClick={() => toggleFAQ(index)}
+                  className="w-full flex items-center justify-between gap-4 px-5 md:px-6 py-5 text-left"
+                >
+                  <span
+                    className={`text-base md:text-lg font-medium leading-snug ${
+                      isOpen ? "text-white" : "text-[#0b2c4d]"
+                    }`}
+                  >
+                    {faq.question}
+                  </span>
 
-              {openIndex === index && (
-                <div className="px-5 pb-5 text-gray-600 text-sm">
-                  {faq.answer}
+                  <span
+                    className={`shrink-0 transition-transform duration-300 ${
+                      isOpen ? "text-white rotate-180" : "text-[#0b2c4d]"
+                    }`}
+                  >
+                    {isOpen ? (
+                      <ChevronUp size={22} strokeWidth={2.2} />
+                    ) : (
+                      <ChevronDown size={22} strokeWidth={2.2} />
+                    )}
+                  </span>
+                </button>
+
+                <div
+                  className={`grid transition-all duration-300 ease-in-out ${
+                    isOpen
+                      ? "grid-rows-[1fr] opacity-100"
+                      : "grid-rows-[0fr] opacity-0"
+                  }`}
+                >
+                  <div className="overflow-hidden">
+                    <div
+                      className={`px-5 md:px-6 pb-5 pt-0 border-t text-sm md:text-[15px] leading-7 ${
+                        isOpen
+                          ? "border-white/30 text-white"
+                          : "border-transparent text-gray-600"
+                      }`}
+                    >
+                      {faq.answer}
+                    </div>
+                  </div>
                 </div>
-              )}
-            </div>
-          ))}
+              </div>
+            );
+          })}
         </div>
-
       </div>
     </section>
   );

@@ -14,7 +14,7 @@ const data = [
   {
     title: "Home Appliances",
     id: 3,
-    img: "/images/categories/categories-re.png",
+    img: "/images/categories/ro-ca.png",
     link: "home-appliances",
   },
   {
@@ -46,6 +46,12 @@ const data = [
     id: 8,
     img: "/images/categories/refrige.png",
     link: "refrigerator",
+  },
+  {
+    title: "Washing Machine",
+    id: 9,
+    img: "/images/categories/refrige.png",
+    link: "washing-machine",
   },
 ];
 

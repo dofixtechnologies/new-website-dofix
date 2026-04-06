@@ -2,9 +2,32 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import { useAppSelector } from "@/redux/hooks";
+import { selectTotalPrice } from "@/redux/features/cart-slice";
+import { useSelector } from "react-redux";
+
+type CartItem = {
+  id?: string | number;
+  title?: string;
+  name?: string;
+  price?: number | string;
+  quantity?: number;
+  category?: string;
+  subCategory?: string;
+  subcategory?: string;
+};
 
 export default function BookingForm() {
   const router = useRouter();
+
+  // ✅ REDUX CART
+  const cartItems = useAppSelector((state) => state.cartReducer.items);
+  const totalPrice = useSelector(selectTotalPrice);
+
+  const tax = Math.round(totalPrice * 0.05);
+  const fee = 9.44;
+  const taxAndFee = tax + fee;
+  const finalAmount = totalPrice + taxAndFee;
 
   const [step, setStep] = useState(1);
 
@@ -36,10 +59,11 @@ export default function BookingForm() {
     "06:00 PM", "07:00 PM", "08:00 PM"
   ];
 
-  // ✅ Load saved step + address correctly
+  // Load saved data
   useEffect(() => {
     const savedAddress = localStorage.getItem("selectedAddress");
     const savedStep = localStorage.getItem("bookingStep");
+    const savedBookingData = localStorage.getItem("bookingFormData");
 
     if (savedAddress) {
       setAddress(JSON.parse(savedAddress));
@@ -50,14 +74,52 @@ export default function BookingForm() {
     } else {
       setStep(1);
     }
+
+    if (savedBookingData) {
+      const data = JSON.parse(savedBookingData);
+
+      setServiceType(data.serviceType || "On-site Service");
+      setSelectedDate(data.selectedDate ?? 0);
+      setSelectedSlot(data.selectedSlot || "");
+      setCustomerName(data.customerName || "");
+      setCustomerPhone(data.customerPhone || "");
+      setCustomerEmail(data.customerEmail || "");
+      setPaymentMethod(data.paymentMethod || "Cash After Service");
+      setComment(data.comment || "");
+    }
   }, []);
 
-  // ✅ Save step whenever it changes
+  // Save step
   useEffect(() => {
     localStorage.setItem("bookingStep", step.toString());
   }, [step]);
 
-  // ✅ Validation
+  // Save all form data
+  useEffect(() => {
+    const bookingData = {
+      serviceType,
+      selectedDate,
+      selectedSlot,
+      customerName,
+      customerPhone,
+      customerEmail,
+      paymentMethod,
+      comment,
+    };
+
+    localStorage.setItem("bookingFormData", JSON.stringify(bookingData));
+  }, [
+    serviceType,
+    selectedDate,
+    selectedSlot,
+    customerName,
+    customerPhone,
+    customerEmail,
+    paymentMethod,
+    comment,
+  ]);
+
+  // Validation
   const validateForm = () => {
     if (step === 1) {
       if (!selectedSlot) {
@@ -98,7 +160,6 @@ export default function BookingForm() {
 
   return (
     <div className="min-h-screen bg-[#f6f7f9] flex justify-center items-start pt-50 pb-10">
-      {/* CONTAINER */}
       <div className="w-full max-w-[350px] sm:max-w-[600px] lg:max-w-[800px] bg-white rounded-3xl shadow-xl overflow-hidden relative pb-28">
         
         {/* HEADER */}
@@ -351,6 +412,65 @@ export default function BookingForm() {
 
             <div className="rounded-[24px] border border-[#d9edf4] bg-[#f8fdff] p-4 shadow-sm">
               <div className="space-y-5">
+
+                {/* ALL CART SERVICES */}
+                <div className="flex gap-4">
+                  <div className="w-14 h-14 rounded-2xl bg-[#edf5f9] flex items-center justify-center text-[24px]">
+                    🛠️
+                  </div>
+                  <div className="w-full">
+                    <p className="text-[15px] text-gray-500 font-medium">
+                      Booked Services
+                    </p>
+
+                    <div className="space-y-3 mt-2">
+                      {cartItems.length > 0 ? (
+                        cartItems.map((item: CartItem, index: number) => {
+                          const serviceName = item.title || item.name || "Service";
+                          const servicePrice = Number(item.price || 0);
+                          const quantity = Number(item.quantity || 1);
+                          const category = item.category || "N/A";
+                          const subCategory =
+                            item.subCategory || item.subcategory || "N/A";
+
+                          return (
+                            <div
+                              key={item.id || index}
+                              className="border border-[#dcecf3] rounded-2xl p-3 bg-white"
+                            >
+                              <p className="text-[17px] font-semibold text-[#1f1f1f]">
+                                {index + 1}. {serviceName}
+                              </p>
+
+                              <p className="text-[14px] text-gray-600 mt-1">
+                                Category: <span className="font-medium">{category}</span>
+                              </p>
+
+                              <p className="text-[14px] text-gray-600">
+                                Subcategory: <span className="font-medium">{subCategory}</span>
+                              </p>
+
+                              <div className="flex justify-between items-center mt-2">
+                                <p className="text-[14px] text-gray-600">
+                                  Qty: <span className="font-medium">{quantity}</span>
+                                </p>
+
+                                <p className="text-[16px] font-semibold text-[#2f8db7]">
+                                  ₹ {(servicePrice * quantity).toFixed(2)}
+                                </p>
+                              </div>
+                            </div>
+                          );
+                        })
+                      ) : (
+                        <p className="text-[18px] font-semibold text-[#1f1f1f]">
+                          No service selected
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                </div>
+
                 <div className="flex gap-4">
                   <div className="w-14 h-14 rounded-2xl bg-[#edf5f9] flex items-center justify-center text-[24px]">
                     ⚙️
@@ -374,7 +494,7 @@ export default function BookingForm() {
                       Date & Slot
                     </p>
                     <p className="text-[18px] font-semibold text-[#1f1f1f]">
-                      {dates[selectedDate].full} • {selectedSlot || "07:00 PM"}
+                      {dates[selectedDate].full} • {selectedSlot || "Not Selected"}
                     </p>
                   </div>
                 </div>
@@ -385,10 +505,16 @@ export default function BookingForm() {
                   </div>
                   <div>
                     <p className="text-[15px] text-gray-500 font-medium">
-                      Assigned Customer
+                      Customer Details
                     </p>
                     <p className="text-[18px] font-semibold text-[#1f1f1f]">
-                      {customerName || "Abc"}
+                      {customerName || "Not Provided"}
+                    </p>
+                    <p className="text-[15px] text-gray-600 mt-1">
+                      📞 {customerPhone || "No Phone"}
+                    </p>
+                    <p className="text-[15px] text-gray-600">
+                      ✉️ {customerEmail || "No Email"}
                     </p>
                   </div>
                 </div>
@@ -416,15 +542,42 @@ export default function BookingForm() {
                     </p>
                   </div>
                 </div>
+
+                {comment && (
+                  <div className="flex gap-4">
+                    <div className="w-14 h-14 rounded-2xl bg-[#edf5f9] flex items-center justify-center text-[24px]">
+                      📝
+                    </div>
+                    <div>
+                      <p className="text-[15px] text-gray-500 font-medium">Comment</p>
+                      <p className="text-[18px] font-semibold text-[#1f1f1f]">
+                        {comment}
+                      </p>
+                    </div>
+                  </div>
+                )}
               </div>
 
-              <div className="border-t border-gray-200 mt-6 pt-5 flex items-center justify-between">
-                <p className="text-[18px] font-semibold text-gray-500">
-                  Total Payable
-                </p>
-                <p className="text-[22px] font-bold text-[#2f8db7]">
-                  ₹ 1057.34
-                </p>
+              {/* PRICE BREAKDOWN */}
+              <div className="border-t border-gray-200 mt-6 pt-5 space-y-3">
+                <div className="flex justify-between text-[16px] text-gray-600">
+                  <span>Item Total</span>
+                  <span>₹ {totalPrice.toFixed(2)}</span>
+                </div>
+
+                <div className="flex justify-between text-[16px] text-gray-600">
+                  <span>Tax & Fee</span>
+                  <span>₹ {taxAndFee.toFixed(2)}</span>
+                </div>
+
+                <div className="border-t border-gray-200 pt-4 flex items-center justify-between">
+                  <p className="text-[18px] font-semibold text-gray-700">
+                    Total Payable
+                  </p>
+                  <p className="text-[22px] font-bold text-[#2f8db7]">
+                    ₹ {finalAmount.toFixed(2)}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -470,6 +623,7 @@ export default function BookingForm() {
               onClick={() => {
                 localStorage.removeItem("bookingStep");
                 localStorage.removeItem("selectedAddress");
+                localStorage.removeItem("bookingFormData");
                 router.push("/thank-you");
               }}
               className="w-full bg-[#3a8fbe] text-white py-4 rounded-2xl text-[18px] font-medium shadow-md"

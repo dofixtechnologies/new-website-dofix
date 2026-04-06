@@ -7,6 +7,12 @@ type CartItem = {
   price: number;
   oldPrice?: number;
   quantity: number;
+
+  // ✅ ADD THESE
+  category?: string;
+  subCategory?: string;
+  subcategory?: string;
+
   imgs?: {
     thumbnails: string[];
     previews: string[];
@@ -36,7 +42,10 @@ export const cart = createSlice({
       if (existingItem) {
         existingItem.quantity += item.quantity;
       } else {
-        state.items.push(item);
+        // ✅ Full object push so category/subCategory bhi save ho
+        state.items.push({
+          ...item,
+        });
       }
     },
 
