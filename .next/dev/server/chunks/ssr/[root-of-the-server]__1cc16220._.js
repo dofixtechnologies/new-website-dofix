@@ -1,0 +1,3468 @@
+module.exports = [
+"[project]/src/app/favicon.ico.mjs { IMAGE => \"[project]/src/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", ((__turbopack_context__) => {
+
+__turbopack_context__.n(__turbopack_context__.i("[project]/src/app/favicon.ico.mjs { IMAGE => \"[project]/src/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript)"));
+}),
+"[externals]/next/dist/shared/lib/no-fallback-error.external.js [external] (next/dist/shared/lib/no-fallback-error.external.js, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("next/dist/shared/lib/no-fallback-error.external.js", () => require("next/dist/shared/lib/no-fallback-error.external.js"));
+
+module.exports = mod;
+}),
+"[project]/src/app/loading.tsx [app-rsc] (ecmascript, Next.js Server Component)", ((__turbopack_context__) => {
+
+__turbopack_context__.n(__turbopack_context__.i("[project]/src/app/loading.tsx [app-rsc] (ecmascript)"));
+}),
+"[project]/src/app/(site)/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", ((__turbopack_context__) => {
+
+__turbopack_context__.n(__turbopack_context__.i("[project]/src/app/(site)/layout.tsx [app-rsc] (ecmascript)"));
+}),
+"[project]/src/components/Shop/shopData.ts [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+const shopData = [
+    // ================= AC Service =================
+    {
+        id: "foam-jet-ac-service",
+        title: "Foam Jet AC Service",
+        category: "acrepairinstallation",
+        subCategory: "ac-service",
+        rateCardKey: "ac",
+        reviews: 10,
+        imgs: {
+            thumbnails: [
+                "/images/ac/foam-jet.png"
+            ],
+            previews: [
+                "/images/ac/foam-jet.png"
+            ]
+        },
+        description: {
+            about: [
+                "High-pressure jet cleaning of indoor unit",
+                "Deep cleaning of cooling coil",
+                "Blower and fan cleaning",
+                "Drain line cleaning",
+                "Outdoor condenser jet wash",
+                "Cooling performance testing"
+            ],
+            benefits: [
+                "Strong and fast cooling",
+                "Removal of deep dirt and blockages",
+                "Improved airflow",
+                "Reduced electricity consumption",
+                "Extended AC lifespan"
+            ]
+        },
+        variants: [
+            {
+                id: 101,
+                title: "Split AC Foam Jet Service",
+                price: 499,
+                oldPrice: 599,
+                img: "/images/ac/foam-jet.png",
+                // description: "Complete AC inspection and jet cleaning",
+                description: "Deep foam jet cleaning and inspection for split AC"
+            },
+            {
+                id: 102,
+                title: "Window AC Foam Jet Service",
+                price: 499,
+                oldPrice: 599,
+                img: "/images/ac/foam-w.png",
+                // description: "Deep jet cleaning for two AC units",
+                description: "Deep foam jet cleaning and inspection for window AC"
+            },
+            {
+                id: 99,
+                title: "Window AC Foam Jet Service (2 AC)",
+                price: 949,
+                oldPrice: 1199,
+                img: "/images/ac/foam-w.png",
+                description: "Deep jet cleaning for three AC units"
+            },
+            {
+                id: 98,
+                title: "Split AC Foam Jet Service (2 AC)",
+                price: 949,
+                oldPrice: 1199,
+                img: "/images/ac/foam-jet.png",
+                description: "Deep jet cleaning for Four AC units"
+            },
+            {
+                id: 97,
+                title: "Window AC Foam Jet Service (3 AC)",
+                price: 1348,
+                oldPrice: 1799,
+                img: "/images/ac/foam-w.png",
+                description: "Deep jet cleaning for three AC units"
+            },
+            {
+                id: 96,
+                title: "Split AC Foam Jet Service (3 AC)",
+                price: 1348,
+                oldPrice: 1799,
+                img: "/images/ac/foam-jet.png",
+                description: "Deep jet cleaning for Four AC units"
+            },
+            {
+                id: 95,
+                title: "Window AC Foam Jet Service (4 AC)",
+                price: 1697,
+                oldPrice: 2399,
+                img: "/images/ac/foam-w.png",
+                description: "Deep jet cleaning for three AC units"
+            },
+            {
+                id: 94,
+                title: "Split AC Foam Jet Service (4 AC)",
+                price: 1697,
+                oldPrice: 2399,
+                img: "/images/ac/foam-jet.png",
+                description: "Deep jet cleaning for Four AC units"
+            },
+            {
+                id: 93,
+                title: "Window AC Foam Jet Service (5 AC)",
+                price: 2120,
+                oldPrice: 2999,
+                img: "/images/ac/foam-w.png",
+                description: "Deep jet cleaning for three AC units"
+            },
+            {
+                id: 92,
+                title: "Split AC Foam Jet Service (5 AC)",
+                price: 2120,
+                oldPrice: 2999,
+                img: "/images/ac/foam-jet.png",
+                description: "Deep jet cleaning for Four AC units"
+            },
+            {
+                id: 91,
+                title: "Window AC Foam Jet Service (6 AC)",
+                price: 2544,
+                oldPrice: 3599,
+                img: "/images/ac/foam-w.png",
+                description: "Deep jet cleaning for three AC units"
+            },
+            {
+                id: 90,
+                title: "Split AC Foam Jet Service (6 AC)",
+                price: 2544,
+                oldPrice: 3599,
+                img: "/images/ac/foam-jet.png",
+                description: "Deep jet cleaning for Four AC units"
+            }
+        ]
+    },
+    {
+        id: "jet-pump-ac-service",
+        title: "Jet Pump Ac Service",
+        category: "acrepairinstallation",
+        subCategory: "ac-service",
+        rateCardKey: "ac",
+        reviews: 10,
+        imgs: {
+            thumbnails: [
+                "/images/ac/jet-pump.png"
+            ],
+            previews: [
+                "/images/ac/jet-pump.png"
+            ]
+        },
+        description: {
+            about: [
+                "Basic cleaning of indoor AC unit",
+                "Air filter cleaning and dust removal",
+                "Cooling coil surface cleaning",
+                "Drain pipe inspection and cleaning",
+                "Outdoor unit basic cleaning",
+                "Complete AC performance check"
+            ],
+            benefits: [
+                "Maintains healthy airflow",
+                "Improves cooling efficiency",
+                "Reduces dust and bad smell",
+                "Helps lower electricity consumption",
+                "Prevents minor AC issues"
+            ]
+        },
+        variants: [
+            {
+                id: 103,
+                title: "Split AC Jet Pump Service",
+                price: 399,
+                oldPrice: 799,
+                img: "/images/ac/split-j.png",
+                // description: "Basic cleaning and inspection for one AC unit",
+                description: "Basic jet pump cleaning and inspection for split AC"
+            },
+            {
+                id: 104,
+                title: "Window AC Jet Pump Service",
+                price: 399,
+                oldPrice: 599,
+                img: "/images/ac/window-j.png",
+                // description: "Basic cleaning and inspection for two AC units",
+                description: "Basic jet pump cleaning and inspection for window AC"
+            },
+            {
+                id: 89,
+                title: "Split AC Jet Pump Service (2 AC)",
+                price: 759,
+                oldPrice: 999,
+                img: "/images/ac/split-j.png",
+                description: "Basic cleaning and inspection for three AC units"
+            },
+            {
+                id: 88,
+                title: "Window AC Jet Pump Service (2 AC)",
+                price: 759,
+                oldPrice: 999,
+                img: "/images/ac/window-j.png",
+                description: "Basic cleaning and inspection for four AC units"
+            },
+            {
+                id: 87,
+                title: "Split AC Jet Pump Service (3 AC)",
+                price: 1078,
+                oldPrice: 1499,
+                img: "/images/ac/split-j.png",
+                description: "Basic cleaning and inspection for three AC units"
+            },
+            {
+                id: 86,
+                title: "Window AC Jet Pump Service (3 AC)",
+                price: 1078,
+                oldPrice: 1499,
+                img: "/images/ac/window-j.png",
+                description: "Basic cleaning and inspection for four AC units"
+            },
+            {
+                id: 85,
+                title: "Split AC Jet Pump Service (4 AC)",
+                price: 1357,
+                oldPrice: 1999,
+                img: "/images/ac/split-j.png",
+                description: "Basic cleaning and inspection for three AC units"
+            },
+            {
+                id: 84,
+                title: "Window AC Jet Pump Service (4 AC)",
+                price: 1357,
+                oldPrice: 1999,
+                img: "/images/ac/window-j.png",
+                description: "Basic cleaning and inspection for four AC units"
+            },
+            {
+                id: 83,
+                title: "Split AC Jet Pump Service (5 AC)",
+                price: 1695,
+                oldPrice: 2499,
+                img: "/images/ac/split-j.png",
+                description: "Basic cleaning and inspection for three AC units"
+            },
+            {
+                id: 82,
+                title: "Window AC Jet Pump Service (5 AC)",
+                price: 1695,
+                oldPrice: 2499,
+                img: "/images/ac/window-j.png",
+                description: "Basic cleaning and inspection for four AC units"
+            },
+            {
+                id: 81,
+                title: "Split AC Jet Pump Service (6 AC)",
+                price: 2034,
+                oldPrice: 2999,
+                img: "/images/ac/split-j.png",
+                description: "Basic cleaning and inspection for three AC units"
+            },
+            {
+                id: 80,
+                title: "Window AC Jet Pump Service (6 AC)",
+                price: 2034,
+                oldPrice: 2999,
+                img: "/images/ac/window-j.png",
+                description: "Basic cleaning and inspection for four AC units"
+            }
+        ]
+    },
+    {
+        id: "ac-gas-charging",
+        title: "AC Gas Charging",
+        category: "acrepairinstallation",
+        subCategory: "ac-service",
+        rateCardKey: "ac",
+        reviews: 6,
+        imgs: {
+            thumbnails: [
+                "/images/ac/gas-charge.png"
+            ],
+            previews: [
+                "/images/ac/gas-charge.png"
+            ]
+        },
+        description: {
+            about: [
+                "Complete AC gas pressure inspection",
+                "Leak detection and basic check",
+                "Top-up or refill of AC refrigerant gas",
+                "Cooling performance testing",
+                "System pressure balancing"
+            ],
+            benefits: [
+                "Restores proper cooling performance",
+                "Improves AC efficiency",
+                "Prevents compressor overload",
+                "Reduces electricity consumption",
+                "Ensures longer AC lifespan"
+            ]
+        },
+        variants: [
+            {
+                id: 105,
+                title: "Rubber Washer (1 Peice)",
+                price: 50,
+                oldPrice: 100,
+                img: "/images/ac/gas1.png",
+                // description: "Gas refill service for split AC with pressure check",
+                description: "Refrigerant gas refill service for AC up to 1 Ton capacity"
+            },
+            {
+                id: 106,
+                title: "Cooling Coil U Band (Per Peice)",
+                price: 50,
+                oldPrice: 100,
+                img: "/images/ac/gas2.png",
+                // description: "Gas refill service for split AC with pressure check",
+                description: "Refrigerant gas refill service for AC up to 1.5 Ton capacity"
+            },
+            {
+                id: 107,
+                title: "Pin Valve (Per Peice)",
+                price: 50,
+                oldPrice: 100,
+                img: "/images/ac/gas2.png",
+                // description: "Gas refill service for split AC with pressure check",
+                description: "Refrigerant gas refill service for AC up to 1.5 Ton capacity"
+            },
+            {
+                id: 108,
+                title: "Expansion Valve Replaced",
+                price: 1149,
+                oldPrice: 1299,
+                img: "/images/ac/gas2.png",
+                // description: "Gas refill service for split AC with pressure check",
+                description: "Refrigerant gas refill service for AC up to 1.5 Ton capacity"
+            },
+            {
+                id: 109,
+                title: "Gas Charging (1 to 2 Ton)",
+                price: 2739,
+                oldPrice: 2999,
+                img: "/images/ac/gas3.png",
+                // description: "Gas refill service for split AC with pressure check",
+                description: "Refrigerant gas refill service for AC up to 2 Ton capacity"
+            }
+        ]
+    },
+    {
+        id: "cassette-ac-jet-service",
+        title: "Cassette AC Jet Service",
+        category: "acrepairinstallation",
+        subCategory: "ac-service",
+        rateCardKey: "ac",
+        reviews: 6,
+        imgs: {
+            thumbnails: [
+                "/images/ac/c-jet.png"
+            ],
+            previews: [
+                "/images/ac/c-jet.png"
+            ]
+        },
+        description: {
+            about: [
+                "Deep jet cleaning of cassette AC indoor unit",
+                "Cooling coil cleaning with high-pressure jet",
+                "Blower and fan blade cleaning",
+                "Drain tray and drain pipe cleaning",
+                "Dust and dirt removal from air vents",
+                "Complete AC performance testing after service"
+            ],
+            benefits: [
+                "Improves cooling performance",
+                "Removes dust, bacteria and bad odor",
+                "Ensures smooth airflow",
+                "Reduces electricity consumption",
+                "Increases AC lifespan"
+            ]
+        },
+        variants: [
+            {
+                id: 110,
+                title: "Cassette AC Jet Service",
+                price: 599,
+                oldPrice: 799,
+                img: "/images/ac/c-jet-service.png",
+                // description: "Deep jet cleaning service for cassette AC units",
+                description: "High pressure jet cleaning service for cassette AC units"
+            }
+        ]
+    },
+    // ================= Ac Repair =================
+    {
+        id: "ac-less-no-cooling-repair",
+        title: "Ac Less/No Cooling Repair",
+        category: "acrepairinstallation",
+        subCategory: "ac-repair",
+        rateCardKey: "ac",
+        reviews: 18,
+        imgs: {
+            thumbnails: [
+                "/images/ac/ac-less.png"
+            ],
+            previews: [
+                "/images/ac/ac-less.png"
+            ]
+        },
+        description: {
+            about: [
+                "Complete inspection of indoor and outdoor AC units",
+                "Cooling coil and air filter check",
+                "Refrigerant gas pressure inspection",
+                "Compressor and capacitor testing",
+                "Electrical wiring and thermostat check",
+                "Cooling performance testing after repair"
+            ],
+            benefits: [
+                "Restores proper cooling performance",
+                "Identifies root cause of cooling issue",
+                "Prevents compressor damage",
+                "Improves AC efficiency",
+                "Reduces electricity consumption"
+            ]
+        },
+        variants: [
+            {
+                id: 201,
+                title: "Window AC Repair (Inspection Charges)",
+                price: 249,
+                oldPrice: 499,
+                img: "/images/ac/less-w.png",
+                // description: "Deep jet cleaning service for cassette AC units",
+                description: "Inspection charge for window AC cooling issues"
+            },
+            {
+                id: 202,
+                title: "Split AC Repair (Inspection Charges)",
+                price: 249,
+                oldPrice: 499,
+                img: "/images/ac/less-s.png",
+                // description: "Deep jet cleaning service for cassette AC units",
+                description: "Inspection charge for split AC cooling issues"
+            }
+        ]
+    },
+    {
+        id: "ac-power-issue-repair",
+        title: "Ac Power Issue Repair",
+        category: "acrepairinstallation",
+        subCategory: "ac-repair",
+        rateCardKey: "ac",
+        reviews: 18,
+        imgs: {
+            thumbnails: [
+                "/images/ac/ac-power.png"
+            ],
+            previews: [
+                "/images/ac/ac-power.png"
+            ]
+        },
+        description: {
+            about: [
+                "Inspection of AC electrical components",
+                "Power supply and wiring check",
+                "PCB board testing",
+                "Contactor and capacitor inspection",
+                "Thermostat and sensor check",
+                "Safe power restoration testing"
+            ],
+            benefits: [
+                "Fixes AC not turning on issue",
+                "Prevents electrical damage",
+                "Ensures safe AC operation",
+                "Improves AC reliability",
+                "Extends AC lifespan"
+            ]
+        },
+        variants: [
+            {
+                id: 203,
+                title: "Window AC Power Issue Repair",
+                price: 299,
+                oldPrice: 499,
+                img: "/images/ac/power-w.png",
+                description: "Deep jet cleaning service for cassette AC units"
+            },
+            {
+                id: 204,
+                title: "Split AC Power Issue Repair",
+                price: 299,
+                oldPrice: 499,
+                img: "/images/ac/power-s.png",
+                description: "Deep jet cleaning service for cassette AC units"
+            }
+        ]
+    },
+    {
+        id: "ac-noise-smell-repair",
+        title: "Ac Noise/Smell Repair",
+        category: "acrepairinstallation",
+        subCategory: "ac-repair",
+        rateCardKey: "ac",
+        reviews: 18,
+        imgs: {
+            thumbnails: [
+                "/images/ac/ac-noise.png"
+            ],
+            previews: [
+                "/images/ac/ac-noise.png"
+            ]
+        },
+        description: {
+            about: [
+                "Inspection of blower motor and fan blades",
+                "Cleaning of cooling coil and air filters",
+                "Drain tray and drainage pipe check",
+                "Loose component tightening",
+                "Removal of bacteria and bad odor sources",
+                "AC performance test after repair"
+            ],
+            benefits: [
+                "Eliminates unpleasant AC smell",
+                "Reduces abnormal AC noise",
+                "Improves air quality",
+                "Ensures smooth AC operation",
+                "Enhances indoor comfort"
+            ]
+        },
+        variants: [
+            {
+                id: 205,
+                title: "Window AC Noise or Smell Repair",
+                price: 339,
+                oldPrice: 699,
+                img: "/images/ac/noise-w.png",
+                description: "Deep jet cleaning service for cassette AC units"
+            },
+            {
+                id: 206,
+                title: "Split AC Noise or Smell Repair",
+                price: 339,
+                oldPrice: 699,
+                img: "/images/ac/noise-s.png",
+                description: "Deep jet cleaning service for cassette AC units"
+            }
+        ]
+    },
+    {
+        id: "ac-water-leakage-repair",
+        title: "Ac Water Leakage Repair",
+        category: "acrepairinstallation",
+        subCategory: "ac-repair",
+        rateCardKey: "ac",
+        reviews: 18,
+        imgs: {
+            thumbnails: [
+                "/images/ac/ac-leakage.png"
+            ],
+            previews: [
+                "/images/ac/ac-leakage.png"
+            ]
+        },
+        description: {
+            about: [
+                "Inspection of AC drainage system",
+                "Drain pipe blockage removal",
+                "Cooling coil and drain tray cleaning",
+                "Indoor unit installation level check",
+                "Water flow testing",
+                "Complete leakage solution and performance test"
+            ],
+            benefits: [
+                "Stops indoor water leakage",
+                "Prevents wall and furniture damage",
+                "Improves AC efficiency",
+                "Ensures smooth water drainage",
+                "Extends AC lifespan"
+            ]
+        },
+        variants: [
+            {
+                id: 207,
+                title: "Window AC Water Leakage Repair",
+                price: 449,
+                oldPrice: 699,
+                img: "/images/ac/leakage-w.png",
+                description: "Deep jet cleaning service for cassette AC units"
+            },
+            {
+                id: 208,
+                title: "Split AC Water Leakage Repair",
+                price: 449,
+                oldPrice: 799,
+                img: "/images/ac/leakage-s.png",
+                description: "Deep jet cleaning service for cassette AC units"
+            }
+        ]
+    },
+    {
+        id: "ac-gas-refill-checkup",
+        title: "Ac Gas Refill/CheckUp",
+        category: "acrepairinstallation",
+        subCategory: "ac-repair",
+        rateCardKey: "ac",
+        reviews: 18,
+        imgs: {
+            thumbnails: [
+                "/images/ac/ac-refill.png"
+            ],
+            previews: [
+                "/images/ac/ac-refill.png"
+            ]
+        },
+        description: {
+            about: [
+                "Inspection of refrigerant gas pressure",
+                "Leak detection and basic repair",
+                "Vacuuming of AC system if required",
+                "Gas refill using proper refrigerant",
+                "Cooling efficiency testing",
+                "System pressure balancing"
+            ],
+            benefits: [
+                "Restores proper AC cooling",
+                "Improves AC performance",
+                "Prevents compressor overload",
+                "Reduces electricity consumption",
+                "Increases AC lifespan"
+            ]
+        },
+        variants: [
+            // {
+            // id: 209,
+            // title: "Gas Refill 1 Ton",
+            // price: 2499,
+            // oldPrice: 2599,
+            // img: "/images/ac/ac-refill.png",
+            // description: "Deep jet cleaning service for cassette AC units",
+            // },
+            // {
+            // id: 210,
+            // title: "Gas Refill 1.5 Ton",
+            // price: 2799,
+            // oldPrice: 2899,
+            // img: "/images/ac/refill-1.5.png",
+            // description: "Deep jet cleaning service for cassette AC units",
+            // },
+            {
+                id: 211,
+                title: "Gas Refill 1 to 2 Ton",
+                price: 2739,
+                oldPrice: 3299,
+                img: "/images/ac/refill-2.png",
+                description: "Deep jet cleaning service for cassette AC units"
+            }
+        ]
+    },
+    {
+        id: "cassette-ac-repair",
+        title: "Cassette Ac Repair",
+        category: "acrepairinstallation",
+        subCategory: "ac-repair",
+        rateCardKey: "ac",
+        reviews: 18,
+        imgs: {
+            thumbnails: [
+                "/images/ac/cass.png"
+            ],
+            previews: [
+                "/images/ac/cass.png"
+            ]
+        },
+        description: {
+            about: [
+                "Inspection of cassette AC indoor unit",
+                "Cooling coil and blower cleaning",
+                "Drain tray and drain pipe check",
+                "Electrical components testing",
+                "Fan motor and compressor inspection",
+                "Complete AC performance testing"
+            ],
+            benefits: [
+                "Restores proper cooling performance",
+                "Improves airflow and air quality",
+                "Reduces unusual AC noise",
+                "Prevents major AC breakdown",
+                "Increases AC lifespan"
+            ]
+        },
+        variants: [
+            {
+                id: 212,
+                title: "Cassette AC Gas Refill 1.5 Ton",
+                price: 3000,
+                oldPrice: 3299,
+                img: "/images/ac/refill-2.png",
+                description: "Deep jet cleaning service for cassette AC units"
+            },
+            {
+                id: 213,
+                title: "Cassette AC Gas Refill 2 Ton",
+                price: 4000,
+                oldPrice: 4299,
+                img: "/images/ac/refill-2.png",
+                description: "Deep jet cleaning service for cassette AC units"
+            },
+            {
+                id: 214,
+                title: "Cassette AC Gas Refill 2.5 Ton",
+                price: 5000,
+                oldPrice: 5299,
+                img: "/images/ac/refill-2.png",
+                description: "Deep jet cleaning service for cassette AC units"
+            },
+            {
+                id: 215,
+                title: "Cassette AC Gas Refill 3 Ton",
+                price: 6500,
+                oldPrice: 6799,
+                img: "/images/ac/refill-2.png",
+                description: "Deep jet cleaning service for cassette AC units"
+            },
+            {
+                id: 216,
+                title: "Cassette AC Gas Refill 5 Ton",
+                price: 8000,
+                oldPrice: 8299,
+                img: "/images/ac/refill-2.png",
+                description: "Deep jet cleaning service for cassette AC units"
+            }
+        ]
+    },
+    // ================= Installation =================
+    {
+        id: "ac-installation",
+        title: "AC Installation",
+        category: "acrepairinstallation",
+        subCategory: "ac-installation-uninstallation",
+        rateCardKey: "ac",
+        reviews: 12,
+        imgs: {
+            thumbnails: [
+                "/images/ac/ac-ins.png"
+            ],
+            previews: [
+                "/images/ac/ac-ins.png"
+            ]
+        },
+        description: {
+            about: [
+                "Professional installation of indoor and outdoor units",
+                "Copper pipe connection and insulation",
+                "Drain pipe setup for water flow",
+                "Electrical wiring and power connection",
+                "Vacuuming and gas pressure check",
+                "Complete AC performance testing"
+            ],
+            benefits: [
+                "Ensures safe AC installation",
+                "Improves cooling efficiency",
+                "Prevents gas leakage issues",
+                "Reduces power consumption",
+                "Enhances AC lifespan"
+            ]
+        },
+        variants: [
+            {
+                id: 301,
+                title: "Window AC Installation",
+                price: 799,
+                oldPrice: 899,
+                img: "/images/ac/ins-w.png",
+                description: "Deep jet cleaning service for cassette AC units"
+            },
+            {
+                id: 302,
+                title: "Split AC Installation",
+                price: 1349,
+                oldPrice: 1599,
+                img: "/images/ac/ins-s.png",
+                description: "Deep jet cleaning service for cassette AC units"
+            }
+        ]
+    },
+    {
+        id: "ac-uninstallation",
+        title: "AC Uninstallation",
+        category: "acrepairinstallation",
+        subCategory: "ac-installation-uninstallation",
+        rateCardKey: "ac",
+        reviews: 12,
+        imgs: {
+            thumbnails: [
+                "/images/ac/ac-unins.png"
+            ],
+            previews: [
+                "/images/ac/ac-unins.png"
+            ]
+        },
+        description: {
+            about: [
+                "Safe removal of indoor and outdoor units",
+                "Disconnection of electrical wiring",
+                "Copper pipe removal and sealing",
+                "Refrigerant gas safety handling",
+                "AC components safety check",
+                "Preparation for reinstallation or relocation"
+            ],
+            benefits: [
+                "Safe AC removal without damage",
+                "Prevents gas leakage",
+                "Protects AC components",
+                "Makes relocation easy",
+                "Ready for reinstall at new location"
+            ]
+        },
+        variants: [
+            {
+                id: 303,
+                title: "Window AC Uninstallation",
+                price: 449,
+                oldPrice: 799,
+                img: "/images/ac/unins-w.png",
+                description: "Deep jet cleaning service for cassette AC units"
+            },
+            {
+                id: 304,
+                title: "Split AC Uninstallation",
+                price: 699,
+                oldPrice: 799,
+                img: "/images/ac/unins-s.png",
+                description: "Deep jet cleaning service for cassette AC units"
+            }
+        ]
+    },
+    // ================= Addon =================
+    {
+        id: "compressor-replacement",
+        title: "Compressor Replacement",
+        category: "acrepairinstallation",
+        subCategory: "ac-addon-services",
+        rateCardKey: "ac",
+        reviews: 27,
+        imgs: {
+            thumbnails: [
+                "/images/ac/comp-rep.png"
+            ],
+            previews: [
+                "/images/ac/comp-rep.png"
+            ]
+        },
+        description: {
+            about: [
+                "Removal of faulty compressor",
+                "Installation of new compatible compressor",
+                "Vacuuming of refrigeration system",
+                "Refrigerant gas refill",
+                "Electrical connection setup",
+                "Complete AC performance testing"
+            ],
+            benefits: [
+                "Restores AC cooling performance",
+                "Improves system reliability",
+                "Prevents further compressor damage",
+                "Ensures stable AC operation",
+                "Increases AC lifespan"
+            ]
+        },
+        variants: [
+            {
+                id: 401,
+                title: "Compressor Replacement (0.8 Ton to 1 Ton)",
+                price: 6349,
+                oldPrice: 7499,
+                img: "/images/ac/compressor1.png",
+                description: "AC compressor replacement service"
+            },
+            {
+                id: 402,
+                title: "Compressor Replacement (1.5 Ton)",
+                price: 7349,
+                oldPrice: 8499,
+                img: "/images/ac/compressor2.png",
+                description: "AC compressor replacement service"
+            },
+            {
+                id: 403,
+                title: "Compressor Replacement (2 Ton)",
+                price: 9049,
+                oldPrice: 10499,
+                img: "/images/ac/compressor3.png",
+                description: "AC compressor replacement service"
+            }
+        ]
+    },
+    {
+        id: "compressor-labour",
+        title: "Replacement Compressor Labour Charge",
+        category: "acrepairinstallation",
+        subCategory: "ac-addon-services",
+        rateCardKey: "ac",
+        reviews: 25,
+        imgs: {
+            thumbnails: [
+                "/images/ac/rep-comp.png"
+            ],
+            previews: [
+                "/images/ac/rep-comp.png"
+            ]
+        },
+        variants: [
+            {
+                id: 404,
+                title: "Replacement Compressor 1 to 2 Ton (Labour Extra)",
+                price: 1500,
+                oldPrice: 2999,
+                img: "/images/ac/compressor-labour1.png",
+                description: "Labour charge for AC compressor replacement"
+            }
+        ]
+    },
+    {
+        id: "ac-service-valve",
+        title: "Service Valve",
+        category: "acrepairinstallation",
+        subCategory: "ac-addon-services",
+        rateCardKey: "ac",
+        reviews: 30,
+        imgs: {
+            thumbnails: [
+                "/images/ac/valve.png"
+            ],
+            previews: [
+                "/images/ac/valve.png"
+            ]
+        },
+        variants: [
+            {
+                id: 407,
+                title: "Service Valve 1/4",
+                price: 399,
+                oldPrice: 599,
+                img: "/images/ac/valve1.png",
+                description: "AC service valve replacement"
+            },
+            {
+                id: 408,
+                title: "Service Valve 3/8",
+                price: 449,
+                oldPrice: 699,
+                img: "/images/ac/valve2.png",
+                description: "AC service valve replacement"
+            },
+            {
+                id: 409,
+                title: "Service Valve 5/8",
+                price: 599,
+                oldPrice: 799,
+                img: "/images/ac/valve3.png",
+                description: "AC service valve replacement"
+            },
+            {
+                id: 410,
+                title: "Service Valve 1/2",
+                price: 599,
+                oldPrice: 799,
+                img: "/images/ac/valve4.png",
+                description: "AC service valve replacement"
+            }
+        ]
+    },
+    {
+        id: "ac-fan-motor",
+        title: "Fan Motor",
+        category: "acrepairinstallation",
+        subCategory: "ac-addon-services",
+        rateCardKey: "ac",
+        reviews: 21,
+        imgs: {
+            thumbnails: [
+                "/images/ac/fan.png"
+            ],
+            previews: [
+                "/images/ac/fan.png"
+            ]
+        },
+        variants: [
+            {
+                id: 411,
+                title: "AC Fan Motor Split AC Outdoor",
+                price: 1799,
+                oldPrice: 1999,
+                img: "/images/ac/fan-motor1.png",
+                description: "AC outdoor fan motor replacement"
+            },
+            {
+                id: 412,
+                title: "AC Fan Motor Window AC",
+                price: 2499,
+                oldPrice: 2999,
+                img: "/images/ac/fan-motor2.png",
+                description: "AC outdoor fan motor replacement"
+            },
+            {
+                id: 4112,
+                title: "DC Fan Motor (Outdoor Unit)",
+                price: 3199,
+                oldPrice: 3499,
+                img: "/images/ac/fan-motor2.png",
+                description: "AC outdoor fan motor replacement"
+            },
+            {
+                id: 412,
+                title: "DC Fan Motor (Indoor Unit)",
+                price: 3399,
+                oldPrice: 3999,
+                img: "/images/ac/fan-motor2.png",
+                description: "AC outdoor fan motor replacement"
+            }
+        ]
+    },
+    {
+        id: "ac-blower-motor",
+        title: "Blower Motor",
+        category: "acrepairinstallation",
+        subCategory: "ac-addon-services",
+        rateCardKey: "ac",
+        reviews: 22,
+        imgs: {
+            thumbnails: [
+                "/images/ac/blower.png"
+            ],
+            previews: [
+                "/images/ac/blower.png"
+            ]
+        },
+        variants: [
+            {
+                id: 413,
+                title: "Blower Replacement",
+                price: 999,
+                oldPrice: 2199,
+                img: "/images/ac/blower1.png",
+                description: "AC indoor blower motor replacement"
+            },
+            {
+                id: 414,
+                title: "Blower Replacement",
+                price: 3800,
+                oldPrice: 3999,
+                img: "/images/ac/blower2.png",
+                description: "AC indoor blower motor replacement"
+            }
+        ]
+    },
+    {
+        id: "ac-contactor",
+        title: "Contactor",
+        category: "acrepairinstallation",
+        subCategory: "ac-addon-services",
+        rateCardKey: "ac",
+        reviews: 1,
+        imgs: {
+            thumbnails: [
+                "/images/ac/cont.png"
+            ],
+            previews: [
+                "/images/ac/cont.png"
+            ]
+        },
+        variants: [
+            {
+                id: 415,
+                title: "Contactor Replaced",
+                price: 499,
+                oldPrice: 599,
+                img: "/images/ac/contactor1.png",
+                description: "AC contactor replacement"
+            },
+            {
+                id: 416,
+                title: "Contactor Daikin or O-General",
+                price: 1299,
+                oldPrice: 1499,
+                img: "/images/ac/contactor2.png",
+                description: "AC contactor replacement"
+            }
+        ]
+    },
+    {
+        id: "ac-stabilizer",
+        title: "Stabilizer",
+        category: "acrepairinstallation",
+        subCategory: "ac-addon-services",
+        rateCardKey: "ac",
+        reviews: 28,
+        imgs: {
+            thumbnails: [
+                "/images/ac/stab.png"
+            ],
+            previews: [
+                "/images/ac/stab.png"
+            ]
+        },
+        description: {
+            about: [
+                "AC stabilizer installation",
+                "Voltage fluctuation protection",
+                "Electrical safety check",
+                "Stabilizer wiring setup"
+            ],
+            benefits: [
+                "Protects AC from voltage fluctuations",
+                "Prevents compressor damage",
+                "Improves AC lifespan"
+            ]
+        },
+        variants: [
+            {
+                id: 417,
+                title: "Stabilizer Repair",
+                price: 1449,
+                oldPrice: 2499,
+                img: "/images/ac/stabilizer1.png",
+                description: "Professional stabilizer installation for AC"
+            },
+            {
+                id: 418,
+                title: "Stabilizer Connection",
+                price: 149,
+                oldPrice: 449,
+                img: "/images/ac/stabilizer2.png",
+                description: "Professional stabilizer installation for AC"
+            },
+            {
+                id: 4118,
+                title: "Stabilizer Repair (up to Single Boost)",
+                price: 1499,
+                oldPrice: 2449,
+                img: "/images/ac/stabilizer2.png",
+                description: "Professional stabilizer installation for AC"
+            },
+            {
+                id: 4118,
+                title: "Stabilizer Repair (up to Double Boost)",
+                price: 2499,
+                oldPrice: 2999,
+                img: "/images/ac/stabilizer2.png",
+                description: "Professional stabilizer installation for AC"
+            }
+        ]
+    },
+    {
+        id: "pcb-repair-replace",
+        title: "PCB Replace & Repair",
+        category: "acrepairinstallation",
+        subCategory: "ac-addon-services",
+        rateCardKey: "ac",
+        reviews: 22,
+        imgs: {
+            thumbnails: [
+                "/images/ac/pcb.png"
+            ],
+            previews: [
+                "/images/ac/pcb.png"
+            ]
+        },
+        description: {
+            about: [
+                "AC stabilizer installation",
+                "Voltage fluctuation protection",
+                "Electrical safety check",
+                "Stabilizer wiring setup"
+            ],
+            benefits: [
+                "Protects AC from voltage fluctuations",
+                "Prevents compressor damage",
+                "Improves AC lifespan"
+            ]
+        },
+        variants: [
+            {
+                id: 419,
+                title: "Non Inverter PCB Repair",
+                price: 1499,
+                oldPrice: 1599,
+                img: "/images/ac/pcb1.png",
+                description: "AC PCB board repair service"
+            },
+            {
+                id: 420,
+                title: "Inverter PCB Repair",
+                price: 3999,
+                oldPrice: 4599,
+                img: "/images/ac/pcb2.png",
+                description: "AC PCB board replacement"
+            },
+            {
+                id: 421,
+                title: "Fuse Change in PCB",
+                price: 149,
+                oldPrice: 599,
+                img: "/images/ac/pcb3.png",
+                description: "AC PCB board repair service"
+            },
+            {
+                id: 422,
+                title: "Convert PCB With Remote",
+                price: 1499,
+                oldPrice: 1599,
+                img: "/images/ac/pcb4.png",
+                description: "AC PCB board replacement"
+            }
+        ]
+    },
+    // {
+    //   id: "copper-pipe-service",
+    //   title: "Copper Pipe Service",
+    //   category: "acrepairinstallation",
+    //   subCategory: "ac-addon-services",
+    //   rateCardKey: "ac",
+    //   reviews: 27,
+    //   imgs: {
+    //     thumbnails: ["/images/ac/cop-pipe.png"],
+    //     previews: ["/images/ac/cop-pipe.png"],
+    //   },
+    //   description: {
+    //   about: [
+    //     "Installation or replacement of AC copper pipe",
+    //     "Proper pipe insulation for cooling efficiency",
+    //     "Leak prevention and sealing",
+    //     "Secure pipe fitting with indoor and outdoor units",
+    //     "Gas pressure testing after installation",
+    //   ],
+    //   benefits: [
+    //     "Prevents refrigerant gas leakage",
+    //     "Improves cooling efficiency",
+    //     "Ensures proper refrigerant flow",
+    //     "Increases AC lifespan",
+    //   ],
+    // },
+    //   variants: [
+    //     {
+    //       id: 423,
+    //       title: "Copper Pipe 0.5 inch",
+    //       price: 2000,
+    //       oldPrice: 2500,
+    //       img: "/images/ac/copper1.png",
+    //       description: "Copper pipe installation for AC",
+    //     },
+    //     {
+    //       id: 424,
+    //       title: "Copper Pipe 0.25 inch",
+    //       price: 1300,
+    //       oldPrice: 2000,
+    //       img: "/images/ac/copper2.png",
+    //       description: "Copper pipe installation for AC",
+    //     },
+    //     {
+    //       id: 425,
+    //       title: "Copper Pipe 0.375 inch",
+    //       price: 1500,
+    //       oldPrice: 1800,
+    //       img: "/images/ac/copper3.png",
+    //       description: "Copper pipe installation for AC",
+    //     },
+    //     {
+    //       id: 426,
+    //       title: "Copper Pipe 0.625 inch",
+    //       price: 1600,
+    //       oldPrice: 2000,
+    //       img: "/images/ac/copper4.png",
+    //       description: "Copper pipe installation for AC",
+    //     },
+    //   ],
+    // },
+    {
+        id: "ac-reinstallation",
+        title: "AC Re - Installation",
+        category: "acrepairinstallation",
+        subCategory: "ac-addon-services",
+        rateCardKey: "ac",
+        reviews: 28,
+        imgs: {
+            thumbnails: [
+                "/images/ac/re-ins.png"
+            ],
+            previews: [
+                "/images/ac/re-ins.png"
+            ]
+        },
+        variants: [
+            {
+                id: 427,
+                title: "Re-installation Outdoor",
+                price: 699,
+                oldPrice: 799,
+                img: "/images/ac/reinstall1.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 428,
+                title: "Re-installation Indoor",
+                price: 699,
+                oldPrice: 799,
+                img: "/images/ac/reinstall2.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "sensor",
+        title: "Sensor",
+        category: "acrepairinstallation",
+        subCategory: "ac-addon-services",
+        rateCardKey: "ac",
+        reviews: 28,
+        imgs: {
+            thumbnails: [
+                "/images/ac/sensor.png"
+            ],
+            previews: [
+                "/images/ac/sensor.png"
+            ]
+        },
+        variants: [
+            {
+                id: 429,
+                title: "Replace Sensor",
+                price: 299,
+                oldPrice: 599,
+                img: "/images/ac/sensor1.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "coil-repair",
+        title: "Coil Repair",
+        category: "acrepairinstallation",
+        subCategory: "ac-addon-services",
+        rateCardKey: "ac",
+        reviews: 28,
+        imgs: {
+            thumbnails: [
+                "/images/ac/coil-re.png"
+            ],
+            previews: [
+                "/images/ac/coil-re.png"
+            ]
+        },
+        variants: [
+            {
+                id: 430,
+                title: "Cooling Coil Repair & Anti-Rush (Coating)",
+                price: 849,
+                oldPrice: 1499,
+                img: "/images/ac/coil-re1.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 431,
+                title: "Condenser Coil Repair",
+                price: 500,
+                oldPrice: 1099,
+                img: "/images/ac/coil-re2.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "spare-parts",
+        title: "Spare Parts",
+        category: "acrepairinstallation",
+        subCategory: "ac-addon-services",
+        rateCardKey: "ac",
+        reviews: 28,
+        imgs: {
+            thumbnails: [
+                "/images/ac/spare.png"
+            ],
+            previews: [
+                "/images/ac/spare.png"
+            ]
+        },
+        variants: [
+            {
+                id: 432,
+                title: "Sleeves (Per mtr)",
+                price: 50,
+                oldPrice: 99,
+                img: "/images/ac/spare1.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 433,
+                title: "Drain Pipe Replacement (1m)",
+                price: 99,
+                oldPrice: 299,
+                img: "/images/ac/spare2.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 434,
+                title: "Connector Wire(1m)",
+                price: 100,
+                oldPrice: 120,
+                img: "/images/ac/spare3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 435,
+                title: "1 ft Copper Pipe Set(Insulation+Wire)",
+                price: 299,
+                oldPrice: 499,
+                img: "/images/ac/spare4.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 436,
+                title: "Anti-Rush Spray",
+                price: 199,
+                oldPrice: 299,
+                img: "/images/ac/spare5.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 437,
+                title: "Flap or Swing Motor Rplacement (Labour Charge)",
+                price: 399,
+                oldPrice: 599,
+                img: "/images/ac/spare6.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 438,
+                title: "Swing Blade Replacement",
+                price: 399,
+                oldPrice: 1299,
+                img: "/images/ac/spare7.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 439,
+                title: "Drain Tray Window AC",
+                price: 449,
+                oldPrice: 999,
+                img: "/images/ac/spare8.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 440,
+                title: "Universal Remote",
+                price: 599,
+                oldPrice: 899,
+                img: "/images/ac/spare9.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 441,
+                title: "AC Fan Blade",
+                price: 649,
+                oldPrice: 1200,
+                img: "/images/ac/spare10.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 442,
+                title: "Motor Bearing Change",
+                price: 999,
+                oldPrice: 1199,
+                img: "/images/ac/spare11.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 443,
+                title: "Grill Cover",
+                price: 1499,
+                oldPrice: 1599,
+                img: "/images/ac/spare12.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 444,
+                title: "Fan Motor Window AC",
+                price: 2400,
+                oldPrice: 2999,
+                img: "/images/ac/spare13.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "capacitor",
+        title: "Capacitor",
+        category: "acrepairinstallation",
+        subCategory: "ac-addon-services",
+        rateCardKey: "ac",
+        reviews: 28,
+        imgs: {
+            thumbnails: [
+                "/images/ac/capa.png"
+            ],
+            previews: [
+                "/images/ac/capa.png"
+            ]
+        },
+        variants: [
+            {
+                id: 445,
+                title: "Compressor Capacitor 25-60 MFD (Labour Charge)",
+                price: 399,
+                oldPrice: 999,
+                img: "/images/ac/capa1.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 446,
+                title: "Fan Capacitor(2.5-10 MFD)",
+                price: 249,
+                oldPrice: 799,
+                img: "/images/ac/capa2.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 447,
+                title: "Combo Capacitor(Comp with Fan)",
+                price: 499,
+                oldPrice: 799,
+                img: "/images/ac/capa3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "split-installation",
+        title: "Split Installation",
+        category: "acrepairinstallation",
+        subCategory: "ac-addon-services",
+        rateCardKey: "ac",
+        reviews: 28,
+        imgs: {
+            thumbnails: [
+                "/images/ac/sp-ins.png"
+            ],
+            previews: [
+                "/images/ac/sp-ins.png"
+            ]
+        },
+        variants: [
+            {
+                id: 454,
+                title: "Fastener Set 6 Piece",
+                price: 149,
+                oldPrice: 299,
+                img: "/images/ac/sp-ins7.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 448,
+                title: "Flare Nut Replacement",
+                price: 149,
+                oldPrice: 200,
+                img: "/images/ac/sp-ins1.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 453,
+                title: "Universal Back Plate",
+                price: 249,
+                oldPrice: 300,
+                img: "/images/ac/sp-ins6.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 449,
+                title: "Capillary & Filter Replacement",
+                price: 299,
+                oldPrice: 350,
+                img: "/images/ac/sp-ins2.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 450,
+                title: "Wall Stand",
+                price: 549,
+                oldPrice: 799,
+                img: "/images/ac/sp-ins3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 451,
+                title: "Floor Stand",
+                price: 649,
+                oldPrice: 799,
+                img: "/images/ac/sp-ins4.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 452,
+                title: "Long Stand",
+                price: 1299,
+                oldPrice: 1949,
+                img: "/images/ac/sp-ins5.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "minor-repairs",
+        title: "Minor Repair",
+        category: "acrepairinstallation",
+        subCategory: "ac-addon-services",
+        rateCardKey: "ac",
+        reviews: 28,
+        imgs: {
+            thumbnails: [
+                "/images/ac/minor.png"
+            ],
+            previews: [
+                "/images/ac/minor.png"
+            ]
+        },
+        variants: [
+            {
+                id: 456,
+                title: "Adjust Grill Locks with Labour Charge",
+                price: 399,
+                oldPrice: 499,
+                img: "/images/ac/minor2.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 455,
+                title: "Water Leakage Repair Split AC",
+                price: 499,
+                oldPrice: 599,
+                img: "/images/ac/minor1.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 457,
+                title: "Adjust Pipe or Compresser Screw",
+                price: 349,
+                oldPrice: 399,
+                img: "/images/ac/minor3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 458,
+                title: "External Dust or Stick Removal",
+                price: 399,
+                oldPrice: 499,
+                img: "/images/ac/minor4.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 459,
+                title: "Insulation Re-fix",
+                price: 399,
+                oldPrice: 499,
+                img: "/images/ac/minor5.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 460,
+                title: "Noise Adjustment(All Types)",
+                price: 499,
+                oldPrice: 549,
+                img: "/images/ac/minor6.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "copper-coil",
+        title: "Copper Coil",
+        category: "acrepairinstallation",
+        subCategory: "ac-addon-services",
+        rateCardKey: "ac",
+        reviews: 28,
+        imgs: {
+            thumbnails: [
+                "/images/ac/co-coil.png"
+            ],
+            previews: [
+                "/images/ac/co-coil.png"
+            ]
+        },
+        variants: [
+            {
+                id: 461,
+                title: "Window AC Condenser Coil 1 Ton",
+                price: 4000,
+                oldPrice: 4200,
+                img: "/images/ac/co-coil1.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 462,
+                title: "Window AC Cooling Coil 1 Ton",
+                price: 4000,
+                oldPrice: 4500,
+                img: "/images/ac/co-coil2.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 463,
+                title: "Split AC Condenser Coil 1 Ton",
+                price: 3800,
+                oldPrice: 4900,
+                img: "/images/ac/co-coil3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 464,
+                title: "Split AC Cooling Coil 1 Ton",
+                price: 6500,
+                oldPrice: 6700,
+                img: "/images/ac/co-coil4.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 465,
+                title: "Window AC Condenser Coil 1.5 Ton",
+                price: 4500,
+                oldPrice: 4699,
+                img: "/images/ac/co-coil5.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 466,
+                title: "Window AC Condenser Coil 2 Ton",
+                price: 2600,
+                oldPrice: 2799,
+                img: "/images/ac/co-coil6.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 467,
+                title: "Window AC Cooling Coil 1.5 Ton",
+                price: 4500,
+                oldPrice: 4799,
+                img: "/images/ac/co-coil7.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 468,
+                title: "Window AC Cooling Coil 2 Ton",
+                price: 5000,
+                oldPrice: 5299,
+                img: "/images/ac/co-coil8.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 469,
+                title: "Split AC Condenser Coil 1.5 Ton",
+                price: 4400,
+                oldPrice: 4599,
+                img: "/images/ac/co-coil9.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 470,
+                title: "Split AC Condenser Coil 2 Ton",
+                price: 4800,
+                oldPrice: 4900,
+                img: "/images/ac/co-coil10.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 471,
+                title: "Split AC Cooling Coil 1.5 Ton",
+                price: 7500,
+                oldPrice: 7800,
+                img: "/images/ac/co-coil11.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 472,
+                title: "Split AC Cooling Coil 2 Ton",
+                price: 8500,
+                oldPrice: 8700,
+                img: "/images/ac/co-coil12.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "wire",
+        title: "Wire",
+        category: "acrepairinstallation",
+        subCategory: "ac-addon-services",
+        rateCardKey: "ac",
+        reviews: 28,
+        imgs: {
+            thumbnails: [
+                "/images/ac/wire.png"
+            ],
+            previews: [
+                "/images/ac/wire.png"
+            ]
+        },
+        variants: [
+            {
+                id: 473,
+                title: "3 Core Wire 2.5mm",
+                price: 100.00,
+                oldPrice: 149.00,
+                img: "/images/ac/wire1.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 474,
+                title: "4 Core Wire 2.5mm",
+                price: 130,
+                oldPrice: 179,
+                img: "/images/ac/wire2.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 475,
+                title: "6 Core Wire 2.5mm",
+                price: 160,
+                oldPrice: 199,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    // ================= HOME CLEANING =================
+    {
+        id: "bathroom-classic-hand-cleaning",
+        title: "Bathroom Classic Hand Cleaning",
+        category: "home-cleaning",
+        subCategory: "bathroom-cleaning",
+        rateCardKey: "cleaning",
+        reviews: 10,
+        imgs: {
+            thumbnails: [
+                "/images/ac/bath-class.png"
+            ],
+            previews: [
+                "/images/ac/bath-class.png"
+            ]
+        },
+        variants: [
+            {
+                id: 501,
+                title: "Bathroom Hand Cleaning",
+                price: 449,
+                oldPrice: 499,
+                img: "/images/ac/wire1.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 502,
+                title: "2 Bathroom Cleaning",
+                price: 769,
+                oldPrice: 999,
+                img: "/images/ac/wire2.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 503,
+                title: "3 Bathroom Cleaning",
+                price: 1179,
+                oldPrice: 1399,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "bathroom-deep-cleaning",
+        title: "Bathroom Deep Cleaning",
+        category: "home-cleaning",
+        subCategory: "bathroom-cleaning",
+        rateCardKey: "cleaning",
+        reviews: 9,
+        imgs: {
+            thumbnails: [
+                "/images/ac/bath-deep.png"
+            ],
+            previews: [
+                "/images/ac/bath-deep.png"
+            ]
+        },
+        variants: [
+            {
+                id: 504,
+                title: "Bathroom Deep Cleaning",
+                price: 349,
+                oldPrice: 699,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 505,
+                title: "2 Bathroom Deep Cleaning",
+                price: 749,
+                oldPrice: 999,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 506,
+                title: "3 Bathroom Deep Cleaning",
+                price: 1149,
+                oldPrice: 1499,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 507,
+                title: "4 Bathroom Deep Cleaning",
+                price: 1549,
+                oldPrice: 1999,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "basic-kitchen-cleaning",
+        title: "Basic Kitchen Cleaning",
+        category: "home-cleaning",
+        subCategory: "kitchen-cleaning",
+        rateCardKey: "cleaning",
+        reviews: 11,
+        imgs: {
+            thumbnails: [
+                "/images/ac/basic-kitch.png"
+            ],
+            previews: [
+                "/images/ac/basic-kitch.png"
+            ]
+        },
+        variants: [
+            {
+                id: 508,
+                title: "Basic Kitchen Cleaning",
+                price: 949,
+                oldPrice: 1499,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "deep-full-kitchen-cleaning",
+        title: "Deep Full Kitchen Cleaning",
+        category: "home-cleaning",
+        subCategory: "kitchen-cleaning",
+        rateCardKey: "cleaning",
+        reviews: 11,
+        imgs: {
+            thumbnails: [
+                "/images/ac/deep-kitch.png"
+            ],
+            previews: [
+                "/images/ac/deep-kitch.png"
+            ]
+        },
+        variants: [
+            {
+                id: 509,
+                title: "Deep Kitchen Cleaning",
+                price: 1720,
+                oldPrice: 1999,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "complete-hand-cleaning",
+        title: "Complete Hand Cleaning",
+        category: "home-cleaning",
+        subCategory: "home-cleaning",
+        rateCardKey: "cleaning",
+        reviews: 14,
+        imgs: {
+            thumbnails: [
+                "/images/ac/comp-hand.png"
+            ],
+            previews: [
+                "/images/ac/comp-hand.png"
+            ]
+        },
+        variants: [
+            {
+                id: 510,
+                title: "1 BHK Hand Cleaning",
+                price: 1949,
+                oldPrice: 2799,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 511,
+                title: "2 BHK Hand Cleaning",
+                price: 2649,
+                oldPrice: 4999,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 512,
+                title: "3 BHK Hand Cleaning",
+                price: 3249,
+                oldPrice: 6999,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 513,
+                title: "4 BHK Hand Cleaning",
+                price: 3540,
+                oldPrice: 7999,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "complete-deep-machine-cleaning",
+        title: "Complete Deep Machine Cleaning",
+        category: "home-cleaning",
+        subCategory: "home-cleaning",
+        rateCardKey: "cleaning",
+        reviews: 14,
+        imgs: {
+            thumbnails: [
+                "/images/ac/comp-deep.png"
+            ],
+            previews: [
+                "/images/ac/comp-deep.png"
+            ]
+        },
+        variants: [
+            {
+                id: 514,
+                title: "1 BHK Deep Machine Cleaning",
+                price: 2749,
+                oldPrice: 3499,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 515,
+                title: "2 BHK Deep Machine Cleaning",
+                price: 3049,
+                oldPrice: 3999,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 516,
+                title: "3 BHK Deep Machine Cleaning",
+                price: 3799,
+                oldPrice: 5999,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 517,
+                title: "4 BHK Deep Machine Cleaning",
+                price: 5099,
+                oldPrice: 7999,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "bungalow-cleaning",
+        title: "Bungalow Cleaning",
+        category: "home-cleaning",
+        subCategory: "home-cleaning",
+        rateCardKey: "cleaning",
+        reviews: 14,
+        imgs: {
+            thumbnails: [
+                "/images/ac/bung.png"
+            ],
+            previews: [
+                "/images/ac/bung.png"
+            ]
+        },
+        variants: [
+            {
+                id: 518,
+                title: "Deep Bungalow Cleaning (3000-4000 squareFeet)",
+                price: 11999,
+                oldPrice: 12999,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 519,
+                title: "Deep Bungalow Cleaning (4000-5000 squareFeet)",
+                price: 12999,
+                oldPrice: 14999,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 520,
+                title: "Deep Bungalow Cleaning (6000-7000 squareFeet)",
+                price: 13999,
+                oldPrice: 16999,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "basic-chimney-cleaning",
+        title: "Basic Chimney Cleaning",
+        category: "home-cleaning",
+        subCategory: "chimney-cleaning",
+        rateCardKey: "cleaning",
+        reviews: 14,
+        imgs: {
+            thumbnails: [
+                "/images/ac/chim.png"
+            ],
+            previews: [
+                "/images/ac/chim.png"
+            ]
+        },
+        variants: [
+            {
+                id: 521,
+                title: "Full Basic Chimney Cleaning",
+                price: 375,
+                oldPrice: 599,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "deep-chimney-cleaning",
+        title: "Deep Chimney Cleaning",
+        category: "home-cleaning",
+        subCategory: "chimney-cleaning",
+        rateCardKey: "cleaning",
+        reviews: 14,
+        imgs: {
+            thumbnails: [
+                "/images/ac/chim.png"
+            ],
+            previews: [
+                "/images/ac/chim.png"
+            ]
+        },
+        variants: [
+            {
+                id: 522,
+                title: "Full Deep Chimney Cleaning",
+                price: 1199,
+                oldPrice: 1699,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "mattress-vacuum-service",
+        title: "Mattress Vacuum Service",
+        category: "home-cleaning",
+        subCategory: "mattress-cleaning",
+        rateCardKey: "cleaning",
+        reviews: 14,
+        imgs: {
+            thumbnails: [
+                "/images/ac/matt-vac.png"
+            ],
+            previews: [
+                "/images/ac/matt-vac.png"
+            ]
+        },
+        variants: [
+            {
+                id: 523,
+                title: "Single Mattress Cleaning",
+                price: 399,
+                oldPrice: 499,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 524,
+                title: "Double Mattress Cleaning",
+                price: 599,
+                oldPrice: 699,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "sofa-cleaning",
+        title: "Sofa Cleaning",
+        category: "home-cleaning",
+        subCategory: "sofa-cleaning",
+        rateCardKey: "cleaning",
+        reviews: 14,
+        imgs: {
+            thumbnails: [
+                "/images/ac/sofa-c.png"
+            ],
+            previews: [
+                "/images/ac/sofa-c.png"
+            ]
+        },
+        variants: [
+            {
+                id: 525,
+                title: "Sofa Cleaning 3 Seater",
+                price: 399,
+                oldPrice: 799,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 526,
+                title: "Sofa Cleaning 4 Seater",
+                price: 499,
+                oldPrice: 899,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 527,
+                title: "Sofa Cleaning 5 Seater",
+                price: 599,
+                oldPrice: 999,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 528,
+                title: "Sofa Cleaning 6 Seater",
+                price: 699,
+                oldPrice: 1199,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 529,
+                title: "Sofa Cleaning 7 Seater",
+                price: 799,
+                oldPrice: 1399,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 530,
+                title: "Sofa Cleaning 8 Seater",
+                price: 899,
+                oldPrice: 1599,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 531,
+                title: "Sofa Cleaning 9 Seater",
+                price: 999,
+                oldPrice: 1899,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 532,
+                title: "Sofa Cleaning 10 Seater",
+                price: 1099,
+                oldPrice: 1999,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 533,
+                title: "Sofa Cleaning 11 Seater",
+                price: 1199,
+                oldPrice: 2399,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 534,
+                title: "Sofa Cleaning 12 Seater",
+                price: 1299,
+                oldPrice: 2599,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "carpet-deep-cleaning",
+        title: "Carpet Deep Cleaning",
+        category: "home-cleaning",
+        subCategory: "sofa-cleaning",
+        rateCardKey: "cleaning",
+        reviews: 14,
+        imgs: {
+            thumbnails: [
+                "/images/ac/carpet-d.png"
+            ],
+            previews: [
+                "/images/ac/carpet-d.png"
+            ]
+        },
+        variants: [
+            {
+                id: 535,
+                title: "Carpet Deep Cleaning 25 sq ft",
+                price: 399,
+                oldPrice: 699,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 536,
+                title: "Carpet Deep Cleaning (25 to 50 sq ft)",
+                price: 499,
+                oldPrice: 699,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "cushion-cleaning",
+        title: "Cushion Cleaning",
+        category: "home-cleaning",
+        subCategory: "sofa-cleaning",
+        rateCardKey: "cleaning",
+        reviews: 14,
+        imgs: {
+            thumbnails: [
+                "/images/ac/cushion-c.png"
+            ],
+            previews: [
+                "/images/ac/cushion-c.png"
+            ]
+        },
+        variants: [
+            {
+                id: 537,
+                title: "Cushions Cleaning 5 to 10 Pieces",
+                price: 359,
+                oldPrice: 699,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    // ================= PAINTING =================
+    {
+        id: "single-wall-painting",
+        title: "Single Wall Painting",
+        category: "painting",
+        subCategory: "interior-painting",
+        rateCardKey: "painting",
+        reviews: 8,
+        imgs: {
+            thumbnails: [
+                "/images/ac/sing-wall.png"
+            ],
+            previews: [
+                "/images/ac/sing-wall.png"
+            ]
+        },
+        variants: [
+            {
+                id: 601,
+                title: "Visiting Charge",
+                price: 0.00,
+                oldPrice: 49,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "single-room-painting",
+        title: "Single Room Painting",
+        category: "painting",
+        subCategory: "interior-painting",
+        rateCardKey: "painting",
+        reviews: 8,
+        imgs: {
+            thumbnails: [
+                "/images/ac/sing-room.png"
+            ],
+            previews: [
+                "/images/ac/sing-room.png"
+            ]
+        },
+        variants: [
+            {
+                id: 602,
+                title: "Visiting Charge",
+                price: 0.00,
+                oldPrice: 49,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "front-home-painting",
+        title: "Front Home Painting",
+        category: "painting",
+        subCategory: "exterior-painting",
+        rateCardKey: "painting",
+        reviews: 8,
+        imgs: {
+            thumbnails: [
+                "/images/ac/front-home.png"
+            ],
+            previews: [
+                "/images/ac/front-home.png"
+            ]
+        },
+        variants: [
+            {
+                id: 603,
+                title: "Visiting Charge",
+                price: 0.00,
+                oldPrice: 49,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "full-home-painting",
+        title: "Full Home Painting",
+        category: "painting",
+        subCategory: "exterior-painting",
+        rateCardKey: "painting",
+        reviews: 8,
+        imgs: {
+            thumbnails: [
+                "/images/ac/full-home.png"
+            ],
+            previews: [
+                "/images/ac/full-home.png"
+            ]
+        },
+        variants: [
+            {
+                id: 604,
+                title: "Visiting Charge",
+                price: 0.00,
+                oldPrice: 49,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "grill-painting",
+        title: "Grill Painting",
+        category: "painting",
+        subCategory: "grill-painting",
+        rateCardKey: "painting",
+        reviews: 8,
+        imgs: {
+            thumbnails: [
+                "/images/ac/grill-pai.png"
+            ],
+            previews: [
+                "/images/ac/grill-pai.png"
+            ]
+        },
+        variants: [
+            {
+                id: 605,
+                title: "Visiting Charge",
+                price: 0.00,
+                oldPrice: 49,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "window-painting",
+        title: "Window Painting",
+        category: "painting",
+        subCategory: "grill-painting",
+        rateCardKey: "painting",
+        reviews: 8,
+        imgs: {
+            thumbnails: [
+                "/images/ac/wind-pai.png"
+            ],
+            previews: [
+                "/images/ac/wind-pai.png"
+            ]
+        },
+        variants: [
+            {
+                id: 606,
+                title: "Visiting Charge",
+                price: 0.00,
+                oldPrice: 49,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "door-painting",
+        title: "Door Painting",
+        category: "painting",
+        subCategory: "grill-painting",
+        rateCardKey: "painting",
+        reviews: 8,
+        imgs: {
+            thumbnails: [
+                "/images/ac/do-pai.png"
+            ],
+            previews: [
+                "/images/ac/do-pai.png"
+            ]
+        },
+        variants: [
+            {
+                id: 607,
+                title: "Visiting Charge",
+                price: 0.00,
+                oldPrice: 49,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "exterior-water-proofing",
+        title: "Exterior Water Proofing",
+        category: "painting",
+        subCategory: "water-proofing",
+        rateCardKey: "painting",
+        reviews: 8,
+        imgs: {
+            thumbnails: [
+                "/images/ac/ex-wat-pr.png"
+            ],
+            previews: [
+                "/images/ac/ex-wat-pr.png"
+            ]
+        },
+        variants: [
+            {
+                id: 608,
+                title: "Visiting Charge",
+                price: 0.00,
+                oldPrice: 49,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "interior-water-proofing",
+        title: "Interior Water Proofing",
+        category: "painting",
+        subCategory: "water-proofing",
+        rateCardKey: "painting",
+        reviews: 8,
+        imgs: {
+            thumbnails: [
+                "/images/ac/in-wat-pr.png"
+            ],
+            previews: [
+                "/images/ac/in-wat-pr.png"
+            ]
+        },
+        variants: [
+            {
+                id: 609,
+                title: "Visiting Charge",
+                price: 0.00,
+                oldPrice: 49,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "grouting",
+        title: "Grouting",
+        category: "painting",
+        subCategory: "water-proofing",
+        rateCardKey: "painting",
+        reviews: 8,
+        imgs: {
+            thumbnails: [
+                "/images/ac/grout.png"
+            ],
+            previews: [
+                "/images/ac/grout.png"
+            ]
+        },
+        variants: [
+            {
+                id: 610,
+                title: "Visiting Charge",
+                price: 0.00,
+                oldPrice: 49,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "damp-proofing",
+        title: "Damp Proofing",
+        category: "painting",
+        subCategory: "water-proofing",
+        rateCardKey: "painting",
+        reviews: 8,
+        imgs: {
+            thumbnails: [
+                "/images/ac/da-pr.png"
+            ],
+            previews: [
+                "/images/ac/da-pr.png"
+            ]
+        },
+        variants: [
+            {
+                id: 611,
+                title: "Visiting Charge",
+                price: 0.00,
+                oldPrice: 49,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "bed-polish",
+        title: "Bed Polish",
+        category: "painting",
+        subCategory: "wood-polish",
+        rateCardKey: "painting",
+        reviews: 8,
+        imgs: {
+            thumbnails: [
+                "/images/ac/bed-po.png"
+            ],
+            previews: [
+                "/images/ac/bed-po.png"
+            ]
+        },
+        variants: [
+            {
+                id: 612,
+                title: "Visiting Charge",
+                price: 0.00,
+                oldPrice: 49,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "door-polish",
+        title: "Door Polish",
+        category: "painting",
+        subCategory: "wood-polish",
+        rateCardKey: "painting",
+        reviews: 8,
+        imgs: {
+            thumbnails: [
+                "/images/ac/door-po.png"
+            ],
+            previews: [
+                "/images/ac/door-po.png"
+            ]
+        },
+        variants: [
+            {
+                id: 613,
+                title: "Visiting Charge",
+                price: 0.00,
+                oldPrice: 49,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "window-polish",
+        title: "Window Polish",
+        category: "painting",
+        subCategory: "wood-polish",
+        rateCardKey: "painting",
+        reviews: 8,
+        imgs: {
+            thumbnails: [
+                "/images/ac/wind-po.png"
+            ],
+            previews: [
+                "/images/ac/wind-po.png"
+            ]
+        },
+        variants: [
+            {
+                id: 614,
+                title: "Visiting Charge",
+                price: 0.00,
+                oldPrice: 49,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    // ================= HOME APPLIANCES =================
+    {
+        id: "chimney-installation-wall-mount",
+        title: "Chimney Installation Wall Mount",
+        category: "home-appliances",
+        subCategory: "chimney-repair-service",
+        rateCardKey: "appliances",
+        reviews: 8,
+        imgs: {
+            thumbnails: [
+                "/images/ac/chim-inst.png"
+            ],
+            previews: [
+                "/images/ac/chim-inst.png"
+            ]
+        },
+        variants: [
+            {
+                id: 701,
+                title: "Chimney Installation By Any Brand",
+                price: 549,
+                oldPrice: 899,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "chimney-inspection-repair-warranty",
+        title: "Chimney Inspection & Repair Warranty",
+        category: "home-appliances",
+        subCategory: "chimney-repair-service",
+        rateCardKey: "appliances",
+        reviews: 8,
+        imgs: {
+            thumbnails: [
+                "/images/ac/chim-ins.png"
+            ],
+            previews: [
+                "/images/ac/chim-ins.png"
+            ]
+        },
+        variants: [
+            {
+                id: 702,
+                title: "Chimney Inspection",
+                price: 259,
+                oldPrice: 599,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "water-purifier-service",
+        title: "Water Purifier Service",
+        category: "home-appliances",
+        subCategory: "ro-repair",
+        rateCardKey: "appliances",
+        reviews: 8,
+        imgs: {
+            thumbnails: [
+                "/images/ac/water-p.png"
+            ],
+            previews: [
+                "/images/ac/water-p.png"
+            ]
+        },
+        variants: [
+            {
+                id: 703,
+                title: "Water Purifier Service",
+                price: 349,
+                oldPrice: 399,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 704,
+                title: "Water Purifier Installation",
+                price: 399,
+                oldPrice: 599,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 705,
+                title: "Water Purifier Uninstallation",
+                price: 399,
+                oldPrice: 599,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "geyser-service-repair",
+        title: "Geyser Service Repair",
+        category: "home-appliances",
+        subCategory: "geyser-repair-service",
+        rateCardKey: "appliances",
+        reviews: 8,
+        imgs: {
+            thumbnails: [
+                "/images/ac/geyser.png"
+            ],
+            previews: [
+                "/images/ac/geyser.png"
+            ]
+        },
+        variants: [
+            {
+                id: 706,
+                title: "Geyser Inspection Service",
+                price: 169,
+                oldPrice: 199,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 707,
+                title: "Geyser Installation",
+                price: 499,
+                oldPrice: 599,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 708,
+                title: "Geyser Uninstallation",
+                price: 399,
+                oldPrice: 599,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 709,
+                title: "Geyser Servicing",
+                price: 499,
+                oldPrice: 599,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 710,
+                title: "Geyser Shifting",
+                price: 999,
+                oldPrice: 1299,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    {
+        id: "washing-machine-inspection",
+        title: "Washing Machine Inspection-Front Load",
+        category: "home-appliances",
+        subCategory: "washing-machine-service",
+        rateCardKey: "appliances",
+        reviews: 7,
+        imgs: {
+            thumbnails: [
+                "/images/ac/washing-machine.png"
+            ],
+            previews: [
+                "/images/ac/washing-machine.png"
+            ]
+        },
+        variants: [
+            {
+                id: 711,
+                title: "Washing Machine Inspection-Front Load",
+                price: 249,
+                oldPrice: 299,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 712,
+                title: "Washing Machine Inspection-Top Load",
+                price: 269,
+                oldPrice: 299,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            },
+            {
+                id: 713,
+                title: "Washing Machine Inspection Semi Full Automic",
+                price: 269,
+                oldPrice: 299,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    // {
+    //   id: "microwave-repair",
+    //   title: "Microwave Repair",
+    //   category: "home-appliances",
+    //   subCategory: "microwave",
+    //   rateCardKey: "appliances",
+    //   reviews: 6,
+    //   imgs: {
+    //     thumbnails: ["/images/ac/microwave.png"],
+    //     previews: ["/images/ac/microwave.png"],
+    //   },
+    //   variants: [],
+    // },
+    // ================= INTERIOR =================
+    {
+        id: "home-visit",
+        title: "Home Visit",
+        category: "home-interior-renovation",
+        subCategory: "visit",
+        rateCardKey: "interior",
+        reviews: 9,
+        imgs: {
+            thumbnails: [
+                "/images/ac/home-visit.png"
+            ],
+            previews: [
+                "/images/ac/home-visit.png"
+            ]
+        },
+        variants: [
+            {
+                id: 714,
+                title: "Visit",
+                price: 99,
+                oldPrice: 199,
+                img: "/images/ac/wire3.png",
+                description: "AC reinstall after shifting"
+            }
+        ]
+    },
+    // ================= Plumber =================
+    {
+        id: "wash-basin-installation",
+        title: "Wash Basin Installation",
+        category: "plumber-services",
+        subCategory: "basin-sink",
+        rateCardKey: "plumber",
+        reviews: 12,
+        imgs: {
+            thumbnails: [
+                "/images/ac/wash-basin.png"
+            ],
+            previews: [
+                "/images/ac/wash-basin.png"
+            ]
+        },
+        variants: []
+    },
+    {
+        id: "water-pipe-replacement",
+        title: "Water Pipe Replacement",
+        category: "plumber-services",
+        subCategory: "basin-sink",
+        rateCardKey: "plumber",
+        reviews: 12,
+        imgs: {
+            thumbnails: [
+                "/images/ac/waste-pipe.png"
+            ],
+            previews: [
+                "/images/ac/waste-pipe.png"
+            ]
+        },
+        variants: []
+    },
+    {
+        id: "sink-drainage-removal",
+        title: "Sink Drainage Removal",
+        category: "plumber-services",
+        subCategory: "basin-sink",
+        rateCardKey: "plumber",
+        reviews: 12,
+        imgs: {
+            thumbnails: [
+                "/images/ac/sink-drain.png"
+            ],
+            previews: [
+                "/images/ac/sink-drain.png"
+            ]
+        },
+        variants: []
+    },
+    {
+        id: "bath-accessory-installation",
+        title: "Bath Accessory Installation",
+        category: "plumber-services",
+        subCategory: "bath-fittings",
+        rateCardKey: "plumber",
+        reviews: 12,
+        imgs: {
+            thumbnails: [
+                "/images/ac/bath-access.png"
+            ],
+            previews: [
+                "/images/ac/bath-access.png"
+            ]
+        },
+        variants: []
+    },
+    {
+        id: "tap-installation",
+        title: "Tap Installation",
+        category: "plumber-services",
+        subCategory: "tap-fitting",
+        rateCardKey: "plumber",
+        reviews: 12,
+        imgs: {
+            thumbnails: [
+                "/images/ac/tap-ins.png"
+            ],
+            previews: [
+                "/images/ac/tap-ins.png"
+            ]
+        },
+        variants: []
+    },
+    {
+        id: "ceiling-mounted",
+        title: "Ceiling Mounted",
+        category: "plumber-services",
+        subCategory: "shower-installation",
+        rateCardKey: "plumber",
+        reviews: 12,
+        imgs: {
+            thumbnails: [
+                "/images/ac/ceil-mount.png"
+            ],
+            previews: [
+                "/images/ac/ceil-mount.png"
+            ]
+        },
+        variants: []
+    },
+    {
+        id: "wall-mounted-hand-held",
+        title: "Wall Mounted/Hand Held",
+        category: "plumber-services",
+        subCategory: "shower-installation",
+        rateCardKey: "plumber",
+        reviews: 12,
+        imgs: {
+            thumbnails: [
+                "/images/ac/wall-mount.png"
+            ],
+            previews: [
+                "/images/ac/wall-mount.png"
+            ]
+        },
+        variants: []
+    },
+    {
+        id: "waste-pipe-basin",
+        title: "Waste Pipe Basin",
+        category: "plumber-services",
+        subCategory: "water-coupling",
+        rateCardKey: "plumber",
+        reviews: 12,
+        imgs: {
+            thumbnails: [
+                "/images/ac/was-pipe.png"
+            ],
+            previews: [
+                "/images/ac/was-pipe.png"
+            ]
+        },
+        variants: []
+    },
+    {
+        id: "bottle-trap-basin",
+        title: "Bottle Trap Basin",
+        category: "plumber-services",
+        subCategory: "water-coupling",
+        rateCardKey: "plumber",
+        reviews: 12,
+        imgs: {
+            thumbnails: [
+                "/images/ac/bot-trap.png"
+            ],
+            previews: [
+                "/images/ac/bot-trap.png"
+            ]
+        },
+        variants: []
+    },
+    {
+        id: "drainage-cover-installation",
+        title: "Drainage Cover Installation",
+        category: "plumber-services",
+        subCategory: "drainage",
+        rateCardKey: "plumber",
+        reviews: 12,
+        imgs: {
+            thumbnails: [
+                "/images/ac/drain-cover.png"
+            ],
+            previews: [
+                "/images/ac/drain-cover.png"
+            ]
+        },
+        variants: []
+    },
+    {
+        id: "bathroom-drainage-removal",
+        title: "Bathroom Drainage Removal",
+        category: "plumber-services",
+        subCategory: "drainage",
+        rateCardKey: "plumber",
+        reviews: 12,
+        imgs: {
+            thumbnails: [
+                "/images/ac/bath-drain.png"
+            ],
+            previews: [
+                "/images/ac/bath-drain.png"
+            ]
+        },
+        variants: []
+    },
+    {
+        id: "balcony-drainage-removal",
+        title: "Balcony Drainage Removal",
+        category: "plumber-services",
+        subCategory: "drainage",
+        rateCardKey: "plumber",
+        reviews: 12,
+        imgs: {
+            thumbnails: [
+                "/images/ac/bal-drain.png"
+            ],
+            previews: [
+                "/images/ac/bal-drain.png"
+            ]
+        },
+        variants: []
+    },
+    {
+        id: "concealed-pvc-flush-tank",
+        title: "Concealed PVC Flush Tank",
+        category: "plumber-services",
+        subCategory: "flush-tank-repair",
+        rateCardKey: "plumber",
+        reviews: 12,
+        imgs: {
+            thumbnails: [
+                "/images/ac/con-pvc.png"
+            ],
+            previews: [
+                "/images/ac/con-pvc.png"
+            ]
+        },
+        variants: []
+    },
+    {
+        id: "concealed-push-cock-flush-tank",
+        title: "Concealed Push Cock Flush Tank",
+        category: "plumber-services",
+        subCategory: "flush-tank-repair",
+        rateCardKey: "plumber",
+        reviews: 12,
+        imgs: {
+            thumbnails: [
+                "/images/ac/con-push.png"
+            ],
+            previews: [
+                "/images/ac/con-push.png"
+            ]
+        },
+        variants: []
+    },
+    {
+        id: "flush-tank-repair",
+        title: "Flush Tank Repair (External Ceramic)",
+        category: "plumber-services",
+        subCategory: "flush-tank-repair",
+        rateCardKey: "plumber",
+        reviews: 12,
+        imgs: {
+            thumbnails: [
+                "/images/ac/flush-tank.png"
+            ],
+            previews: [
+                "/images/ac/flush-tank.png"
+            ]
+        },
+        variants: []
+    },
+    {
+        id: "wastern-toilet-repair",
+        title: "Wastern Toilet Repair (Floor Mounted)",
+        category: "plumber-services",
+        subCategory: "flush-tank-repair",
+        rateCardKey: "plumber",
+        reviews: 12,
+        imgs: {
+            thumbnails: [
+                "/images/ac/wastern-toilet.png"
+            ],
+            previews: [
+                "/images/ac/wastern-toilet.png"
+            ]
+        },
+        variants: []
+    },
+    {
+        id: "toilet-pot-blockage-removal",
+        title: "Toilet Pot Blockage Removal",
+        category: "plumber-services",
+        subCategory: "flush-tank-repair",
+        rateCardKey: "plumber",
+        reviews: 12,
+        imgs: {
+            thumbnails: [
+                "/images/ac/toilet-pot.png"
+            ],
+            previews: [
+                "/images/ac/toilet-pot.png"
+            ]
+        },
+        variants: []
+    },
+    {
+        id: "jet-spray-installation",
+        title: "Jet Spray Installation",
+        category: "plumber-services",
+        subCategory: "flush-tank-repair",
+        rateCardKey: "plumber",
+        reviews: 12,
+        imgs: {
+            thumbnails: [
+                "/images/ac/jet-sp.png"
+            ],
+            previews: [
+                "/images/ac/jet-sp.png"
+            ]
+        },
+        variants: []
+    }
+];
+const __TURBOPACK__default__export__ = shopData;
+}),
+"[project]/src/app/(site)/(pages)/[category]/[subcategory]/page.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>SubCategoryPage
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Shop$2f$shopData$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Shop/shopData.ts [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.react-server.js [app-rsc] (ecmascript)");
+;
+;
+;
+;
+async function SubCategoryPage({ params }) {
+    const { category, subcategory } = await params;
+    const filteredServices = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Shop$2f$shopData$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].filter((item)=>item.category === category && item.subCategory === subcategory);
+    if (filteredServices.length === 0) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "p-20 text-center text-red-600 text-xl",
+            children: "No Services Found"
+        }, void 0, false, {
+            fileName: "[project]/src/app/(site)/(pages)/[category]/[subcategory]/page.tsx",
+            lineNumber: 20,
+            columnNumber: 7
+        }, this);
+    }
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "max-w-7xl mx-auto bg-gray pt-32 pb-32 pt-55 px-4",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                className: "text-2xl font-bold mb-4 capitalize",
+                children: subcategory.replace(/-/g, " ")
+            }, void 0, false, {
+                fileName: "[project]/src/app/(site)/(pages)/[category]/[subcategory]/page.tsx",
+                lineNumber: 30,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "inline-block mb-6 px-5 py-2 border border-[#3683ab] text-[#3683ab] rounded-full text-sm font-medium",
+                children: [
+                    filteredServices.length,
+                    " Services Available"
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/(site)/(pages)/[category]/[subcategory]/page.tsx",
+                lineNumber: 35,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
+                children: filteredServices.map((service)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "bg-white rounded-2xl shadow-md p-4 flex items-center justify-between",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex items-center gap-4",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "w-[90px] h-[90px] rounded-xl overflow-hidden",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                            src: service.imgs.thumbnails[0],
+                                            alt: service.title,
+                                            width: 90,
+                                            height: 90,
+                                            className: "object-cover w-full h-full"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/(site)/(pages)/[category]/[subcategory]/page.tsx",
+                                            lineNumber: 52,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/(site)/(pages)/[category]/[subcategory]/page.tsx",
+                                        lineNumber: 51,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                className: "text-lg font-semibold",
+                                                children: service.title
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/(site)/(pages)/[category]/[subcategory]/page.tsx",
+                                                lineNumber: 64,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "text-sm text-gray-500 mt-1",
+                                                children: [
+                                                    "⭐ 4.7 (",
+                                                    service.reviews,
+                                                    ")"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/app/(site)/(pages)/[category]/[subcategory]/page.tsx",
+                                                lineNumber: 68,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "mt-2 inline-block px-4 py-1 border border-[#3683ab] text-[#3683ab] rounded-full text-xs",
+                                                children: [
+                                                    service.variants.length,
+                                                    " Options Available"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/app/(site)/(pages)/[category]/[subcategory]/page.tsx",
+                                                lineNumber: 72,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                                href: `/ac-services/${service.id}`,
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "mt-2 text-[#3683ab] text-sm font-medium",
+                                                    children: "View Details"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/(site)/(pages)/[category]/[subcategory]/page.tsx",
+                                                    lineNumber: 77,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/(site)/(pages)/[category]/[subcategory]/page.tsx",
+                                                lineNumber: 76,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/(site)/(pages)/[category]/[subcategory]/page.tsx",
+                                        lineNumber: 62,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/(site)/(pages)/[category]/[subcategory]/page.tsx",
+                                lineNumber: 48,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                href: `/ac-services/${service.id}`,
+                                className: "w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-lg text-[#3683ab]",
+                                children: "→"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/(site)/(pages)/[category]/[subcategory]/page.tsx",
+                                lineNumber: 86,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, service.id, true, {
+                        fileName: "[project]/src/app/(site)/(pages)/[category]/[subcategory]/page.tsx",
+                        lineNumber: 43,
+                        columnNumber: 11
+                    }, this))
+            }, void 0, false, {
+                fileName: "[project]/src/app/(site)/(pages)/[category]/[subcategory]/page.tsx",
+                lineNumber: 40,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/app/(site)/(pages)/[category]/[subcategory]/page.tsx",
+        lineNumber: 27,
+        columnNumber: 5
+    }, this);
+}
+}),
+"[project]/src/app/(site)/(pages)/[category]/[subcategory]/page.tsx [app-rsc] (ecmascript, Next.js Server Component)", ((__turbopack_context__) => {
+
+__turbopack_context__.n(__turbopack_context__.i("[project]/src/app/(site)/(pages)/[category]/[subcategory]/page.tsx [app-rsc] (ecmascript)"));
+}),
+];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__1cc16220._.js.map
