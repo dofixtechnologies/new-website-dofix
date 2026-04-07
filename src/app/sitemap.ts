@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://dofix.in";
+const BASE_URL = "https://www.dofix.in";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Static pages
@@ -30,7 +30,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.5,
     },
     {
-      url: `${BASE_URL}/terms-conditions`,
+      url: `${BASE_URL}/terms`,
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.5,
@@ -39,24 +39,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Add your real service pages here ONLY if they exist
   const servicePages: MetadataRoute.Sitemap = [
-    { url: `${BASE_URL}/ac-repair`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
-    { url: `${BASE_URL}/washing-machine-repair`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/acrepairinstallation/ac-repair`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/washing-machine/repair`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/refrigerator-repair`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
-    { url: `${BASE_URL}/microwave-repair`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
-    { url: `${BASE_URL}/plumbing-services`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
-    { url: `${BASE_URL}/electrical-services`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
-    { url: `${BASE_URL}/carpenter-services`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
-    { url: `${BASE_URL}/painting-services`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
+    // { url: `${BASE_URL}/microwave-repair`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/plumber-services/shower-installation`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
+    // { url: `${BASE_URL}/electrical-services`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
+    // { url: `${BASE_URL}/carpenter-services`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/painting/interior-painting`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
   ];
 
-  // Add your real city/location pages here ONLY if they exist
-  const cityPages: MetadataRoute.Sitemap = [
-    { url: `${BASE_URL}/noida`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
-    { url: `${BASE_URL}/delhi`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
-    { url: `${BASE_URL}/gurgaon`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
-    { url: `${BASE_URL}/ghaziabad`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
-    { url: `${BASE_URL}/greater-noida`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
-  ];
+  // // Add your real city/location pages here ONLY if they exist
+  // const cityPages: MetadataRoute.Sitemap = [
+  //   { url: `${BASE_URL}/noida`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+  //   { url: `${BASE_URL}/delhi`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+  //   { url: `${BASE_URL}/gurgaon`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+  //   { url: `${BASE_URL}/ghaziabad`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+  //   { url: `${BASE_URL}/greater-noida`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+  // ];
 
   // If blog exists, add real blog slugs only
   const blogPages: MetadataRoute.Sitemap = [
@@ -66,7 +66,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [
     ...staticPages,
     ...servicePages,
-    ...cityPages,
+    // ...cityPages,
     ...blogPages,
   ];
 }

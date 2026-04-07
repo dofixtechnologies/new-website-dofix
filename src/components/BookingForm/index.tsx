@@ -45,11 +45,11 @@ export default function BookingForm() {
   const [comment, setComment] = useState("");
 
   const dates = [
-    { day: "Tue", date: "17", full: "17 Mar 2026" },
-    { day: "Wed", date: "18", full: "18 Mar 2026" },
-    { day: "Thu", date: "19", full: "19 Mar 2026" },
-    { day: "Fri", date: "20", full: "20 Mar 2026" },
-    { day: "Sat", date: "21", full: "21 Mar 2026" },
+    { day: "Tue", date: "07", full: "07 April 2026" },
+    { day: "Wed", date: "08", full: "08 April 2026" },
+    { day: "Thu", date: "09", full: "09 April 2026" },
+    { day: "Fri", date: "10", full: "10 April 2026" },
+    { day: "Sat", date: "11", full: "11 April 2026" },
   ];
 
   const slots = [

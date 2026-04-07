@@ -1,5 +1,6 @@
 {
   "app": {
+    "[project]/src/app/(site)/(pages)/[category]/[subcategory]/page": [],
     "[project]/src/app/(site)/page": []
   },
   "appUsingSizeAdjust": false,

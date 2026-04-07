@@ -12,29 +12,35 @@ const About = () => {
       <section className="w-full min-h-screen bg-gray-50 py-10 sm:py-14 pt-20 lg:py-20">
         <div className="w-full px-4 sm:px-8 lg:px-20 xl:px-32">
           <div className="bg-white w-full rounded-2xl shadow-lg p-6 sm:p-10 lg:p-16">
+            
             <h3 className="text-[#14455b] text-xl sm:text-3xl lg:text-4xl font-semibold leading-relaxed mb-6 -mt-20">
               DOFIX - Trusted Home Repair Services in Delhi NCR
             </h3>
-            <div className="w-full">
+
+            {/* Top Intro Section */}
+            <div className="grid grid-cols-1 lg:grid-cols-[140px_1fr] gap-6 items-start mb-6">
+              {/* Left Image */}
+              <div className="w-full flex justify-center lg:justify-start">
                 <Image
                   src="/images/about/first.webp"
                   alt="Customer Satisfaction"
                   width={600}
                   height={400}
-                  // className="w-full h-auto rounded-2xl object-cover"
-                  className="w-full max-w-[120px] h-auto rounded-2xl object-cover mb-5"
+                  className="w-full max-w-[320px] h-auto rounded-2xl object-cover"
                 />
               </div>
 
-            <p className="text-gray-600 text-base sm:text-5 leading-relaxed mb-6">
-              <span className="font-semibold text-[#3683ab]">DoFix</span> is a trusted home maintenance company dedicated to providing reliable and high-quality home repair services across Delhi NCR.
-              We understand that your home is more than just a place to live—it’s where your life happens.
-              From small repairs to complete home maintenance solutions, our goal is to make home care simple, convenient, and stress-free.
-              <br />
-              <br />
-              Founded with the vision of transforming the way homeowners access repair and maintenance support, DoFix connects customers with experienced home repair experts who deliver professional service with attention to detail.
-              We believe that every homeowner deserves quick, dependable, and affordable home repair services without the hassle of searching for multiple vendors.
-            </p>
+              {/* Right Paragraph */}
+              <p className="text-gray-600 text-base sm:text-5 leading-relaxed">
+                <span className="font-semibold text-[#3683ab]">DoFix</span> is a trusted home maintenance company dedicated to providing reliable and high-quality home repair services across Delhi NCR.
+                We understand that your home is more than just a place to live—it’s where your life happens.
+                From small repairs to complete home maintenance solutions, our goal is to make home care simple, convenient, and stress-free.
+                <br />
+                <br />
+                Founded with the vision of transforming the way homeowners access repair and maintenance support, DoFix connects customers with experienced home repair experts who deliver professional service with attention to detail.
+                We believe that every homeowner deserves quick, dependable, and affordable home repair services without the hassle of searching for multiple vendors.
+              </p>
+            </div>
 
             {/* Section 1 */}
             <div className="mb-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -51,21 +57,30 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="w-full">
+              <div className="w-full flex justify-center lg:justify-end">
                 <Image
                   src="/images/about/who-we-are.webp"
                   alt="Who We Are"
                   width={600}
                   height={400}
-                  // className="w-full h-auto rounded-2xl object-cover"
-                  className="w-full max-w-[320px] h-auto rounded-2xl object-cover lg:ml-50"
+                  className="w-full max-w-[320px] h-auto rounded-2xl object-cover"
                 />
               </div>
             </div>
 
             {/* Section 2 */}
             <div className="mb-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div>
+              <div className="w-full flex justify-center lg:justify-start order-1 lg:order-1">
+                <Image
+                  src="/images/about/our-mission.webp"
+                  alt="Our Mission"
+                  width={600}
+                  height={400}
+                  className="w-full max-w-[320px] h-auto rounded-2xl object-cover"
+                />
+              </div>
+
+              <div className="order-2 lg:order-2">
                 <h2 className="text-xl sm:text-2xl font-semibold mb-3">
                   2. Our Mission
                 </h2>
@@ -93,17 +108,6 @@ const About = () => {
                   <br />
                   Our goal is not only to fix problems but also to help homeowners maintain their properties efficiently and prevent future issues.
                 </p>
-              </div>
-
-              <div className="w-full">
-                <Image
-                  src="/images/about/our-mission.webp"
-                  alt="Our Mission"
-                  width={600}
-                  height={400}
-                  // className="w-full h-auto rounded-2xl object-cover"
-                  className="w-full max-w-[320px] h-auto rounded-2xl object-cover lg:ml-50"
-                />
               </div>
             </div>
 
@@ -160,7 +164,7 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="w-full">
+              <div className="w-full flex justify-center lg:justify-end">
                 <Image
                   src="/images/about/what-we-do.webp"
                   alt="What We Do"
@@ -246,7 +250,17 @@ const About = () => {
 
             {/* Section 6 */}
             <div className="mb-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div>
+              <div className="w-full flex justify-center lg:justify-start order-1 lg:order-1">
+                <Image
+                  src="/images/about/customer-satisfaction.webp"
+                  alt="Customer Satisfaction"
+                  width={600}
+                  height={400}
+                  className="w-full max-w-[320px] h-auto rounded-2xl object-cover"
+                />
+              </div>
+
+              <div className="order-2 lg:order-2">
                 <h2 className="text-xl sm:text-2xl font-semibold mb-3 mt-8">
                   6. Customer Satisfaction
                 </h2>
@@ -269,22 +283,12 @@ const About = () => {
                   Your comfort and satisfaction are our top priorities.
                 </p>
               </div>
-
-              <div className="w-full">
-                <Image
-                  src="/images/about/customer-satisfaction.webp"
-                  alt="Customer Satisfaction"
-                  width={600}
-                  height={400}
-                  // className="w-full h-auto rounded-2xl object-cover"
-                  className="w-full max-w-[320px] h-auto rounded-2xl object-cover lg:ml-50"
-                />
-              </div>
             </div>
 
             <div className="mt-12 border-t pt-6 text-sm text-gray-500">
               Last Updated: {new Date().getFullYear()}
             </div>
+
           </div>
         </div>
       </section>
