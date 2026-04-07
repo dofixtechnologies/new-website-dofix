@@ -10,8 +10,7 @@ const Hero = () => {
         <div className="flex flex-wrap gap-5">
           <div className="xl:max-w-[1500px] w-full -mt-5">
             <div className="relative z-1 rounded-[10px] bg-white overflow-hidden h-[450px]">
-
-              {/* <!-- bg shapes --> */}
+              {/* bg shapes */}
               <Image
                 src="/images/hero/hero-bg.png"
                 alt="hero bg shapes"
@@ -23,127 +22,86 @@ const Hero = () => {
               <HeroCarousel />
             </div>
           </div>
-           <div className="max-w-6xl mx-auto">
 
-    {/* TITLE */}
-    <h2 className="text-2xl sm:text-3xl font-bold pt-10 text-center text-[#2e5563] mb-6">
-      Dofix - One-stop solution for all<br></br> your home services & maintenance
-    </h2>
+          {/* CONTENT + IMAGE SECTION */}
+          <div className="max-w-6xl mx-auto px-4 w-full">
+            {/* HEADING */}
+            <h2 className="text-2xl sm:text-3xl font-bold pt-10 text-center text-[#2e5563] mb-10">
+              Dofix - One-stop solution for all
+              <br />
+              your home services & maintenance
+            </h2>
 
-    {/* PARAGRAPH */}
-    <p className="text-gray-600 text-center max-w-3xl mx-auto mb-8 leading-relaxed">
-      We don't wait for problems to happen at your home. Our mission is to solve all your home problems by delivering dependable services that keep your home safe, functional, and attractive.
-    </p>
+            {/* MAIN GRID */}
+            <div className="grid md:grid-cols-2 gap-10 items-center">
+              {/* LEFT CONTENT */}
+              <div>
+                {/* TOP PARAGRAPH */}
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  We don't wait for problems to happen at your home. Our mission
+                  is to solve all your home problems by delivering dependable
+                  services that keep your home safe, functional, and attractive.
+                </p>
 
-    {/* GRID CONTENT */}
-    <div className="grid md:grid-cols-2 gap-6 text-gray-700 leading-relaxed">
+                {/* INNER GRID */}
+                <div className="grid sm:grid-cols-2 gap-5 text-gray-700 leading-relaxed">
+                  <p>
+                    We believe every home deserves the best care — and that's
+                    exactly what we do, every single day. Your home has needs
+                    every single day — and DoFix is there to fulfil every need.
+                  </p>
 
-      <p>
-        We believe every home deserves the best care — and that's exactly what we do, every single day. Your home has needs every single day — and DoFix is there to fulfil every need.
-      </p>
+                  <p>
+                    From fast repairs to complete home improvement, we connect
+                    you with trusted experts at your doorstep. Our mission is to
+                    make home care simple, reliable, and effortless.
+                  </p>
 
-      <p>
-        From fast repairs to complete home improvement, we connect you with trusted experts at your doorstep. Our mission is to make home care simple, reliable, and effortless.
-      </p>
+                  <p>
+                    DoFix has grown into a trusted facility service provider,
+                    trusted by homeowners and businesses for quality, speed, and
+                    reliability.
+                  </p>
 
-      <p>
-        DoFix has grown into a trusted facility service provider, trusted by homeowners and businesses for quality, speed, and reliability.
-      </p>
-
-      <p>
-        You wouldn't let just anyone into your home — and you shouldn't have to. Every DoFix professional is trained, certified, and background-verified.
-      </p>
-
-    </div>
-
-    {/* FINAL LINE */}
-    <p className="text-center text-gray-700 mt-8 max-w-3xl mx-auto">
-      No more searching for separate vendors, no more unreliable workers, no more wasted time — just one call, one platform, one solution.
-    </p>
-
-  </div>
-
-
-          {/* <div className="xl:max-w-[393px] w-full">
-            <div className="flex flex-col sm:flex-row xl:flex-col gap-5">
-              <div className="w-full relative rounded-[10px] bg-white p-4 sm:p-7.5">
-                <div className="flex items-center gap-14">
-                  <div>
-                    <h2 className="max-w-[153px] font-semibold text-dark text-xl mb-20">
-                      <a href="#"> iPhone 14 Plus & 14 Pro Max </a>
-                    </h2>
-
-                    <div>
-                      <p className="font-medium text-dark-4 text-custom-sm mb-1.5">
-                        limited time offer
-                      </p>
-                      <span className="flex items-center gap-3">
-                        <span className="font-medium text-heading-5 text-red">
-                          $699
-                        </span>
-                        <span className="font-medium text-2xl text-dark-4 line-through">
-                          $999
-                        </span>
-                      </span>
-                    </div>
-                  </div>
-
-                  <div>
-                    <Image
-                      src="/images/hero/hero-02.png"
-                      alt="mobile image"
-                      width={123}
-                      height={161}
-                    />
-                  </div>
+                  <p>
+                    You wouldn't let just anyone into your home — and you
+                    shouldn't have to. Every DoFix professional is trained,
+                    certified, and background-verified.
+                  </p>
                 </div>
-              </div>
-              <div className="w-full relative rounded-[10px] bg-white p-4 sm:p-7.5">
-                <div className="flex items-center gap-14">
-                  <div>
-                    <h2 className="max-w-[153px] font-semibold text-dark text-xl mb-20">
-                      <a href="#"> Wireless Headphone </a>
-                    </h2>
 
-                    <div>
-                      <p className="font-medium text-dark-4 text-custom-sm mb-1.5">
-                        limited time offer
-                      </p>
-                      <span className="flex items-center gap-3">
-                        <span className="font-medium text-heading-5 text-red">
-                          $699
-                        </span>
-                        <span className="font-medium text-2xl text-dark-4 line-through">
-                          $999
-                        </span>
-                      </span>
-                    </div>
-                  </div>
-
-                  <div>
-                    <Image
-                      src="/images/hero/hero-01.png"
-                      alt="mobile image"
-                      width={123}
-                      height={161}
-                    />
-                  </div>
-                </div>
+                {/* FINAL LINE */}
+                <p className="text-gray-700 mt-6 leading-relaxed">
+                  No more searching for separate vendors, no more unreliable
+                  workers, no more wasted time — just one call, one platform,
+                  one solution.
+                </p>
               </div>
 
-              
+              {/* RIGHT IMAGE */}
+              <div className="w-full">
+                <img
+                  src="/images/hero/home-services-dofix-delhi.webp"
+                  alt="DoFix Home Services"
+                  className="w-full h-auto rounded-2xl shadow-lg object-cover"
+                />
+              </div>
             </div>
-          </div> */}
+          </div>
+
+          {/* 
+          <div className="xl:max-w-[393px] w-full">
+            <div className="flex flex-col sm:flex-row xl:flex-col gap-5">
+              ...
+            </div>
+          </div> 
+          */}
         </div>
       </div>
 
-      {/* <!-- Hero features --> */}
+      {/* Hero features */}
       <HeroFeature />
-
-</section>
-    
-
-
+    </section>
   );
 };
 

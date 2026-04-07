@@ -2775,8 +2775,8 @@ const shopData: Product[] = [
   reviews: 8,
 
   imgs: {
-    thumbnails: ["/images/ac/fridge.png"],
-    previews: ["/images/ac/fridge.png"],
+    thumbnails: ["/images/ac/chim-inst.png"],
+    previews: ["/images/ac/chim-inst.png"],
   },
 
   variants: [
@@ -2800,8 +2800,8 @@ const shopData: Product[] = [
   reviews: 8,
 
   imgs: {
-    thumbnails: ["/images/ac/fridge.png"],
-    previews: ["/images/ac/fridge.png"],
+    thumbnails: ["/images/ac/chim-ins.png"],
+    previews: ["/images/ac/chim-ins.png"],
   },
 
   variants: [
@@ -2825,8 +2825,8 @@ const shopData: Product[] = [
   reviews: 8,
 
   imgs: {
-    thumbnails: ["/images/ac/fridge.png"],
-    previews: ["/images/ac/fridge.png"],
+    thumbnails: ["/images/ac/water-p.png"],
+    previews: ["/images/ac/water-p.png"],
   },
 
   variants: [
@@ -2866,8 +2866,8 @@ const shopData: Product[] = [
   reviews: 8,
 
   imgs: {
-    thumbnails: ["/images/ac/fridge.png"],
-    previews: ["/images/ac/fridge.png"],
+    thumbnails: ["/images/ac/geyser.png"],
+    previews: ["/images/ac/geyser.png"],
   },
 
   variants: [
@@ -2976,14 +2976,14 @@ const shopData: Product[] = [
 {
   id: "home-visit",
   title: "Home Visit",
-  category: "interior",
+  category: "home-interior-renovation",
   subCategory: "visit",
   rateCardKey: "interior",
   reviews: 9,
 
   imgs: {
-    thumbnails: ["/images/interior/modular-kitchen.png"],
-    previews: ["/images/interior/modular-kitchen.png"],
+    thumbnails: ["/images/ac/home-visit.png"],
+    previews: ["/images/ac/home-visit.png"],
   },
 
   variants: [
@@ -3011,8 +3011,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/electrician/switch-board.png"],
-    previews: ["/images/electrician/switch-board.png"],
+    thumbnails: ["/images/ac/wash-basin.png"],
+    previews: ["/images/ac/wash-basin.png"],
   },
 
   variants: [],
@@ -3027,8 +3027,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/electrician/switch-board.png"],
-    previews: ["/images/electrician/switch-board.png"],
+    thumbnails: ["/images/ac/waste-pipe.png"],
+    previews: ["/images/ac/waste-pipe.png"],
   },
 
   variants: [],
@@ -3043,8 +3043,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/electrician/switch-board.png"],
-    previews: ["/images/electrician/switch-board.png"],
+    thumbnails: ["/images/ac/sink-drain.png"],
+    previews: ["/images/ac/sink-drain.png"],
   },
 
   variants: [],
@@ -3059,8 +3059,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/electrician/switch-board.png"],
-    previews: ["/images/electrician/switch-board.png"],
+    thumbnails: ["/images/ac/bath-access.png"],
+    previews: ["/images/ac/bath-access.png"],
   },
 
   variants: [],
@@ -3075,8 +3075,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/electrician/switch-board.png"],
-    previews: ["/images/electrician/switch-board.png"],
+    thumbnails: ["/images/ac/tap-ins.png"],
+    previews: ["/images/ac/tap-ins.png"],
   },
 
   variants: [],
@@ -3091,8 +3091,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/electrician/switch-board.png"],
-    previews: ["/images/electrician/switch-board.png"],
+    thumbnails: ["/images/ac/ceil-mount.png"],
+    previews: ["/images/ac/ceil-mount.png"],
   },
 
   variants: [],
@@ -3107,8 +3107,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/electrician/switch-board.png"],
-    previews: ["/images/electrician/switch-board.png"],
+    thumbnails: ["/images/ac/wall-mount.png"],
+    previews: ["/images/ac/wall-mount.png"],
   },
 
   variants: [],
@@ -3116,16 +3116,16 @@ const shopData: Product[] = [
 
 
 {
-  id: "water-pipe-basin",
-  title: "Water Pipe Basin",
+  id: "waste-pipe-basin",
+  title: "Waste Pipe Basin",
   category: "plumber-services",
   subCategory: "water-coupling",
   rateCardKey: "plumber",
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/electrician/switch-board.png"],
-    previews: ["/images/electrician/switch-board.png"],
+    thumbnails: ["/images/ac/was-pipe.png"],
+    previews: ["/images/ac/was-pipe.png"],
   },
 
   variants: [],
@@ -3140,8 +3140,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/electrician/switch-board.png"],
-    previews: ["/images/electrician/switch-board.png"],
+    thumbnails: ["/images/ac/bot-trap.png"],
+    previews: ["/images/ac/bot-trap.png"],
   },
 
   variants: [],
@@ -3156,8 +3156,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/electrician/switch-board.png"],
-    previews: ["/images/electrician/switch-board.png"],
+    thumbnails: ["/images/ac/drain-cover.png"],
+    previews: ["/images/ac/drain-cover.png"],
   },
 
   variants: [],
@@ -3172,8 +3172,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/electrician/switch-board.png"],
-    previews: ["/images/electrician/switch-board.png"],
+    thumbnails: ["/images/ac/bath-drain.png"],
+    previews: ["/images/ac/bath-drain.png"],
   },
 
   variants: [],
@@ -3188,8 +3188,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/electrician/switch-board.png"],
-    previews: ["/images/electrician/switch-board.png"],
+    thumbnails: ["/images/ac/bal-drain.png"],
+    previews: ["/images/ac/bal-drain.png"],
   },
 
   variants: [],
@@ -3204,8 +3204,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/electrician/switch-board.png"],
-    previews: ["/images/electrician/switch-board.png"],
+    thumbnails: ["/images/ac/con-pvc.png"],
+    previews: ["/images/ac/con-pvc.png"],
   },
 
   variants: [],
@@ -3220,72 +3220,72 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/electrician/switch-board.png"],
-    previews: ["/images/electrician/switch-board.png"],
+    thumbnails: ["/images/ac/con-push.png"],
+    previews: ["/images/ac/con-push.png"],
   },
 
   variants: [],
 },
 
 {
-  id: "concealed-pvc-flush-tank",
-  title: "Concealed PVC Flush Tank",
+  id: "flush-tank-repair",
+  title: "Flush Tank Repair (External Ceramic)",
   category: "plumber-services",
   subCategory: "flush-tank-repair",
   rateCardKey: "plumber",
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/electrician/switch-board.png"],
-    previews: ["/images/electrician/switch-board.png"],
+    thumbnails: ["/images/ac/flush-tank.png"],
+    previews: ["/images/ac/flush-tank.png"],
   },
 
   variants: [],
 },
 
 {
-  id: "concealed-pvc-flush-tank",
-  title: "Concealed PVC Flush Tank",
+  id: "wastern-toilet-repair",
+  title: "Wastern Toilet Repair (Floor Mounted)",
   category: "plumber-services",
   subCategory: "flush-tank-repair",
   rateCardKey: "plumber",
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/electrician/switch-board.png"],
-    previews: ["/images/electrician/switch-board.png"],
+    thumbnails: ["/images/ac/wastern-toilet.png"],
+    previews: ["/images/ac/wastern-toilet.png"],
   },
 
   variants: [],
 },
 
 {
-  id: "concealed-pvc-flush-tank",
-  title: "Concealed PVC Flush Tank",
+  id: "toilet-pot-blockage-removal",
+  title: "Toilet Pot Blockage Removal",
   category: "plumber-services",
   subCategory: "flush-tank-repair",
   rateCardKey: "plumber",
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/electrician/switch-board.png"],
-    previews: ["/images/electrician/switch-board.png"],
+    thumbnails: ["/images/ac/toilet-pot.png"],
+    previews: ["/images/ac/toilet-pot.png"],
   },
 
   variants: [],
 },
 
 {
-  id: "concealed-pvc-flush-tank",
-  title: "Concealed PVC Flush Tank",
+  id: "jet-spray-installation",
+  title: "Jet Spray Installation",
   category: "plumber-services",
   subCategory: "flush-tank-repair",
   rateCardKey: "plumber",
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/electrician/switch-board.png"],
-    previews: ["/images/electrician/switch-board.png"],
+    thumbnails: ["/images/ac/jet-sp.png"],
+    previews: ["/images/ac/jet-sp.png"],
   },
 
   variants: [],
@@ -3300,8 +3300,8 @@ const shopData: Product[] = [
 //   reviews: 12,
 
 //   imgs: {
-//     thumbnails: ["/images/electrician/switch-board.png"],
-//     previews: ["/images/electrician/switch-board.png"],
+//     thumbnails: ["/images/ac/switch-board.png"],
+//     previews: ["/images/ac/switch-board.png"],
 //   },
 
 //   variants: [],

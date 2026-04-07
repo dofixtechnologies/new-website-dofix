@@ -105,17 +105,35 @@ export const subCategoryMapping: any = {
     //   img: "/images/subcategories/microwave.png",
     // },
     
-    {
-      id: "washing-machine-service",
-      title: "Washing Machine Service",
-      img: "/images/subcategories/wash.png",
-    },
+    // {
+    //   id: "washing-machine-service",
+    //   title: "Washing Machine Service",
+    //   img: "/images/subcategories/wash.png",
+    // },
   ],
 
   "home-interior-renovation": [
     {
       id: "visit",
       title: "Only Visit",
+      img: "/images/subcategories/only-visit.png",
+    },
+  ],
+
+  "washing-machine": [
+    {
+      id: "servicing",
+      title: "Servicing",
+      img: "/images/subcategories/kitchen-interior.png",
+    },
+    {
+      id: "repair",
+      title: "Repair",
+      img: "/images/subcategories/kitchen-interior.png",
+    },
+    {
+      id: "install",
+      title: "Installation & Uninstallation",
       img: "/images/subcategories/kitchen-interior.png",
     },
   ],

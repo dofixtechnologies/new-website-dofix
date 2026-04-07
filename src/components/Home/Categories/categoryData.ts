@@ -50,7 +50,7 @@ const data = [
   {
     title: "Washing Machine",
     id: 9,
-    img: "/images/categories/refrige.png",
+    img: "/images/categories/washing-m.png",
     link: "washing-machine",
   },
 ];
