@@ -33,5 +33,6 @@
   "/api/send-otp/create-user/route": "/api/send-otp/create-user",
   "/api/send-otp/route": "/api/send-otp",
   "/api/send-otp/verify-otp/route": "/api/send-otp/verify-otp",
-  "/favicon.ico/route": "/favicon.ico"
+  "/favicon.ico/route": "/favicon.ico",
+  "/sitemap.xml/route": "/sitemap.xml"
 }
