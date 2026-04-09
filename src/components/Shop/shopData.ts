@@ -3291,25 +3291,264 @@ const shopData: Product[] = [
   variants: [],
 },
 
-// {
-//   id: "bath-accessory-installation",
-//   title: "Bath Accessory Installation",
-//   category: "plumber-services",
-//   subCategory: "bath-fittings",
-//   rateCardKey: "plumber",
-//   reviews: 12,
+{
+  id: "cockroach-termite",
+  title: "Cockroach, Ant & Termite Control And Kitchen & Bathroom Total Pest Control",
+  category: "pest-control",
+  subCategory: "cockroach-ant-termite-control",
+  rateCardKey: "pest",
+  reviews: 12,
 
-//   imgs: {
-//     thumbnails: ["/images/ac/switch-board.png"],
-//     previews: ["/images/ac/switch-board.png"],
-//   },
+  imgs: {
+    thumbnails: ["/images/ac/switch-board.png"],
+    previews: ["/images/ac/switch-board.png"],
+  },
 
-//   variants: [],
-// },
+  variants: [],
+},
+
+{
+  id: "cockroach-control-service",
+  title: "Cockroach Control Service",
+  category: "pest-control",
+  subCategory: "pest-control-bungalow",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/switch-board.png"],
+    previews: ["/images/ac/switch-board.png"],
+  },
+
+  variants: [],
+},
+
+{
+  id: "termite-control-apartment",
+  title: "Termite Control Apartment",
+  category: "pest-control",
+  subCategory: "pest-control-bungalow",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/switch-board.png"],
+    previews: ["/images/ac/switch-board.png"],
+  },
+
+  variants: [],
+},
+
+{
+  id: "termite-control-bungalow",
+  title: "Termite Control Bungalow",
+  category: "pest-control",
+  subCategory: "pest-control-bungalow",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/switch-board.png"],
+    previews: ["/images/ac/switch-board.png"],
+  },
+
+  variants: [],
+},
+
+{
+  id: "power-unit",
+  title: "Power Unit",
+  category: "refrigerator",
+  subCategory: "single-door",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/switch-board.png"],
+    previews: ["/images/ac/switch-board.png"],
+  },
+
+  variants: [],
+},
+
+{
+  id: "cooling-issue",
+  title: "Cooling Issue",
+  category: "refrigerator",
+  subCategory: "single-door",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/switch-board.png"],
+    previews: ["/images/ac/switch-board.png"],
+  },
+
+  variants: [],
+},
+
+{
+  id: "gas-charge",
+  title: "Gas Charge",
+  category: "refrigerator",
+  subCategory: "single-door",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/switch-board.png"],
+    previews: ["/images/ac/switch-board.png"],
+  },
+
+  variants: [],
+},
+
+{
+  id: "compressor",
+  title: "Compressor",
+  category: "refrigerator",
+  subCategory: "single-door",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/switch-board.png"],
+    previews: ["/images/ac/switch-board.png"],
+  },
+
+  variants: [],
+},
+
+{
+  id: "minor-repair",
+  title: "Minor Repair (Labour ₹299)",
+  category: "refrigerator",
+  subCategory: "single-door",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/switch-board.png"],
+    previews: ["/images/ac/switch-board.png"],
+  },
+
+  variants: [],
+},
+
+{
+  id: "accessories",
+  title: "Accessories",
+  category: "refrigerator",
+  subCategory: "single-door",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/switch-board.png"],
+    previews: ["/images/ac/switch-board.png"],
+  },
+
+  variants: [],
+},
+
+{
+  id: "power-unit",
+  title: "Power Unit",
+  category: "refrigerator",
+  subCategory: "double-door",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/switch-board.png"],
+    previews: ["/images/ac/switch-board.png"],
+  },
+
+  variants: [],
+},
+
+{
+  id: "defrost-issue",
+  title: "Defrost Issue",
+  category: "refrigerator",
+  subCategory: "double-door",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/switch-board.png"],
+    previews: ["/images/ac/switch-board.png"],
+  },
+
+  variants: [],
+},
+
+{
+  id: "gas-charge",
+  title: "Gas Charge",
+  category: "refrigerator",
+  subCategory: "double-door",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/switch-board.png"],
+    previews: ["/images/ac/switch-board.png"],
+  },
+
+  variants: [],
+},
+
+{
+  id: "compressor-unit",
+  title: "Compressor Unit",
+  category: "refrigerator",
+  subCategory: "double-door",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/switch-board.png"],
+    previews: ["/images/ac/switch-board.png"],
+  },
+
+  variants: [],
+},
+
+{
+  id: "cooling-issue",
+  title: "Cooling Issue",
+  category: "refrigerator",
+  subCategory: "double-door",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/switch-board.png"],
+    previews: ["/images/ac/switch-board.png"],
+  },
+
+  variants: [],
+},
+
+{
+  id: "accessories",
+  title: "Accessories",
+  category: "refrigerator",
+  subCategory: "double-door",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/switch-board.png"],
+    previews: ["/images/ac/switch-board.png"],
+  },
+
+  variants: [],
+},
+
 
 
 ];
-
-
 
 export default shopData;

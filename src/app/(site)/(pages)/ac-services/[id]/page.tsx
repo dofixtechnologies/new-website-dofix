@@ -95,7 +95,7 @@ export default function ServiceVariantPage() {
           <div className="px-6 py-6 flex items-center justify-between gap-4 flex-wrap">
             <div className="flex items-center gap-3 text-[#1f2937] text-[18px] font-semibold">
               <span className="text-[20px]">🏠</span>
-              AC Service, Repair & Installation
+              {service.subCategory}
             </div>
 
             <div className="flex items-center gap-2 border border-[#d7e5ee] bg-[#f6fbfe] px-5 py-3 rounded-full text-[18px] text-[#1f2937]">

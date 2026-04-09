@@ -151,6 +151,24 @@ export const subCategoryMapping: any = {
     },
   ],
 
+  refrigerator: [
+    {
+      id: "single-door",
+      title: "Single Door Fridge Check-Up",
+      img: "/images/subcategories/single-door.png",
+    },
+    {
+      id: "double-door",
+      title: "Double Door Check-up",
+      img: "/images/subcategories/double-door.png",
+    },
+    {
+      id: "side-by-side",
+      title: "Side By Side Door Check-Up",
+      img: "/images/subcategories/side-door.png",
+    },
+  ],
+
   "plumber-services": [
     {
       id: "bath-fittings",

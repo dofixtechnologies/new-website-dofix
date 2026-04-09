@@ -29,52 +29,23 @@ const Hero = () => {
             <h2 className="text-2xl sm:text-3xl font-bold pt-10 text-center text-[#2e5563] mb-10">
               Dofix - One-stop solution for all
               <br />
-              your home services & maintenance
+              your home services & maintenance in Delhi NCR
             </h2>
 
             {/* MAIN GRID */}
             <div className="grid md:grid-cols-2 gap-10 items-center">
               {/* LEFT CONTENT */}
               <div>
-                {/* TOP PARAGRAPH */}
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  We don't wait for problems to happen at your home. Our mission
-                  is to solve all your home problems by delivering dependable
-                  services that keep your home safe, functional, and attractive.
+                  At <span className="font-semibold text-black">DOFIX</span>, we believe in preventing problems before they start. Our reliable <span className="font-semibold text-black">home services</span> help keep your home safe, working well, and in great shape every day. We connect you with skilled professionals for fast, affordable, and easy doorstep service. Whether you need <span className="font-semibold text-black">AC repair services or installation</span>, <span className="font-semibold text-black">plumbing services</span>, <span className="font-semibold text-black">electrical repairs</span>, <span className="font-semibold text-black">washing machine fixes</span>, or <span className="font-semibold text-black">other appliance repairs</span>, our team handles every job with care and professionalism. We also offer specialized <span className="font-semibold text-black">fabrication services</span> for modern home upgrades.
                 </p>
 
-                {/* INNER GRID */}
-                <div className="grid sm:grid-cols-2 gap-5 text-gray-700 leading-relaxed">
-                  <p>
-                    We believe every home deserves the best care — and that's
-                    exactly what we do, every single day. Your home has needs
-                    every single day — and DoFix is there to fulfil every need.
-                  </p>
+                <p className="text-gray-700 mb-6 leading-relaxed">
+                  We want to make home care easy and dependable. Our trained and certified experts are background-checked, so you can trust the service you get. With DOFIX, you don’t need to look for different vendors or worry about unreliable workers. Everything you need is on one platform. We proudly offer convenient <span className="font-semibold text-black">doorstep services across Delhi NCR</span>, including Delhi, Noida, and <span className="font-semibold text-black">Gurgaon</span>.
+                </p>
 
-                  <p>
-                    From fast repairs to complete home improvement, we connect
-                    you with trusted experts at your doorstep. Our mission is to
-                    make home care simple, reliable, and effortless.
-                  </p>
-
-                  <p>
-                    DoFix has grown into a trusted facility service provider,
-                    trusted by homeowners and businesses for quality, speed, and
-                    reliability.
-                  </p>
-
-                  <p>
-                    You wouldn't let just anyone into your home — and you
-                    shouldn't have to. Every DoFix professional is trained,
-                    certified, and background-verified.
-                  </p>
-                </div>
-
-                {/* FINAL LINE */}
-                <p className="text-gray-700 mt-6 leading-relaxed">
-                  No more searching for separate vendors, no more unreliable
-                  workers, no more wasted time — just one call, one platform,
-                  one solution.
+                <p className="text-gray-700 leading-relaxed">
+                  Your home deserves the best care. With DOFIX, you can count on quality, speed, and reliability every time.
                 </p>
               </div>
 
