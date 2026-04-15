@@ -45,43 +45,42 @@ export default async function SubCategoryPage({
             className="bg-white rounded-2xl shadow-md p-4 flex items-center justify-between"
           >
 
-            <div className="flex items-center gap-4">
+<div className="flex items-start gap-4 w-full">
 
-              {/* Image */}
-              <div className="w-[90px] h-[90px] rounded-xl overflow-hidden">
-                <Image
-                  src={service.imgs.thumbnails[0]}
-                  alt={service.title}
-                  width={90}
-                  height={90}
-                  className="object-cover w-full h-full"
-                />
-              </div>
+  {/* Image */}
+  <div className="w-[90px] h-[90px] rounded-xl overflow-hidden flex-shrink-0">
+    <Image
+      src={service.imgs.thumbnails[0]}
+      alt={service.title}
+      width={90}
+      height={90}
+      className="object-cover w-full h-full"
+    />
+  </div>
 
-              {/* Content */}
-              <div>
+  {/* Content */}
+  <div className="flex-1 min-w-0">
 
-                <h2 className="text-lg font-semibold">
-                  {service.title}
-                </h2>
+    <h2 className="text-lg font-semibold line-clamp-2">
+      {service.title}
+    </h2>
 
-                <div className="text-sm text-gray-500 mt-1">
-                  ⭐ 4.7 ({service.reviews})
-                </div>
+    <div className="text-sm text-gray-500 mt-1">
+      ⭐ 4.7 ({service.reviews})
+    </div>
 
-                <div className="mt-2 inline-block px-4 py-1 border border-[#3683ab] text-[#3683ab] rounded-full text-xs">
-                  {service.variants.length} Options Available
-                </div>
+    <div className="mt-2 inline-block px-4 py-1 border border-[#3683ab] text-[#3683ab] rounded-full text-xs">
+      {service.variants.length} Options Available
+    </div>
 
-                <Link href={`/ac-services/${service.id}`}>
-                  <p className="mt-2 text-[#3683ab] text-sm font-medium">
-                    View Details
-                  </p>
-                </Link>
+    <Link href={`/ac-services/${service.id}`}>
+      <p className="mt-2 text-[#3683ab] text-sm font-medium">
+        View Details
+      </p>
+    </Link>
 
-              </div>
-            </div>
-
+  </div>
+</div>
             {/* Arrow */}
             <Link
               href={`/ac-services/${service.id}`}

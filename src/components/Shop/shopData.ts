@@ -3300,8 +3300,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/ac/switch-board.png"],
-    previews: ["/images/ac/switch-board.png"],
+    thumbnails: ["/images/ac/cock-ant.png"],
+    previews: ["/images/ac/cock-ant.png"],
   },
 
   variants: [],
@@ -3316,8 +3316,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/ac/switch-board.png"],
-    previews: ["/images/ac/switch-board.png"],
+    thumbnails: ["/images/ac/cock-control.png"],
+    previews: ["/images/ac/cock-control.png"],
   },
 
   variants: [],
@@ -3332,8 +3332,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/ac/switch-board.png"],
-    previews: ["/images/ac/switch-board.png"],
+    thumbnails: ["/images/ac/ter-apart.png"],
+    previews: ["/images/ac/ter-apart.png"],
   },
 
   variants: [],
@@ -3348,8 +3348,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/ac/switch-board.png"],
-    previews: ["/images/ac/switch-board.png"],
+    thumbnails: ["/images/ac/ter-bung.png"],
+    previews: ["/images/ac/ter-bung.png"],
   },
 
   variants: [],
@@ -3364,8 +3364,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/ac/switch-board.png"],
-    previews: ["/images/ac/switch-board.png"],
+    thumbnails: ["/images/ac/pow-uni.png"],
+    previews: ["/images/ac/pow-uni.png"],
   },
 
   variants: [],
@@ -3380,8 +3380,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/ac/switch-board.png"],
-    previews: ["/images/ac/switch-board.png"],
+    thumbnails: ["/images/ac/coo-uni.png"],
+    previews: ["/images/ac/coo-uni.png"],
   },
 
   variants: [],
@@ -3396,8 +3396,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/ac/switch-board.png"],
-    previews: ["/images/ac/switch-board.png"],
+    thumbnails: ["/images/ac/gas-ch.png"],
+    previews: ["/images/ac/gas-ch.png"],
   },
 
   variants: [],
@@ -3412,8 +3412,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/ac/switch-board.png"],
-    previews: ["/images/ac/switch-board.png"],
+    thumbnails: ["/images/ac/com.png"],
+    previews: ["/images/ac/com.png"],
   },
 
   variants: [],
@@ -3428,8 +3428,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/ac/switch-board.png"],
-    previews: ["/images/ac/switch-board.png"],
+    thumbnails: ["/images/ac/min-re-la.png"],
+    previews: ["/images/ac/min-re-la.png"],
   },
 
   variants: [],
@@ -3444,8 +3444,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/ac/switch-board.png"],
-    previews: ["/images/ac/switch-board.png"],
+    thumbnails: ["/images/ac/acc.png"],
+    previews: ["/images/ac/acc.png"],
   },
 
   variants: [],
@@ -3460,8 +3460,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/ac/switch-board.png"],
-    previews: ["/images/ac/switch-board.png"],
+    thumbnails: ["/images/ac/power-unit.png"],
+    previews: ["/images/ac/power-unit.png"],
   },
 
   variants: [],
@@ -3476,8 +3476,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/ac/switch-board.png"],
-    previews: ["/images/ac/switch-board.png"],
+    thumbnails: ["/images/ac/power-unit.png"],
+    previews: ["/images/ac/power-unit.png"],
   },
 
   variants: [],
@@ -3492,8 +3492,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/ac/switch-board.png"],
-    previews: ["/images/ac/switch-board.png"],
+    thumbnails: ["/images/ac/power-unit.png"],
+    previews: ["/images/ac/power-unit.png"],
   },
 
   variants: [],
@@ -3508,8 +3508,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/ac/switch-board.png"],
-    previews: ["/images/ac/switch-board.png"],
+    thumbnails: ["/images/ac/power-unit.png"],
+    previews: ["/images/ac/power-unit.png"],
   },
 
   variants: [],
@@ -3524,8 +3524,8 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/ac/switch-board.png"],
-    previews: ["/images/ac/switch-board.png"],
+    thumbnails: ["/images/ac/power-unit.png"],
+    previews: ["/images/ac/power-unit.png"],
   },
 
   variants: [],
@@ -3540,8 +3540,136 @@ const shopData: Product[] = [
   reviews: 12,
 
   imgs: {
-    thumbnails: ["/images/ac/switch-board.png"],
-    previews: ["/images/ac/switch-board.png"],
+    thumbnails: ["/images/ac/power-unit.png"],
+    previews: ["/images/ac/power-unit.png"],
+  },
+
+  variants: [],
+},
+
+{
+  id: "power-unit",
+  title: "Power Unit",
+  category: "refrigerator",
+  subCategory: "side-by-side",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/pow-uni.png"],
+    previews: ["/images/ac/pow-uni.png"],
+  },
+
+  variants: [],
+},
+
+{
+  id: "power-unit",
+  title: "Power Unit",
+  category: "refrigerator",
+  subCategory: "side-by-side",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/power-unit.png"],
+    previews: ["/images/ac/power-unit.png"],
+  },
+
+  variants: [],
+},
+
+{
+  id: "power-unit",
+  title: "Power Unit",
+  category: "refrigerator",
+  subCategory: "side-by-side",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/power-unit.png"],
+    previews: ["/images/ac/power-unit.png"],
+  },
+
+  variants: [],
+},
+
+{
+  id: "power-unit",
+  title: "Power Unit",
+  category: "refrigerator",
+  subCategory: "side-by-side",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/power-unit.png"],
+    previews: ["/images/ac/power-unit.png"],
+  },
+
+  variants: [],
+},
+
+{
+  id: "power-unit",
+  title: "Power Unit",
+  category: "refrigerator",
+  subCategory: "side-by-side",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/power-unit.png"],
+    previews: ["/images/ac/power-unit.png"],
+  },
+
+  variants: [],
+},
+
+{
+  id: "power-unit",
+  title: "Power Unit",
+  category: "refrigerator",
+  subCategory: "side-by-side",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/power-unit.png"],
+    previews: ["/images/ac/power-unitpng"],
+  },
+
+  variants: [],
+},
+
+{
+  id: "power-unit",
+  title: "Power Unit",
+  category: "refrigerator",
+  subCategory: "side-by-side",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/power-unit.png"],
+    previews: ["/images/ac/power-unit.png"],
+  },
+
+  variants: [],
+},
+
+{
+  id: "power-unit",
+  title: "Power Unit",
+  category: "refrigerator",
+  subCategory: "side-by-side",
+  rateCardKey: "pest",
+  reviews: 12,
+
+  imgs: {
+    thumbnails: ["/images/ac/min-re.png"],
+    previews: ["/images/ac/min-re.png"],
   },
 
   variants: [],

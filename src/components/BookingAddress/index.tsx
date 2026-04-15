@@ -2,7 +2,11 @@
 
 import { useRouter } from "next/navigation";
 import { useState, useRef } from "react";
-import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
+import {
+  GoogleMap,
+  Marker,
+  useJsApiLoader,
+} from "@react-google-maps/api";
 
 const defaultCenter = {
   lat: 28.6139,
@@ -10,7 +14,6 @@ const defaultCenter = {
 };
 
 export default function BookingAddress() {
-
   const router = useRouter();
   const mapRef = useRef<google.maps.Map | null>(null);
 
@@ -30,66 +33,59 @@ export default function BookingAddress() {
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey:
       process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string,
+    libraries: ["places"],
   });
 
-  // Reverse Geocode
+  // ✅ Reverse Geocode
   const fetchAddressFromLatLng = async (lat: number, lng: number) => {
+    try {
+      const res = await fetch(
+        `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}`
+      );
 
-    const res = await fetch(
-      `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}`
-    );
+      const data = await res.json();
 
-    const data = await res.json();
+      if (data.results?.length > 0) {
+        const result = data.results[0];
 
-    if (data.results?.length > 0) {
+        let state = "";
+        let country = "";
+        let pincode = "";
+        let street = "";
 
-      const result = data.results[0];
+        result.address_components.forEach((component: any) => {
+          if (component.types.includes("administrative_area_level_1")) {
+            state = component.long_name;
+          }
+          if (component.types.includes("country")) {
+            country = component.long_name;
+          }
+          if (component.types.includes("postal_code")) {
+            pincode = component.long_name;
+          }
+          if (component.types.includes("route")) {
+            street = component.long_name;
+          }
+        });
 
-      let state = "";
-      let country = "";
-      let pincode = "";
-      let street = "";
-
-      result.address_components.forEach((component: any) => {
-
-        if (component.types.includes("administrative_area_level_1")) {
-          state = component.long_name;
-        }
-
-        if (component.types.includes("country")) {
-          country = component.long_name;
-        }
-
-        if (component.types.includes("postal_code")) {
-          pincode = component.long_name;
-        }
-
-        if (component.types.includes("route")) {
-          street = component.long_name;
-        }
-
-      });
-
-      setFormData((prev) => ({
-        ...prev,
-        fullAddress: result.formatted_address,
-        state,
-        country,
-        pincode,
-        street
-      }));
+        setFormData((prev) => ({
+          ...prev,
+          fullAddress: result.formatted_address,
+          state,
+          country,
+          pincode,
+          street,
+        }));
+      }
+    } catch (err) {
+      console.log("Geocode error:", err);
     }
   };
 
-  // Button click location detect
+  // 📍 Current Location
   const getCurrentLocation = () => {
-
-    if (!navigator.geolocation) return;
-
     navigator.geolocation.getCurrentPosition(
-
       (pos) => {
-
         const lat = pos.coords.latitude;
         const lng = pos.coords.longitude;
 
@@ -102,26 +98,22 @@ export default function BookingAddress() {
         }
 
         fetchAddressFromLatLng(lat, lng);
-
       },
-
-      () => {
-        alert("Unable to fetch location");
-      }
-
+      () => alert("Unable to fetch location")
     );
   };
 
-  // Updated validation
+  // ✅ FIXED VALIDATION
   const validateAddress = () => {
-
-    if (!formData.fullAddress || !formData.pincode) {
-
-      alert("Please fill full Address");
-
+    if (
+      !formData.houseNo ||
+      !formData.street ||
+      !formData.state ||
+      !formData.pincode
+    ) {
+      alert("Please fill all required fields");
       return false;
     }
-
     return true;
   };
 
@@ -129,35 +121,30 @@ export default function BookingAddress() {
 
   return (
     <div className="min-h-screen bg-gray-50 pt-55 pb-10 px-4">
-
       <div className="max-w-[800px] mx-auto bg-white rounded-3xl shadow-xl p-6 space-y-6">
 
+        {/* Header */}
         <div>
           <h2 className="text-2xl font-semibold text-[#14455b]">
             Address
           </h2>
-          <p className="text-sm text-gray-500 mt-1">
-            Choose your location and fill address details
-          </p>
         </div>
 
-        {/* Map */}
+        {/* 🗺️ Map */}
         <div className="rounded-2xl overflow-hidden border">
-
           <GoogleMap
             mapContainerStyle={{ width: "100%", height: "220px" }}
             center={position}
             zoom={15}
+            // onLoad={(map) => (mapRef.current = map)}
             onLoad={(map) => {
               mapRef.current = map;
             }}
           >
-
             <Marker
               position={position}
               draggable
               onDragEnd={(e) => {
-
                 const lat = e.latLng?.lat() || 0;
                 const lng = e.latLng?.lng() || 0;
 
@@ -170,62 +157,53 @@ export default function BookingAddress() {
                 }
 
                 fetchAddressFromLatLng(lat, lng);
-
               }}
             />
-
           </GoogleMap>
-
         </div>
 
-        {/* Location Button */}
+        {/* 📍 Button */}
         <button
           onClick={getCurrentLocation}
-          className="w-full bg-[#3683ab] hover:bg-[#14455b] text-white py-3 rounded-xl font-medium transition"
+          className="w-full bg-[#3683ab] text-white py-3 rounded-xl"
         >
           Use My Current Location
         </button>
 
-        {/* Address */}
+        {/* Address (auto) */}
         <input
           type="text"
           value={formData.fullAddress}
           readOnly
-          placeholder="Address will appear after clicking location button"
-          className="w-full border border-gray-300 bg-gray-100 p-3 rounded-xl"
+          className="w-full bg-gray-100 p-3 rounded-xl"
         />
 
-        {/* Address Type */}
+        {/* Type */}
         <div className="flex gap-3">
-
           {["Home", "Office", "Other"].map((type) => (
-
             <button
               key={type}
               onClick={() => setAddressType(type)}
               className={`flex-1 py-2 rounded-xl border ${
                 addressType === type
                   ? "bg-[#3683ab] text-white"
-                  : "border-gray-300"
+                  : ""
               }`}
             >
               {type}
             </button>
-
           ))}
-
         </div>
 
-        {/* Fields */}
+        {/* Inputs */}
         <div className="space-y-4">
-
           <input
             placeholder="House / Office No."
             value={formData.houseNo}
             onChange={(e) =>
               setFormData({ ...formData, houseNo: e.target.value })
             }
-            className="w-full border border-gray-300 p-3 rounded-xl"
+            className="w-full border p-3 rounded-xl"
           />
 
           <input
@@ -234,7 +212,7 @@ export default function BookingAddress() {
             onChange={(e) =>
               setFormData({ ...formData, floor: e.target.value })
             }
-            className="w-full border border-gray-300 p-3 rounded-xl"
+            className="w-full border p-3 rounded-xl"
           />
 
           <input
@@ -243,21 +221,26 @@ export default function BookingAddress() {
             onChange={(e) =>
               setFormData({ ...formData, street: e.target.value })
             }
-            className="w-full border border-gray-300 p-3 rounded-xl"
+            className="w-full border p-3 rounded-xl"
           />
 
+          {/* Editable */}
           <input
+            placeholder="Country"
             value={formData.country}
-            readOnly
-            placeholder="Country auto detect"
-            className="w-full border border-gray-200 bg-gray-100 p-3 rounded-xl"
+            onChange={(e) =>
+              setFormData({ ...formData, country: e.target.value })
+            }
+            className="w-full border p-3 rounded-xl"
           />
 
           <input
+            placeholder="State"
             value={formData.state}
-            readOnly
-            placeholder="State auto detect"
-            className="w-full border border-gray-200 bg-gray-100 p-3 rounded-xl"
+            onChange={(e) =>
+              setFormData({ ...formData, state: e.target.value })
+            }
+            className="w-full border p-3 rounded-xl"
           />
 
           <input
@@ -266,37 +249,38 @@ export default function BookingAddress() {
             onChange={(e) =>
               setFormData({ ...formData, pincode: e.target.value })
             }
-            className="w-full border border-gray-300 p-3 rounded-xl"
+            className="w-full border p-3 rounded-xl"
           />
-
         </div>
 
-        {/* Save Address */}
-        {/* Save Address */}
-<button
-  onClick={() => {
-    if (!validateAddress()) return;
+        {/* Save */}
+        <button
+          onClick={() => {
+            if (!validateAddress()) return;
 
-    const addressData = {
-      ...formData,
-      addressType,
-      lat: position.lat,
-      lng: position.lng,
-    };
+            // ✅ FULL ADDRESS GENERATE
+            const fullAddress = `${formData.houseNo}, ${formData.street}, ${formData.state}, ${formData.pincode}, ${formData.country}`;
 
-    localStorage.setItem(
-      "selectedAddress",
-      JSON.stringify(addressData)
-    );
+            const addressData = {
+              ...formData,
+              fullAddress,
+              addressType,
+              lat: position.lat,
+              lng: position.lng,
+            };
 
-    localStorage.setItem("bookingStep", "2");
+            localStorage.setItem(
+              "selectedAddress",
+              JSON.stringify(addressData)
+            );
 
-    router.back();
-  }}
-  className="w-full bg-[#3683ab] hover:bg-[#14455b] text-white py-4 rounded-2xl font-semibold"
->
-  Add Address
-</button>
+            localStorage.setItem("bookingStep", "2");
+            router.back();
+          }}
+          className="w-full bg-[#3683ab] text-white py-4 rounded-2xl"
+        >
+          Add Address
+        </button>
 
       </div>
     </div>

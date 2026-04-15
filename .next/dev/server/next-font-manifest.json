@@ -1,0 +1,10 @@
+{
+  "app": {
+    "[project]/src/app/(site)/(pages)/[category]/[subcategory]/page": [],
+    "[project]/src/app/(site)/(pages)/ac-services/[id]/page": [],
+    "[project]/src/app/(site)/page": []
+  },
+  "appUsingSizeAdjust": false,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

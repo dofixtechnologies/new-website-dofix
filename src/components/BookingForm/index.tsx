@@ -20,7 +20,6 @@ type CartItem = {
 export default function BookingForm() {
   const router = useRouter();
 
-  // ✅ REDUX CART
   const cartItems = useAppSelector((state) => state.cartReducer.items);
   const totalPrice = useSelector(selectTotalPrice);
 
@@ -53,40 +52,51 @@ export default function BookingForm() {
   ];
 
   const slots = [
-    "09:00 AM", "10:00 AM", "11:00 AM",
-    "12:00 PM", "01:00 PM", "02:00 PM",
-    "03:00 PM", "04:00 PM", "05:00 PM",
-    "06:00 PM", "07:00 PM", "08:00 PM"
+    "09:00 AM","10:00 AM","11:00 AM",
+    "12:00 PM","01:00 PM","02:00 PM",
+    "03:00 PM","04:00 PM","05:00 PM",
+    "06:00 PM","07:00 PM","08:00 PM"
   ];
 
-  // Load saved data
+  // 🔥 ✅ ONLY LOGIC UPDATED HERE
   useEffect(() => {
-    const savedAddress = localStorage.getItem("selectedAddress");
-    const savedStep = localStorage.getItem("bookingStep");
-    const savedBookingData = localStorage.getItem("bookingFormData");
+    const updateFromStorage = () => {
+      const savedAddress = localStorage.getItem("selectedAddress");
+      const savedStep = localStorage.getItem("bookingStep");
+      const savedBookingData = localStorage.getItem("bookingFormData");
 
-    if (savedAddress) {
-      setAddress(JSON.parse(savedAddress));
-    }
+      if (savedAddress) {
+        setAddress(JSON.parse(savedAddress));
+      }
 
-    if (savedStep) {
-      setStep(Number(savedStep));
-    } else {
-      setStep(1);
-    }
+      if (savedStep) {
+        setStep(Number(savedStep));
+      } else {
+        setStep(1);
+      }
 
-    if (savedBookingData) {
-      const data = JSON.parse(savedBookingData);
+      if (savedBookingData) {
+        const data = JSON.parse(savedBookingData);
 
-      setServiceType(data.serviceType || "On-site Service");
-      setSelectedDate(data.selectedDate ?? 0);
-      setSelectedSlot(data.selectedSlot || "");
-      setCustomerName(data.customerName || "");
-      setCustomerPhone(data.customerPhone || "");
-      setCustomerEmail(data.customerEmail || "");
-      setPaymentMethod(data.paymentMethod || "Cash After Service");
-      setComment(data.comment || "");
-    }
+        setServiceType(data.serviceType || "On-site Service");
+        setSelectedDate(data.selectedDate ?? 0);
+        setSelectedSlot(data.selectedSlot || "");
+        setCustomerName(data.customerName || "");
+        setCustomerPhone(data.customerPhone || "");
+        setCustomerEmail(data.customerEmail || "");
+        setPaymentMethod(data.paymentMethod || "Cash After Service");
+        setComment(data.comment || "");
+      }
+    };
+
+    updateFromStorage();
+
+    // ✅ FIX: back आने पर भी trigger होगा
+    window.addEventListener("focus", updateFromStorage);
+
+    return () => {
+      window.removeEventListener("focus", updateFromStorage);
+    };
   }, []);
 
   // Save step
@@ -94,7 +104,7 @@ export default function BookingForm() {
     localStorage.setItem("bookingStep", step.toString());
   }, [step]);
 
-  // Save all form data
+  // Save form data
   useEffect(() => {
     const bookingData = {
       serviceType,
@@ -121,11 +131,9 @@ export default function BookingForm() {
 
   // Validation
   const validateForm = () => {
-    if (step === 1) {
-      if (!selectedSlot) {
-        alert("Please select a time slot");
-        return false;
-      }
+    if (step === 1 && !selectedSlot) {
+      alert("Please select a time slot");
+      return false;
     }
 
     if (step === 2) {

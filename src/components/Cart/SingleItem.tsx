@@ -38,14 +38,14 @@ const SingleItem = ({ item }) => {
     <div className="flex flex-col sm:flex-row gap-5">
       
       {/* Image */}
-      <div className="w-full sm:w-28 h-28 relative rounded-xl overflow-hidden bg-gray-100">
-        <Image
-          src={item.imgs?.thumbnails[0]}
-          alt={item.title}
-          fill
-          className="object-cover"
-        />
-      </div>
+      {/* <div className="w-full sm:w-28 h-28 relative rounded-xl overflow-hidden bg-gray-100">
+      <Image
+  src={item.img && item.img !== "" ? item.img : "/images/default.png"}
+  alt={item.title}
+  fill
+  className="object-cover"
+/>
+      </div> */}
 
       {/* Content */}
       <div className="flex-1 flex flex-col justify-between">
@@ -77,7 +77,7 @@ const SingleItem = ({ item }) => {
         {/* Bottom Row */}
         <div className="flex items-center justify-between mt-4">
           
-          {/* ✅ Updated Quantity Selector */}
+          {/* Quantity */}
           <div className="flex items-center border border-[#3683ab] rounded-full px-1 py-1 gap-2">
             
             <button
