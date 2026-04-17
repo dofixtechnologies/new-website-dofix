@@ -1209,6 +1209,10 @@ body {
   width: 1px;
 }
 
+.min-w-0 {
+  min-width: 0;
+}
+
 .min-w-\[111px\] {
   min-width: 111px;
 }
@@ -1271,10 +1275,6 @@ body {
 
 .min-w-\[900px\] {
   min-width: 900px;
-}
-
-.min-w-0 {
-  min-width: 0;
 }
 
 .max-w-2xl {

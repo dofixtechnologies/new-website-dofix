@@ -39,28 +39,28 @@ function BookingForm() {
     const [comment, setComment] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const dates = [
         {
-            day: "Tue",
-            date: "07",
+            day: "Fri",
+            date: "17",
             full: "07 April 2026"
         },
         {
-            day: "Wed",
-            date: "08",
+            day: "Sat",
+            date: "18",
             full: "08 April 2026"
         },
         {
-            day: "Thu",
-            date: "09",
+            day: "Sun",
+            date: "19",
             full: "09 April 2026"
         },
         {
-            day: "Fri",
-            date: "10",
+            day: "Mon",
+            date: "20",
             full: "10 April 2026"
         },
         {
-            day: "Sat",
-            date: "11",
+            day: "Tues",
+            date: "21",
             full: "11 April 2026"
         }
     ];

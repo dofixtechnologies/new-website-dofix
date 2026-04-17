@@ -1,7 +1,7 @@
 {
   "app": {
-    "[project]/src/app/(site)/(pages)/[category]/[subcategory]/page": [],
-    "[project]/src/app/(site)/(pages)/ac-services/[id]/page": [],
+    "[project]/src/app/(site)/(pages)/booking/page": [],
+    "[project]/src/app/(site)/(pages)/cart/page": [],
     "[project]/src/app/(site)/page": []
   },
   "appUsingSizeAdjust": false,

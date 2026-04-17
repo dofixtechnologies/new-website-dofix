@@ -124,17 +124,17 @@ export const subCategoryMapping: any = {
     {
       id: "servicing",
       title: "Servicing",
-      img: "/images/subcategories/kitchen-interior.png",
+      img: "/images/subcategories/serv.png",
     },
     {
       id: "repair",
       title: "Repair",
-      img: "/images/subcategories/kitchen-interior.png",
+      img: "/images/subcategories/re.png",
     },
     {
       id: "install",
       title: "Installation & Uninstallation",
-      img: "/images/subcategories/kitchen-interior.png",
+      img: "/images/subcategories/re.png",
     },
   ],
 
