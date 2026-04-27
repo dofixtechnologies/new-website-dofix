@@ -1,5 +1,0 @@
-{
-  "/(site)/(pages)/booking/page": "app/(site)/(pages)/booking/page.js",
-  "/(site)/(pages)/cart/page": "app/(site)/(pages)/cart/page.js",
-  "/(site)/page": "app/(site)/page.js"
-}
