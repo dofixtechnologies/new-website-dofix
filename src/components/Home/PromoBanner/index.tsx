@@ -13,21 +13,21 @@ const PromoBanner = ({ onBookNowClick }: PromoBannerProps) => {
       <div className="max-w-[1170px] w-full mx-auto px-4 sm:px-8 xl:px-0">
         
         {/* BIG BANNER */}
-        <div className="relative overflow-hidden rounded-lg mb-7.5 w-full h-[220px] sm:h-[280px] md:h-[320px] lg:h-[360px] xl:h-[400px] bg-[#fff]">
+        {/* <div className="relative overflow-hidden rounded-lg mb-7.5 w-full h-[220px] sm:h-[280px] md:h-[320px] lg:h-[360px] xl:h-[400px] bg-[#fff]">
           <Image
             src="/images/promo/draw.png"
             alt="Mega Lucky Draw Banner"
             fill
             priority
             className="object-cover object-center lg:object-contain"
-          />
+          /> */}
 
           {/* CLICK HANDLER */}
-          <div
+          {/* <div
             onClick={() => onBookNowClick("ac-repair-installation")}
             className="absolute inset-0 z-10 cursor-pointer"
           />
-        </div>
+        </div> */}
 
         <div className="grid gap-7.5 grid-cols-1 lg:grid-cols-2">
           

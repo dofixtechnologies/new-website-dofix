@@ -1,7 +1,7 @@
 {
   "pages": {},
   "app": {
-    "[project]/src/app/(site)/(pages)/rate-card/[categoryId]/page": []
+    "[project]/new-website-dofix/src/app/(site)/(pages)/rate-card/[categoryId]/page": []
   },
   "appUsingSizeAdjust": false,
   "pagesUsingSizeAdjust": false

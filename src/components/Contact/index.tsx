@@ -1,9 +1,60 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Breadcrumb from "../Common/Breadcrumb";
 
 const Contact = () => {
+
+  // ✅ STATE
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    enquiry: "",
+    phone: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState<any>({});
+
+  // ✅ HANDLE CHANGE
+  const handleChange = (e: any) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  // ✅ VALIDATION
+  const validate = () => {
+    let newErrors: any = {};
+
+    if (!formData.firstName.trim()) {
+      newErrors.firstName = "Name is required";
+    }
+
+    if (!formData.enquiry.trim()) {
+      newErrors.enquiry = "Enquiry is required";
+    }
+
+    if (!formData.phone.trim()) {
+      newErrors.phone = "Phone is required";
+    } else if (!/^[0-9]{10}$/.test(formData.phone)) {
+      newErrors.phone = "Enter valid 10 digit number";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  // ✅ SUBMIT
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+
+    if (validate()) {
+      console.log("Form Submitted:", formData);
+    }
+  };
+
   return (
     <>
       <Breadcrumb title={"Contact"} pages={["Contact"]} />
@@ -32,7 +83,7 @@ const Contact = () => {
 
           <div className="grid lg:grid-cols-3 gap-8">
 
-            {/* Contact Form (UNCHANGED) */}
+            {/* Contact Form */}
             <div className="lg:col-span-2 bg-white rounded-2xl shadow-md p-6 sm:p-10">
 
               <h3 className="text-xl font-semibold text-gray-800 mb-8">
@@ -43,7 +94,7 @@ const Contact = () => {
                 If you have a specific request, please complete the form. Our DoFix Home Service team will contact you shortly.
               </p>
 
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
 
                 <div className="grid md:grid-cols-2 gap-6">
 
@@ -53,9 +104,14 @@ const Contact = () => {
                     </label>
                     <input
                       type="text"
+                      name="firstName"
+                      onChange={handleChange}
                       placeholder="Your Name"
                       className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-[#3683ab] outline-none"
                     />
+                    {errors.firstName && (
+                      <p className="text-red-500 text-sm">{errors.firstName}</p>
+                    )}
                   </div>
 
                   <div>
@@ -64,6 +120,8 @@ const Contact = () => {
                     </label>
                     <input
                       type="text"
+                      name="lastName"
+                      onChange={handleChange}
                       placeholder="Surname"
                       className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-[#3683ab] outline-none"
                     />
@@ -79,9 +137,14 @@ const Contact = () => {
                     </label>
                     <input
                       type="text"
+                      name="enquiry"
+                      onChange={handleChange}
                       placeholder="Type your enquiry"
                       className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-[#3683ab] outline-none"
                     />
+                    {errors.enquiry && (
+                      <p className="text-red-500 text-sm">{errors.enquiry}</p>
+                    )}
                   </div>
 
                   <div>
@@ -90,9 +153,14 @@ const Contact = () => {
                     </label>
                     <input
                       type="text"
+                      name="phone"
+                      onChange={handleChange}
                       placeholder="Enter your phone"
                       className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-[#3683ab] outline-none"
                     />
+                    {errors.phone && (
+                      <p className="text-red-500 text-sm">{errors.phone}</p>
+                    )}
                   </div>
 
                 </div>
@@ -103,6 +171,8 @@ const Contact = () => {
                   </label>
                   <textarea
                     rows={5}
+                    name="message"
+                    onChange={handleChange}
                     placeholder="Type your message"
                     className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-[#3683ab] outline-none"
                   ></textarea>
@@ -118,7 +188,7 @@ const Contact = () => {
               </form>
             </div>
 
-            {/* Contact Info (UPDATED CONTENT ONLY) */}
+            {/* Contact Info */}
             <div className="lg:col-span-1 bg-white rounded-2xl shadow-md p-6">
 
               <h3 className="text-xl font-semibold text-gray-800 mb-6">
@@ -132,7 +202,6 @@ const Contact = () => {
 
               <div className="space-y-5 text-gray-600">
 
-                {/* Email */}
                 <div>
                   <span className="font-semibold text-[#14455b]">Email Us:</span>
                   <br />
@@ -141,7 +210,6 @@ const Contact = () => {
                   </a>
                 </div>
 
-                {/* Phone */}
                 <div>
                   <span className="font-semibold text-[#14455b]">Call Us:</span>
                   <br />
@@ -150,7 +218,6 @@ const Contact = () => {
                   </a>
                 </div>
 
-                {/* Address */}
                 <div>
                   <span className="font-semibold text-[#14455b]">Visit Us:</span>
                   <br />
@@ -160,7 +227,6 @@ const Contact = () => {
 
               </div>
 
-              {/* MAP PLACEHOLDER */}
               <div className="mt-6 text-sm text-gray-500">
                 Show map here
               </div>
@@ -169,28 +235,23 @@ const Contact = () => {
 
           </div>
         </div>
+
         <div className="mt-10 w-full ">
-  {/* <h3 className="text-xl font-semibold text-gray-800 mb-4">
-    Find Us on Map
-  </h3> */}
+          <div className="w-full max-w-[75%] mx-auto h-[300px] rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
+            <iframe
+              src="https://www.google.com/maps/place/DOFIX/@28.5922201,77.3131555,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce5d299ab59bf:0xf344f6052d87445e!8m2!3d28.5922201!4d77.3157304!16s%2Fg%2F11x7dpwbq8!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="DoFix Location Map"
+            ></iframe>
+          </div>
+        </div>
 
-  {/* <div className="w-full h-[320px] rounded-2xl overflow-hidden border border-gray-200"> */}
-  <div className="w-full max-w-[75%] mx-auto h-[300px] rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
-    <iframe
-      src="https://www.google.com/maps/place/DOFIX/@28.5922201,77.3131555,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce5d299ab59bf:0xf344f6052d87445e!8m2!3d28.5922201!4d77.3157304!16s%2Fg%2F11x7dpwbq8!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D"
-      width="100%"
-      height="100%"
-      style={{ border: 0 }}
-      allowFullScreen
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-      title="DoFix Location Map"
-    ></iframe>
-  </div>
-</div>
       </section>
-      {/* Map Section */}
-
     </>
   );
 };

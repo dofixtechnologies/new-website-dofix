@@ -1,7 +1,7 @@
 {
   "pages": {},
   "app": {
-    "[project]/src/app/(site)/(pages)/refund-policy/page": []
+    "[project]/new-website-dofix/src/app/(site)/(pages)/refund-policy/page": []
   },
   "appUsingSizeAdjust": false,
   "pagesUsingSizeAdjust": false

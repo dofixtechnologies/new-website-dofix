@@ -1,0 +1,3 @@
+module.exports=[88789,a=>{"use strict";var b=a.i(72492);let c=()=>(0,b.jsx)("div",{className:"fixed inset-0 z-[9999] flex items-center justify-center bg-white",children:(0,b.jsx)("div",{className:"h-16 w-16 animate-spin rounded-full border-4 border-[#3683ab] border-t-transparent"})});function d(){return(0,b.jsx)(c,{})}a.s(["default",()=>d],88789)}];
+
+//# sourceMappingURL=new-website-dofix_src_app_loading_tsx_79b13ffb._.js.map

@@ -1,7 +1,7 @@
 {
   "pages": {},
   "app": {
-    "[project]/src/app/(site)/blog/page": []
+    "[project]/new-website-dofix/src/app/(site)/blog/page": []
   },
   "appUsingSizeAdjust": false,
   "pagesUsingSizeAdjust": false

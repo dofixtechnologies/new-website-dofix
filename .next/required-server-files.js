@@ -100,7 +100,7 @@ self.__SERVER_FILES_MANIFEST={
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\acer\\Downloads\\new-website-dofix",
+    "outputFileTracingRoot": "C:\\Users\\acer\\Downloads",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -293,12 +293,12 @@ self.__SERVER_FILES_MANIFEST={
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.js",
     "turbopack": {
-      "root": "C:\\Users\\acer\\Downloads\\new-website-dofix"
+      "root": "C:\\Users\\acer\\Downloads"
     },
     "distDirRoot": ".next"
   },
   "appDir": "C:\\Users\\acer\\Downloads\\new-website-dofix",
-  "relativeAppDir": "",
+  "relativeAppDir": "new-website-dofix",
   "files": [
     ".next\\routes-manifest.json",
     ".next\\server\\pages-manifest.json",

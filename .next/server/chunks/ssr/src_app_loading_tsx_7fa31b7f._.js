@@ -1,3 +1,0 @@
-module.exports=[2747,a=>{"use strict";var b=a.i(7997);let c=()=>(0,b.jsx)("div",{className:"fixed inset-0 z-[9999] flex items-center justify-center bg-white",children:(0,b.jsx)("div",{className:"h-16 w-16 animate-spin rounded-full border-4 border-[#3683ab] border-t-transparent"})});function d(){return(0,b.jsx)(c,{})}a.s(["default",()=>d],2747)}];
-
-//# sourceMappingURL=src_app_loading_tsx_7fa31b7f._.js.map

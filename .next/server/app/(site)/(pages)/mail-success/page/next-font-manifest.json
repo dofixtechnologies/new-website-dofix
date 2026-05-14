@@ -1,7 +1,7 @@
 {
   "pages": {},
   "app": {
-    "[project]/src/app/(site)/(pages)/mail-success/page": []
+    "[project]/new-website-dofix/src/app/(site)/(pages)/mail-success/page": []
   },
   "appUsingSizeAdjust": false,
   "pagesUsingSizeAdjust": false

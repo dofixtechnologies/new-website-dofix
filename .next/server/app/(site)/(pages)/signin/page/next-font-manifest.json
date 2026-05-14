@@ -1,7 +1,7 @@
 {
   "pages": {},
   "app": {
-    "[project]/src/app/(site)/(pages)/signin/page": []
+    "[project]/new-website-dofix/src/app/(site)/(pages)/signin/page": []
   },
   "appUsingSizeAdjust": false,
   "pagesUsingSizeAdjust": false

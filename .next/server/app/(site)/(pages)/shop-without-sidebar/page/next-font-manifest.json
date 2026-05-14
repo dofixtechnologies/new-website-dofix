@@ -1,7 +1,7 @@
 {
   "pages": {},
   "app": {
-    "[project]/src/app/(site)/(pages)/shop-without-sidebar/page": []
+    "[project]/new-website-dofix/src/app/(site)/(pages)/shop-without-sidebar/page": []
   },
   "appUsingSizeAdjust": false,
   "pagesUsingSizeAdjust": false
